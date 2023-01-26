@@ -9,6 +9,7 @@
 \usepackage{graphicx}
 \usepackage{pgfplots}
 \usepackage{wrapfig}
+\usepackage{gensymb}
 
 \pagestyle{fancy}
 \fancyhead{}
@@ -24,7 +25,7 @@
 \newcommand{\img}[1]{
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=0.3\linewidth]{figs/#1}\\
+		\includegraphics[width=0.35\linewidth]{figs/#1}\\
 		\imagesource{James Stewart, Calculus: Early Transcendentals [9e]}
 	\end{figure}
 }
@@ -258,5 +259,28 @@ $\mathrm{Domain}:[-3,2] \qquad\mathrm{Range}:[-3,3]$
 \soln{Solution}
 False
 
+\section*{Problem 19}
+
+\qn{Shown is a graph of the global average temperature $T$ during the 20th century. Estimate the following:}
+
+\img{1.1.19}
+
+\begin{enumerate}
+	\item \qn{The global average temperature in 1950}
+	\soln{Solution}
+	$\approx 13.82$
+	
+	\item \qn{The year when the average temperature was $14.2 \degree C$}
+	\soln{Solution}
+	$\approx 1992$
+	
+	\item \qn{The years when the temperature was smallest and largest}
+	\soln{Solution}
+	$1910 \quad \text{and} \quad 2003$
+	
+	\item \qn{The range of $T$}
+	\soln{Solution}
+	$[13.5, 14.4]$
+\end{enumerate}
 
 \end{document}
