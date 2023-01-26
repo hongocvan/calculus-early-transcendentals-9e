@@ -22,11 +22,17 @@
 \newcommand{\soln}{\subsection*}
 \newcommand{\qn}{\textit}
 \newcommand{\imagesource}[1]{{\footnotesize Source: #1}}
-\newcommand{\img}[1]{
+\newcommand{\imgqn}[1]{
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=0.35\linewidth]{figs/#1}\\
+		\includegraphics[width=0.35\linewidth]{figs/#1.png}\\
 		\imagesource{James Stewart, Calculus: Early Transcendentals [9e]}
+	\end{figure}
+}
+\newcommand{\imgsoln}[1]{
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.6\linewidth]{figs/#1.png}
 	\end{figure}
 }
 
@@ -53,7 +59,7 @@ False
 
 \qn{The graph of a function $g$ is given:}
 
-\img{1.1.3}
+\imgqn{1.1.3}
 
 \begin{enumerate}
 	\item \qn{State the values of $g(-2)$, $g(0)$, $g(2)$ and $g(3)$}
@@ -81,7 +87,7 @@ False
 
 \qn{The graph of $f$ and $g$ are given:}
 
-\img{1.1.4}
+\imgqn{1.1.4}
 
 \begin{enumerate}
 	\item \qn{State the values of $f(-4)$ and $g(3)$}
@@ -181,7 +187,7 @@ $$y=\pm2x$$
 
 \qn{Determine whether the equation or table defines $y$ as a function of $x$:}
 
-\img{1.1.13}
+\imgqn{1.1.13}
 
 \soln{Solution}
 False
@@ -190,7 +196,7 @@ False
 
 \qn{Determine whether the equation or table defines $y$ as a function of $x$:}
 
-\img{1.1.14}
+\imgqn{1.1.14}
 
 \soln{Solution}
 True
@@ -199,7 +205,7 @@ True
 
 \qn{Determine whether the curve is the graph of a function of $x$. If it is, state the domain and range of the function}
 
-\img{1.1.15}
+\imgqn{1.1.15}
 
 \soln{Solution}
 False
@@ -208,7 +214,7 @@ False
 
 \qn{Determine whether the curve is the graph of a function of $x$. If it is, state the domain and range of the function}
 
-\img{1.1.16}
+\imgqn{1.1.16}
 
 \soln{Solution}
 $\mathrm{Domain}:[-2,2] \qquad\mathrm{Range}:[-1,2]$
@@ -217,7 +223,7 @@ $\mathrm{Domain}:[-2,2] \qquad\mathrm{Range}:[-1,2]$
 
 \qn{Determine whether the curve is the graph of a function of $x$. If it is, state the domain and range of the function}
 
-\img{1.1.17}
+\imgqn{1.1.17}
 
 \soln{Solution}
 $\mathrm{Domain}:[-3,2] \qquad\mathrm{Range}:[-3,3]$
@@ -226,7 +232,7 @@ $\mathrm{Domain}:[-3,2] \qquad\mathrm{Range}:[-3,3]$
 
 \qn{Determine whether the curve is the graph of a function of $x$. If it is, state the domain and range of the function}
 
-\img{1.1.18}
+\imgqn{1.1.18}
 
 \soln{Solution}
 False
@@ -235,7 +241,7 @@ False
 
 \qn{Shown is a graph of the global average temperature $T$ during the 20th century. Estimate the following:}
 
-\img{1.1.19}
+\imgqn{1.1.19}
 
 \begin{enumerate}
 	\item \qn{The global average temperature in 1950}
@@ -259,7 +265,7 @@ False
 
 \qn{Trees grow faster and form wider rings in warm years and grow more slowly and form narrower rings in cooler years. The figure shows ring widths of a Siberian pine from 1500 to 2000.}
 
-\img{1.1.20}
+\imgqn{1.1.20}
 
 \begin{enumerate}
 	\item \qn{What is the range of the ring width function?}
@@ -287,7 +293,7 @@ False
 
 \qn{The graph shows the power consumption for a day in September in San Francisco. ($P$ is measured in megawatts; $t$ is measured in hours starting at midnight.)}
 
-\img{1.1.23}
+\imgqn{1.1.23}
 
 \begin{enumerate}
 	\item \qn{What was the power consumption at 6 AM? At 6 PM?}
@@ -304,7 +310,7 @@ False
 
 \qn{Three runners compete in a 100-meter race. The graph depicts the distance run as a function of time for each runner. Describe in words what the graph tells you about this race. Who won the race? Did each runner finish the race?}
 
-\img{1.1.24}
+\imgqn{1.1.24}
 
 \soln{Solution}
 
@@ -360,28 +366,34 @@ False
 
 \qn{Temperature readings $T$ (in $\degree F$) were recorded every two hours from midnight to 2:00 PM in Atlanta on a day in June. The time $t$ was measured in hours from midnight.}
 
-\img{1.1.31}
+\imgqn{1.1.31}
 
 \begin{enumerate}
 	\item \qn{Use the readings to sketch a rough graph of $T$ as a function of $t$}
 	\soln{Solution}
+	We can use a quadratic function to fit those points.
+	\imgsoln{1.1.31_ans.a}
 	
 	\item \qn{Use your graph to estimate the temperature at 9:00 AM}
 	\soln{Solution}
+	$\approx 72.4 \degree F$
+	\imgsoln{1.1.31_ans.b}
 \end{enumerate}
 
 \section*{Problem 32}
 
 \qn{Researchers measured the blood alcohol concentration(BAC) of eight adult male subjects after rapid consumption 30 mL of ethanol (corresponding to two standard alcoholic drinks). The table shows the data they obtained by averaging the BAC (in g/dL) of the eight men.}
 
-\img{1.1.32}
+\imgqn{1.1.32}
 
 \begin{enumerate}
 	\item \qn{Use the readings to sketch a rough graph of BAC as a function of $t$}
 	\soln{Solution}
+	\imgsoln{1.1.32_ans.a}
 	
 	\item \qn{Use your graph to describe how the effect of alcohol varies with time}
 	\soln{Solution}
+	The BAC value increases from 0 (g/dL) to the maximum of 0.041 (g/dL) before it decreases to 0.001 (g/dL) 4 hours after consuming 30 mL of ethanol.
 \end{enumerate}
 
 \end{document}
