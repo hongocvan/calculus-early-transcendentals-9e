@@ -10,6 +10,7 @@
 \usepackage{pgfplots}
 \usepackage{wrapfig}
 \usepackage{gensymb}
+\usepackage{float}
 
 \pagestyle{fancy}
 \fancyhead{}
@@ -23,14 +24,14 @@
 \newcommand{\qn}{\textit}
 \newcommand{\imagesource}[1]{{\footnotesize Source: #1}}
 \newcommand{\imgqn}[1]{
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.35\linewidth]{figs/#1.png}\\
 		\imagesource{James Stewart, Calculus: Early Transcendentals [9e]}
 	\end{figure}
 }
 \newcommand{\imgsoln}[1]{
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.5\linewidth]{figs/#1.png}
 	\end{figure}
@@ -597,13 +598,13 @@ Range: $$f(x)=\frac{x^2-4}{x-2}=x+2 \Rightarrow f(x) \in (-\infty, \infty)$$
 \section*{Problem 49}
 
 \qn{Evaluate $f(-3)$, $f(0)$, and $f(2)$ for the piecewise defined function. Then sketch the graph of the function}
-\begin{equation}
+\begin{equation*}
 	f(x)=
 	\begin{cases}
 		x^2+2 & \text{if } x < 0\\
 		x & \text{if } x \ge 0
 	\end{cases}
-\end{equation}
+\end{equation*}
 
 \soln{Solution}
 \begin{enumerate}
@@ -615,13 +616,13 @@ Range: $$f(x)=\frac{x^2-4}{x-2}=x+2 \Rightarrow f(x) \in (-\infty, \infty)$$
 \section*{Problem 50}
 
 \qn{Evaluate $f(-3)$, $f(0)$, and $f(2)$ for the piecewise defined function. Then sketch the graph of the function}
-\begin{equation}
+\begin{equation*}
 	f(x)=
 	\begin{cases}
 		5 & \text{if } x < 2\\
 		\frac{1}{2}x-3 & \text{if } x \ge 2
 	\end{cases}
-\end{equation}
+\end{equation*}
 
 \soln{Solution}
 \begin{enumerate}
@@ -633,13 +634,13 @@ Range: $$f(x)=\frac{x^2-4}{x-2}=x+2 \Rightarrow f(x) \in (-\infty, \infty)$$
 \section*{Problem 51}
 
 \qn{Evaluate $f(-3)$, $f(0)$, and $f(2)$ for the piecewise defined function. Then sketch the graph of the function}
-\begin{equation}
+\begin{equation*}
 	f(x)=
 	\begin{cases}
 		x+1 & \text{if } x \le -1\\
 		x^2 & \text{if } x > -1
 	\end{cases}
-\end{equation}
+\end{equation*}
 
 \soln{Solution}
 \begin{enumerate}
@@ -651,13 +652,13 @@ Range: $$f(x)=\frac{x^2-4}{x-2}=x+2 \Rightarrow f(x) \in (-\infty, \infty)$$
 \section*{Problem 52}
 
 \qn{Evaluate $f(-3)$, $f(0)$, and $f(2)$ for the piecewise defined function. Then sketch the graph of the function}
-\begin{equation}
+\begin{equation*}
 	f(x)=
 	\begin{cases}
 		-1 & \text{if } x \le 1\\
 		7-2x & \text{if } x > 1
 	\end{cases}
-\end{equation}
+\end{equation*}
 
 \soln{Solution}
 \begin{enumerate}
@@ -697,13 +698,13 @@ Range: $$f(x)=\frac{x^2-4}{x-2}=x+2 \Rightarrow f(x) \in (-\infty, \infty)$$
 \section*{Problem 57}
 
 \qn{Sketch the graph of the function}
-\begin{equation}
+\begin{equation*}
 	f(x)=
 	\begin{cases}
 		|x| & \text{if } |x| \le 1\\
 		1 & \text{if } |x| > 1
 	\end{cases}
-\end{equation}
+\end{equation*}
 
 \soln{Solution}
 \imgsoln{1.1.57-ans}
@@ -720,24 +721,40 @@ Range: $$f(x)=\frac{x^2-4}{x-2}=x+2 \Rightarrow f(x) \in (-\infty, \infty)$$
 \qn{Find a formula for the function whose graph is the given curve. The line segment joining the points $(1, -3)$ and $(5,7)$}
 
 \soln{Solution}
+\begin{equation*}
+	y-(-3)=\frac{7-(-3)}{5-1}(x-1) \Leftrightarrow y+3=\frac{5}{2}(x-1) \Rightarrow y=f(x)=\frac{5}{2}x-\frac{11}{2}
+\end{equation*}
+\imgsoln{1.1.59-ans}
 
 \section*{Problem 60}
 
 \qn{Find a formula for the function whose graph is the given curve. The line segment joining the points $(-5, 10)$ and $(7, -10)$}
 
 \soln{Solution}
+\begin{equation*}
+	y-10=\frac{-10-10}{7-(-5)}(x-(-5)) \Leftrightarrow y-10=\frac{-5}{3}(x+5) \Rightarrow y=f(x)=\frac{-5}{3}x+\frac{5}{3}
+\end{equation*}
+\imgsoln{1.1.60-ans}
 
 \section*{Problem 61}
 
 \qn{Find a formula for the function whose graph is the given curve. The bottom half of the parabola $$x+(y-1)^2=0$$ }
 
 \soln{Solution}
+\begin{equation*}
+	x+(y-1)^2=0 \Rightarrow y=\pm\sqrt{-x}+1 \Rightarrow g(x)=-\sqrt{-x}+1
+\end{equation*}
+\imgsoln{1.1.61-ans}
 
 \section*{Problem 62}
 
 \qn{Find a formula for the function whose graph is the given curve. The top half of the circle $$x^2+(y-2)^2=4$$}
 
 \soln{Solution}
+\begin{equation*}
+	x^2+(y-2)^2=4 \Rightarrow (y-2)^2=4-x^2 \Rightarrow y=\pm\sqrt{4-x^2}+2 \Rightarrow f(x)=\sqrt{4-x^2}+2
+\end{equation*}
+\imgsoln{1.1.62-ans}
 
 \section*{Problem 63}
 
@@ -746,6 +763,13 @@ Range: $$f(x)=\frac{x^2-4}{x-2}=x+2 \Rightarrow f(x) \in (-\infty, \infty)$$
 \imgqn{1.1.63}
 
 \soln{Solution}
+\begin{equation*}
+	f(x)=
+	\begin{cases}
+		3-x & \text{if } 0 \le x \le 3\\
+		2x-6 & \text{if } 3 < x \le 5
+	\end{cases}
+\end{equation*}
 
 \section*{Problem 64}
 
@@ -754,6 +778,14 @@ Range: $$f(x)=\frac{x^2-4}{x-2}=x+2 \Rightarrow f(x) \in (-\infty, \infty)$$
 \imgqn{1.1.64}
 
 \soln{Solution}
+\begin{equation*}
+	f(x)=
+	\begin{cases}
+		-\frac{3}{2}x-3 & \text{if } -4 \le x \le -2\\
+		\sqrt{4-x^2} & \text{if } -2 < x \le 2 \\
+		\frac{3}{2}x-3 & \text{if } 2 < x \le 4
+	\end{cases}
+\end{equation*}
 
 \section*{Problem 65}
 
