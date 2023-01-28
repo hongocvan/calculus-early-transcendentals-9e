@@ -1,0 +1,754 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage[none]{hyphenat}
+\usepackage{fancyhdr}
+
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage{wrapfig}
+\usepackage{gensymb}
+\usepackage{float}
+
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[L]{\slshape \MakeUppercase{1.1 - Four Ways to Represent a Function}}
+\fancyhead[R]{\slshape Ho Ngoc Van}
+\fancyfoot[C]{\thepage}
+\renewcommand{\footrulewidth}{0pt}
+
+\newcommand{\soln}{\subsection*}
+\newcommand{\qn}{\textit}
+\newcommand{\imagesource}[1]{{\footnotesize Source: #1}}
+\newcommand{\imgqn}[1]{
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.35\linewidth]{figs/#1.png}\\
+		\imagesource{James Stewart, Calculus: Early Transcendentals [9e]}
+	\end{figure}
+}
+\newcommand{\imgsoln}[1]{
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.5\linewidth]{figs/#1.png}
+	\end{figure}
+}
+
+\begin{document}
+
+\section*{Problem 1}
+
+\qn{If $f(x)=x+\sqrt{2-x}$ and $g(x)=u+\sqrt{2-u}$, is it true that $f=g$?}
+
+\soln{Solution}
+
+\section*{Problem 2}
+
+\qn{If $$f(x)=\frac{x^2-x}{x-1} \quad\mathrm{and}\quad g(x)=x$$ is it true that $f=g$?}
+
+\soln{Solution}
+
+\section*{Problem 3}
+
+\qn{The graph of a function $g$ is given:}
+
+\imgqn{1.1.3}
+
+\begin{enumerate}
+	\item \qn{State the values of $g(-2)$, $g(0)$, $g(2)$ and $g(3)$}
+	\soln{Solution}
+	
+	\item \qn{For what value(s) of $x$ is $g(x)=3$?}
+	\soln{Solution}
+	
+	\item \qn{For what value(s) of $x$ is $g(x) \leq 3$?}
+	\soln{Solution}
+	
+	\item \qn{State the domain and range of $g$}
+	\soln{Solution}
+	
+	\item \qn{On what interval(s) is $g$ increasing?}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 4}
+
+\qn{The graph of $f$ and $g$ are given:}
+
+\imgqn{1.1.4}
+
+\begin{enumerate}
+	\item \qn{State the values of $f(-4)$ and $g(3)$}
+	\soln{Solution}
+	
+	\item \qn{Which is larger, $f(-3)$ or $g(-3)$?}
+	\soln{Solution}
+	
+	\item \qn{For what values of $x$ is $f(x)=g(x)$?}
+	\soln{Solution}
+	
+	\item \qn{On what interval(s) is $f(x) \leq g(x)$?}
+	\soln{Solution}
+	
+	\item \qn{State the solution of the equation $f(x)=-1$}
+	\soln{Solution}
+	
+	\item \qn{On what interval(s) is $g$ decreasing?}
+	\soln{Solution}
+	
+	\item \qn{State the domain and range of $f$}
+	\soln{Solution}
+	
+	\item \qn{State the domain and range of $g$}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 5}
+
+\qn{Figure 1 was recorded by an instrument operated by the California Department of Mines and Geology at the University Hospital of the University of Southern California in Los Angeles. Use it to estimate the range of the vertical ground acceleration function at USC during the North-ridge earthquake.}
+
+\soln{Solution}
+
+\section*{Problem 6}
+
+\qn{In this section we discussed examples of ordinary, everyday functions: population is a function of time, postage cost is a function of package weight, water temperature is a function of time. Give three other examples of function from everyday life that are described verbally. What can you say about the domain and range of each of your functions? If possible, sketch a rough graph of each function.}
+
+\soln{Solution}
+
+\section*{Problem 7}
+
+\qn{Determine whether the equation or table defines $y$ as a function of $x$: $$3x-5y=7$$}
+
+\soln{Solution}
+
+\section*{Problem 8}
+
+\qn{Determine whether the equation or table defines $y$ as a function of $x$: $$3x^2-2y=5$$}
+
+\soln{Solution}
+
+\section*{Problem 9}
+
+\qn{Determine whether the equation or table defines $y$ as a function of $x$: $$x^2+(y-3)^2=5$$}
+
+\soln{Solution}
+
+\section*{Problem 10}
+
+\qn{Determine whether the equation or table defines $y$ as a function of $x$: $$2xy+5y^2=4$$}
+
+\soln{Solution}
+
+\section*{Problem 11}
+
+\qn{Determine whether the equation or table defines $y$ as a function of $x$: $$(y+3)^3+1=2x$$}
+
+\soln{Solution}
+
+\section*{Problem 12}
+
+\qn{Determine whether the equation or table defines $y$ as a function of $x$: $$2x-|y|=0$$}
+
+\soln{Solution}
+
+\section*{Problem 13}
+
+\qn{Determine whether the equation or table defines $y$ as a function of $x$:}
+
+\imgqn{1.1.13}
+
+\soln{Solution}
+
+\section*{Problem 14}
+
+\qn{Determine whether the equation or table defines $y$ as a function of $x$:}
+
+\imgqn{1.1.14}
+
+\soln{Solution}
+
+\section*{Problem 15}
+
+\qn{Determine whether the curve is the graph of a function of $x$. If it is, state the domain and range of the function}
+
+\imgqn{1.1.15}
+
+\soln{Solution}
+
+\section*{Problem 16}
+
+\qn{Determine whether the curve is the graph of a function of $x$. If it is, state the domain and range of the function}
+
+\imgqn{1.1.16}
+
+\soln{Solution}
+
+\section*{Problem 17}
+
+\qn{Determine whether the curve is the graph of a function of $x$. If it is, state the domain and range of the function}
+
+\imgqn{1.1.17}
+
+\soln{Solution}
+
+\section*{Problem 18}
+
+\qn{Determine whether the curve is the graph of a function of $x$. If it is, state the domain and range of the function}
+
+\imgqn{1.1.18}
+
+\soln{Solution}
+
+\section*{Problem 19}
+
+\qn{Shown is a graph of the global average temperature $T$ during the 20th century. Estimate the following:}
+
+\imgqn{1.1.19}
+
+\begin{enumerate}
+	\item \qn{The global average temperature in 1950}
+	\soln{Solution}
+	
+	\item \qn{The year when the average temperature was $14.2 \degree C$}
+	\soln{Solution}
+	
+	\item \qn{The years when the temperature was smallest and largest}
+	\soln{Solution}
+	
+	\item \qn{The range of $T$}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 20}
+
+\qn{Trees grow faster and form wider rings in warm years and grow more slowly and form narrower rings in cooler years. The figure shows ring widths of a Siberian pine from 1500 to 2000.}
+
+\imgqn{1.1.20}
+
+\begin{enumerate}
+	\item \qn{What is the range of the ring width function?}
+	\soln{Solution}
+	
+	\item \qn{What does the graph tend to say about the temperature of the earth? Does the graph reflect the volcanic eruptions of the mid-19th century?}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 21}
+
+\qn{You put some ice cubes in a glass, fill the glass with cold water, and then let the glass sit on a table. Describe how the temperature of the water changes as time passes. Then sketch a rough graph of the temperature of the water as a function of the elapsed time.}
+
+\soln{Solution}
+
+\section*{Problem 22}
+
+\qn{You place a frozen pie in an oven and bake it for an hour. Then you take it out and let it cool. Describe how the temperature of the pie changes as time passes. Then sketch a rough graph of the temperature of the pie as a function of time.}
+
+\soln{Solution}
+
+\section*{Problem 23}
+
+\qn{The graph shows the power consumption for a day in September in San Francisco. ($P$ is measured in megawatts; $t$ is measured in hours starting at midnight.)}
+
+\imgqn{1.1.23}
+
+\begin{enumerate}
+	\item \qn{What was the power consumption at 6 AM? At 6 PM?}
+	\soln{Solution}
+	
+	\item \qn{When was the power consumption the lowest? When was it the highest? Do these times seem reasonable?}
+	\soln{Solution}
+\end{enumerate}
+
+
+\section*{Problem 24}
+
+\qn{Three runners compete in a 100-meter race. The graph depicts the distance run as a function of time for each runner. Describe in words what the graph tells you about this race. Who won the race? Did each runner finish the race?}
+
+\imgqn{1.1.24}
+
+\soln{Solution}
+
+\section*{Problem 25}
+
+\qn{Sketch a rough graph of the outdoor temperature as a function of time during a typical spring day.}
+
+\soln{Solution}
+
+\section*{Problem 26}
+
+\qn{Sketch a rough graph of the number of hours of daylight as a function of the time of year.}
+
+\soln{Solution}
+
+\section*{Problem 27}
+
+\qn{Sketch a rough graph of the amount of a particular brand of coffee sold by a store as a function of the price of the coffee.}
+
+\soln{Solution}
+
+\section*{Problem 28}
+
+\qn{Sketch a rough graph of the market value of a new car as a function of time for a period of 20 years. Assume the car is well maintained.}
+
+\soln{Solution}
+
+\section*{Problem 29}
+
+\qn{A homeowner mows the lawn every Wednesday afternoon. Sketch a rough graph of the height of the grass as a function of time over the course of a four-week period.}
+
+\soln{Solution}
+
+\section*{Problem 30}
+
+\qn{An airplane takes off from an airport and lands an hour later at another airport, 400 miles away. If $t$ represents the time in minutes since the plane has left the terminal building, let $x(t)$ be the horizontal distance traveled and $y(t)$ be the altitude of the plane.}
+
+\begin{enumerate}
+	\item \qn{Sketch a possible graph of $x(t)$}
+	\soln{Solution}
+	
+	\item \qn{Sketch a possible graph of $y(t)$}
+	\soln{Solution}
+	
+	\item \qn{Sketch a possible graph of the ground speed}
+	\soln{Solution}
+	
+	\item \qn{Sketch a possible graph of the vertical velocity}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 31}
+
+\qn{Temperature readings $T$ (in $\degree F$) were recorded every two hours from midnight to 2:00 PM in Atlanta on a day in June. The time $t$ was measured in hours from midnight.}
+
+\imgqn{1.1.31}
+
+\begin{enumerate}
+	\item \qn{Use the readings to sketch a rough graph of $T$ as a function of $t$}
+	\soln{Solution}
+	
+	\item \qn{Use your graph to estimate the temperature at 9:00 AM}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 32}
+
+\qn{Researchers measured the blood alcohol concentration(BAC) of eight adult male subjects after rapid consumption 30 mL of ethanol (corresponding to two standard alcoholic drinks). The table shows the data they obtained by averaging the BAC (in g/dL) of the eight men.}
+
+\imgqn{1.1.32}
+
+\begin{enumerate}
+	\item \qn{Use the readings to sketch a rough graph of BAC as a function of $t$}
+	\soln{Solution}
+	
+	\item \qn{Use your graph to describe how the effect of alcohol varies with time}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 33}
+
+\qn{If $f(x)=3x^2-x+2$, find $f(2)$, $f(-2)$, $f(a)$, $f(-a)$, $f(a+1)$, $2f(a)$, $f(2a)$, $f(a^2)$, $[f(a)]^2$, and $f(a+h)$.}
+
+\soln{Solution}
+
+\section*{Problem 34}
+
+\qn{If $g(x)=\frac{x}{\sqrt{x+1}}$, find $g(0)$, $g(3)$, $5g(a)$, $\frac{1}{2}g(4a)$, $g(a^2)$, $[g(a)]^2$, $g(a+h)$, and $g(x-a)$.}
+
+\soln{Solution}
+
+\section*{Problem 35}
+
+\qn{Evaluate the difference quotient for the given function. Simplify your answer. $$f(x)=4+3x-x^2 \qquad \frac{f(3+h)-f(3)}{h}$$}
+
+\soln{Solution}
+
+\section*{Problem 36}
+
+\qn{Evaluate the difference quotient for the given function. Simplify your answer. $$f(x)=x^3 \qquad \frac{f(a+h)-f(a)}{h}$$}
+
+\soln{Solution}
+
+\section*{Problem 37}
+
+\qn{Evaluate the difference quotient for the given function. Simplify your answer. $$f(x)=\frac{1}{x} \qquad \frac{f(x)-f(a)}{x-a}$$}
+
+\soln{Solution}
+
+\section*{Problem 38}
+
+\qn{Evaluate the difference quotient for the given function. Simplify your answer. $$f(x)=\sqrt{x+2} \qquad \frac{f(x)-f(1)}{x-1}$$}
+
+\soln{Solution}
+
+\section*{Problem 39}
+
+\qn{Find the domain of the function $$f(x)=\frac{x+4}{x^2-9}$$}
+
+\soln{Solution}
+
+\section*{Problem 40}
+
+\qn{Find the domain of the function $$f(x)=\frac{x^2+1}{x^2+4x-21}$$}
+
+\soln{Solution}
+
+\section*{Problem 41}
+
+\qn{Find the domain of the function $$f(t)=\sqrt[3]{2t-1}$$}
+
+\soln{Solution}
+
+\section*{Problem 42}
+
+\qn{Find the domain of the function $$g(t)=\sqrt{3-t}-\sqrt{2+t}$$}
+
+\soln{Solution}
+
+\section*{Problem 43}
+
+\qn{Find the domain of the function $$h(x)=\frac{1}{\sqrt[4]{x^2-5x}}$$}
+
+\soln{Solution}
+
+\section*{Problem 44}
+
+\qn{Find the domain of the function $$f(u)=\frac{u+1}{1+\frac{1}{u+1}}$$}
+
+\soln{Solution}
+
+\section*{Problem 45}
+
+\qn{Find the domain of the function $$F(p)=\sqrt{2-\sqrt{p}}$$}
+
+\soln{Solution}
+
+\section*{Problem 46}
+
+\qn{Find the domain of the function $$h(x)=\sqrt{x^2-4x-5}$$}
+
+\soln{Solution}
+
+\section*{Problem 47}
+
+\qn{Find the domain and range and sketch the graph of the function $$h(x)=\sqrt{4-x^2}$$}
+
+\soln{Solution}
+
+\section*{Problem 48}
+
+\qn{Find the domain and sketch the graph of the function $$f(x)=\frac{x^2-4}{x-2}$$}
+
+\soln{Solution}
+
+\section*{Problem 49}
+
+\qn{Evaluate $f(-3)$, $f(0)$, and $f(2)$ for the piecewise defined function. Then sketch the graph of the function}
+\begin{equation}
+	f(x)=
+	\begin{cases}
+		x^2+2 & \text{if } x < 0\\
+		x & \text{if } x \ge 0
+	\end{cases}
+\end{equation}
+
+\soln{Solution}
+
+\section*{Problem 50}
+
+\qn{Evaluate $f(-3)$, $f(0)$, and $f(2)$ for the piecewise defined function. Then sketch the graph of the function}
+\begin{equation}
+	f(x)=
+	\begin{cases}
+		5 & \text{if } x < 2\\
+		\frac{1}{2}x-3 & \text{if } x \ge 2
+	\end{cases}
+\end{equation}
+
+\soln{Solution}
+
+\section*{Problem 51}
+
+\qn{Evaluate $f(-3)$, $f(0)$, and $f(2)$ for the piecewise defined function. Then sketch the graph of the function}
+\begin{equation}
+	f(x)=
+	\begin{cases}
+		x+1 & \text{if } x \le -1\\
+		x^2 & \text{if } x > -1
+	\end{cases}
+\end{equation}
+
+\soln{Solution}
+
+\section*{Problem 52}
+
+\qn{Evaluate $f(-3)$, $f(0)$, and $f(2)$ for the piecewise defined function. Then sketch the graph of the function}
+\begin{equation}
+	f(x)=
+	\begin{cases}
+		-1 & \text{if } x \le 1\\
+		7-2x & \text{if } x > 1
+	\end{cases}
+\end{equation}
+
+\soln{Solution}
+
+\section*{Problem 53}
+
+\qn{Sketch the graph of the function $$f(x)=x+|x|$$}
+
+\soln{Solution}
+
+\section*{Problem 54}
+
+\qn{Sketch the graph of the function $$f(x)=|x+2|$$}
+
+\soln{Solution}
+
+\section*{Problem 55}
+
+\qn{Sketch the graph of the function $$g(t)=|1-3t|$$}
+
+\soln{Solution}
+
+\section*{Problem 56}
+
+\qn{Sketch the graph of the function $$f(x)=\frac{|x|}{x}$$}
+
+\soln{Solution}
+
+\section*{Problem 57}
+
+\qn{Sketch the graph of the function}
+\begin{equation}
+	f(x)=
+	\begin{cases}
+		|x| & \text{if } |x| \le 1\\
+		1 & \text{if } |x| > 1
+	\end{cases}
+\end{equation}
+
+\soln{Solution}
+
+\section*{Problem 58}
+
+\qn{Sketch the graph of the function $$g(x)=||x|-1|$$}
+
+\soln{Solution}
+
+\section*{Problem 59}
+
+\qn{Find a formula for the function whose graph is the given curve. The line segment joining the points $(1, -3)$ and $(5,7)$}
+
+\soln{Solution}
+
+\section*{Problem 60}
+
+\qn{Find a formula for the function whose graph is the given curve. The line segment joining the points $(-5, 10)$ and $(7, -10)$}
+
+\soln{Solution}
+
+\section*{Problem 61}
+
+\qn{Find a formula for the function whose graph is the given curve. The bottom half of the parabola $$x+(y-1)^2=0$$ }
+
+\soln{Solution}
+
+\section*{Problem 62}
+
+\qn{Find a formula for the function whose graph is the given curve. The top half of the circle $$x^2+(y-2)^2=4$$}
+
+\soln{Solution}
+
+\section*{Problem 63}
+
+\qn{Find a formula for the function whose graph is the given curve.}
+
+\imgqn{1.1.63}
+
+\soln{Solution}
+
+\section*{Problem 64}
+
+\qn{Find a formula for the function whose graph is the given curve.}
+
+\imgqn{1.1.64}
+
+\soln{Solution}
+
+\section*{Problem 65}
+
+\qn{Find a formula for the described function and state its domain. A rectangle has perimeter 20 m. Express the area of the rectangle as a function of the length of one of its sides.}
+
+\soln{Solution}
+
+\section*{Problem 66}
+
+\qn{Find a formula for the described function and state its domain. A rectangle has area 16 $m^2$. Express the perimeter of the rectangle as a function of the length of one of its sides.}
+
+\soln{Solution}
+
+\section*{Problem 67}
+
+\qn{Find a formula for the described function and state its domain. Express the area of an equilateral triangle as a function of the length of a side.}
+
+\soln{Solution}
+
+\section*{Problem 68}
+
+\qn{Find a formula for the described function and state its domain. A closed rectangular box with volume 8 $ft^3$ has length twice the width. Express the height of the box as a function of the width.}
+
+\soln{Solution}
+
+\section*{Problem 69}
+
+\qn{Find a formula for the described function and state its domain. An open rectangular box with volume 2 $m^3$ has a square base. Express the surface area of the box as a function of the length of a side of the base.}
+
+\soln{Solution}
+
+\section*{Problem 70}
+
+\qn{Find a formula for the described function and state its domain. A right circular cylinder has volume 25 $in^3$. Express the radius of the cylinder as a function of the height.}
+
+\soln{Solution}
+
+\section*{Problem 71}
+
+\qn{A box with an open top is to be constructed from a rectangular piece of cardboard with dimensions 12 in. by 20 in by cutting out equal squares of side $x$ at each corner and then folding up the sides as in the figure. Express the volume $V$ of the box as a function of $x$.}
+
+\imgqn{1.1.71}
+
+\soln{Solution}
+
+\section*{Problem 72}
+
+\qn{A Norman window has the shape of a rectangle surmounted by a semicircle. If the perimeter of the window is 30 ft, express the area $A$ of the window as a function of the width $x$ of the window.}
+
+\imgqn{1.1.72}
+
+\soln{Solution}
+
+\section*{Problem 73}
+
+\qn{In a certain state the maximum speed permitted on freeways is 65 mi/h and the minimum speed is 40 mi/h. The fine for violating these limits is \$15 for every mile per hour above the maximum speed or below the minimum speed. Express the amount of the fine $F$ as a function of the driving speed $x$ and graph $F(x)$ for $0 \le x \le 100$.}
+
+\soln{Solution}
+
+\section*{Problem 74}
+
+\qn{An electricity company charges its customers a base rate of \$10 a month, plus 6 cents per kilowatt-hour (kWh) for the first 1200 kWh and 7 cents per kWh for all usage over 1200 kWh. Express the month cost $E$ as a function of the amount $x$ of electricity used. Then graph the function $E$ for $0 \le x \le 2000$.}
+
+\soln{Solution}
+
+\section*{Problem 75}
+
+\qn{In a certain country, income tax is assessed as follows. There is no tax on income up to \$10,000. Any income over \$10,000 is taxed at a rate of 10\%, up to an income of \$20,000. Any income over \$20,000 is taxed at 15\%.}
+
+\begin{enumerate}
+	\item \qn{Sketch the graph of the tax rate $R$ as a function of the income $I$}
+	\soln{Solution}
+	
+	\item \qn{How much tax is assessed on an income of \$14,000? On \$26,000?}
+	\soln{Solution}
+	
+	\item \qn{Sketch the graph of the total assessed tax $T$ as a function of the income $I$}
+	\soln{Solution}
+\end{enumerate}
+
+\soln{Solution}
+
+\section*{Problem 76}
+
+\begin{enumerate}
+	\item \qn{If the point $(5,3)$ is on the graph of an even function, what other point must also be on the graph?}
+	\soln{Solution}
+	
+	\item \qn{If the point $(5,3)$ is on the graph of an odd function, what other point must also be on the graph?}
+	\soln{Solution}
+\end{enumerate}
+
+\soln{Solution}
+
+\section*{Problem 77}
+
+\qn{Graphs of $f$ and $g$ are shown. Decide whether each function is even, odd, or neither. Explain your reasoning.}
+
+\imgqn{1.1.77}
+
+\soln{Solution}
+
+\section*{Problem 78}
+
+\qn{Graphs of $f$ and $g$ are shown. Decide whether each function is even, odd, or neither. Explain your reasoning.}
+
+\imgqn{1.1.78}
+
+\soln{Solution}
+
+\section*{Problem 79}
+
+\qn{The graph of a function defined for $x \ge 0$ is given. Complete the graph for $x<0$ to make (a) an even function and (b) an odd function.}
+
+\imgqn{1.1.79}
+
+\soln{Solution}
+
+\section*{Problem 80}
+
+\qn{The graph of a function defined for $x \ge 0$ is given. Complete the graph for $x<0$ to make (a) an even function and (b) an odd function.}
+
+\imgqn{1.1.80}
+
+\soln{Solution}
+
+\section*{Problem 81}
+
+\qn{Determine whether $f$ is even, odd, or neither. You may wish to use a graphing calculator or computer to check your answer visually $$f(x)=\frac{x}{x^2+1}$$}
+
+\soln{Solution}
+
+\section*{Problem 82}
+
+\qn{Determine whether $f$ is even, odd, or neither. You may wish to use a graphing calculator or computer to check your answer visually $$f(x)=\frac{x^2}{x^4+1}$$}
+
+\soln{Solution}
+
+\section*{Problem 83}
+
+\qn{Determine whether $f$ is even, odd, or neither. You may wish to use a graphing calculator or computer to check your answer visually $$f(x)=\frac{x}{x+1}$$}
+
+\soln{Solution}
+
+\section*{Problem 84}
+
+\qn{Determine whether $f$ is even, odd, or neither. You may wish to use a graphing calculator or computer to check your answer visually $$f(x)=x|x|$$}
+
+\soln{Solution}
+
+\section*{Problem 85}
+
+\qn{Determine whether $f$ is even, odd, or neither. You may wish to use a graphing calculator or computer to check your answer visually $$f(x)=1+3x^2-x^4$$}
+
+\soln{Solution}
+
+\section*{Problem 86}
+
+\qn{Determine whether $f$ is even, odd, or neither. You may wish to use a graphing calculator or computer to check your answer visually $$f(x)=1+3x^3-x^5$$}
+
+\soln{Solution}
+
+\section*{Problem 87}
+
+\qn{If $f$ and $g$ are both even functions, is $f+g$ even? If $f$ and $g$ are both odd functions, is $f+g$ odd? What if $f$ is even and $g$ is odd? Justify your answers.}
+
+\soln{Solution}
+
+\section*{Problem 88}
+
+\qn{If $f$ and $g$ are both even functions, is the product $fg$ even? If $f$ and $g$ are both odd functions, is $fg$ odd? What if $f$ is even and $g$ is odd? Justify your answers.}
+
+\soln{Solution}
+
+\end{document}
