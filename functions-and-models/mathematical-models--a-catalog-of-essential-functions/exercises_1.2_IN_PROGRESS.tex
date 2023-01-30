@@ -168,12 +168,17 @@ Tangent ($\tan{x}$) and Cotangent ($\cot{x}$) are trigonometric functions with p
 \begin{enumerate}
 	\item \qn{Find an equation for the family of linear functions with slope 2 and sketch several members of the family}
 	\soln{Solution}
+	$F(x)=2x+a$
+	\imgsoln{1.2.7-ans.a}
 	
 	\item \qn{Find an equation for the family of linear functions such that $f(2)=1$. Sketch several members of the family}
 	\soln{Solution}
+	$G(x)=b(x-2)+1$
+	\imgsoln{1.2.7-ans.b}
 	
 	\item \qn{Which function belongs to both families?}
 	\soln{Solution}
+	$f(x)=2(x-2)+1=2x-3$
 \end{enumerate}
 
 \section*{Problem 8}
@@ -181,18 +186,27 @@ Tangent ($\tan{x}$) and Cotangent ($\cot{x}$) are trigonometric functions with p
 \qn{What do all members of the family of linear functions $f(x)=1+m(x+3)$ have in common? Sketch several members of the family.}
 
 \soln{Solution}
+All family members of linear functions $f(x)=1+m(x+3)$ include $A(-3, 1)$
+\imgsoln{1.2.8-ans}
 
 \section*{Problem 9}
 
 \qn{What do all members of the family of linear functions $f(x)=c-x$ have in common? Sketch several members of the family.}
 
 \soln{Solution}
+All family members of linear functions $f(x)=c-x$ have slope -1
+\imgsoln{1.2.9-ans}
 
 \section*{Problem 10}
 
 \qn{Sketch several members of the family of polynomials $P(x)=x^3-cx^2$. How does the graph change when $c$ changes?}
 
 \soln{Solution}
+\begin{enumerate}
+	\item When $c \to -\infty$, the graph of function $P(x)$ has a local maximum that tends to $\infty$ as the c decreases.
+	\item When $c \to \infty$, the graph of function $P(x)$ has a local minimum that tends to $-\infty$ as the c increases.
+\end{enumerate}
+\imgsoln{1.2.10-ans}
 
 \section*{Problem 11}
 
@@ -201,6 +215,28 @@ Tangent ($\tan{x}$) and Cotangent ($\cot{x}$) are trigonometric functions with p
 \imgqn{1.2.11}
 
 \soln{Solution}
+\begin{equation*}
+	\begin{cases}
+		f(x)=ax^2+bx+c \\
+		A(0,18) \in f(x) \\
+		B(3,0) \in f(x) \\
+		C(4,2) \in f(x)
+	\end{cases}
+	\Rightarrow
+	\begin{cases}
+		18=a(0)^2+b(0)+c \\
+		0=a3^2+3b+c \\
+		2=a4^2+4b+c
+	\end{cases}
+	\Rightarrow
+	\begin{cases}
+		c=18 \\
+		b=-12 \\
+		a=2
+	\end{cases}
+	\Rightarrow
+	f(x)=2x^2-12x+18
+\end{equation*}
 
 \section*{Problem 12}
 
@@ -209,12 +245,47 @@ Tangent ($\tan{x}$) and Cotangent ($\cot{x}$) are trigonometric functions with p
 \imgqn{1.2.12}
 
 \soln{Solution}
+\begin{equation*}
+	\begin{cases}
+		g(x)=ax^2+bx+c \\
+		A(-2,2) \in g(x) \\
+		B(0,1) \in g(x) \\
+		C(1,-2.5) \in g(x) 
+	\end{cases}
+	\Rightarrow
+	\begin{cases}
+		2=a(-2)^2+b(-2)+c \\
+		1=a(0)^2+b(0)+c \\
+		-2.5=a(1)^2+1b+c \in g(x) 
+	\end{cases}
+	\Rightarrow
+	\begin{cases}
+		c=1 \\
+		b=-2.5 \\
+		a=-1
+	\end{cases}
+	\Rightarrow
+	g(x)=-x^2-\frac{5}{2}x+1
+\end{equation*}
 
 \section*{Problem 13}
 
 \qn{Find a formula for a cubic function $f$ if $f(1)=6$ and $f(-1)=f(0)=f(2)=0$.}
 
 \soln{Solution}
+\begin{equation*}
+	\begin{cases}
+		f(-1)=f(0)=f(2)=0 \\
+		f(1)=6
+	\end{cases}
+	\Rightarrow
+	\begin{cases}
+		f(x)=a(x+1)x(x-2) \\
+		f(1)=a(1+1)1(1-2)=6
+	\end{cases}
+	\Rightarrow
+	f(x)=-3(x+1)x(x-2)
+\end{equation*}
 
 \section*{Problem 14}
 
