@@ -395,18 +395,23 @@ Họ đồ thị các phương trình $f(x)=c-x$ có slope -1
 \begin{enumerate}
 	\item \qn{Express the monthly cost $C$ as a function of the distance driven $d$, assuming that a linear relationship gives a suitable model}
 	\soln{Solution}
+	$C-380=\frac{460-380}{800-480}(d-480)=\frac{1}{4}d+260$
 	
 	\item \qn{Use part (1) to predict the cost of driving 1500 miles per month}
 	\soln{Solution}
+	$C(1500)=\frac{1}{4}1500+260=635$
 	
 	\item \qn{Draw the graph of the linear function. What does the slope represent?}
 	\soln{Solution}
+	Độ dốc của hàm số là $\frac{1}{4}$ nói lên rằng cứ mỗi mi June lái xe, chi phí phát sinh sẽ tăng \$0.25
 	
 	\item \qn{What does the $C$-intercept represent?}
 	\soln{Solution}
+	Đây là giá trị cố định mà June phải chịu, tức là chi phí để duy trì chiếc xe mà June đi, trong trong trường June không đi thì vẫn phải chịu chi phí này
 	
 	\item \qn{Why does a linear function give a suitable model in this situation?}
 	\soln{Solution}
+	Nếu không tính chi phí phát sinh từ việc hỏng hóc thiết bị thì linear model là khá phù hợp, nhưng nếu tính tổng quát chi phí thì linear model có thể chưa thực sự hợp lý do càng đi nhiều chi phí phát sinh sẽ càng lớn hơn
 \end{enumerate}
 
 \section*{Problem 21}
@@ -416,9 +421,11 @@ Họ đồ thị các phương trình $f(x)=c-x$ có slope -1
 \begin{enumerate}
 	\item \qn{Express the water pressure as a function of the depth below the ocean surface}
 	\soln{Solution}
+	$P(d=0.434d+15$
 	
 	\item \qn{At what depth is the pressure 100 lb/$in^2$?}
 	\soln{Solution}
+	$P(100)=0.434(100)+15=58.4$
 \end{enumerate}
 
 \section*{Problem 22}
@@ -428,9 +435,11 @@ Họ đồ thị các phương trình $f(x)=c-x$ có slope -1
 \begin{enumerate}
 	\item \qn{A wire of fixed length and 0.005 meters in diameter has a resistance of 140 ohms. Find the value of $k$}
 	\soln{Solution}
+	$k=R(x)x^2=140(0.005)^2$
 	
 	\item \qn{Find the resistance of a wire made of the same material and of the same length as the wire in part (1) but with a diameter of 0.008 meters}
 	\soln{Solution}
+	$\frac{P_1(x)}{P_2(x)}=\frac{x^2_2}{x^2_1}1 \Rightarrow P_2(x)=P_1(x)(\frac{x_1}{x_2})^2=140(\frac{5}{8})^2$
 \end{enumerate}
 
 \section*{Problem 23}
@@ -438,6 +447,7 @@ Họ đồ thị các phương trình $f(x)=c-x$ có slope -1
 \qn{The illumination of an object by a light source is related to the distance from the source by an inverse square law. Suppose that after dark you are sitting in a room with just on lamp, trying to read a book. The light is too dim, so you move your chair halfway to the lamp. How much brighter is the light?}
 
 \soln{Solution}
+Độ sáng sẽ tăng 4 lần
 
 \section*{Problem 24}
 
@@ -446,9 +456,11 @@ Họ đồ thị các phương trình $f(x)=c-x$ có slope -1
 \begin{enumerate}
 	\item \qn{A sample of oxygen gas that occupies 0.671 $m^3$ exerts a pressure of 39 kPa at a temperature of 293 K (absolute temperature measured on the Kelvin scale). Find the value of $k$ in the given model}
 	\soln{Solution}
+	$k=PV=39(0.671)$
 	
 	\item \qn{If the sample expands to a volume of 0.916 $m^3$, find the new pressure}
 	\soln{Solution}
+	$\frac{P_1}{P_2}=\frac{V_2}{V_1} \Rightarrow P_2=\frac{P_1V_1}{V_2}=\frac{39(0.671)}{0.916}$
 \end{enumerate}
 
 \section*{Problem 25}
@@ -458,24 +470,34 @@ Họ đồ thị các phương trình $f(x)=c-x$ có slope -1
 \begin{enumerate}
 	\item \qn{If only wind speed is doubled, by what factor is the power output increased?}
 	\soln{Solution}
+	Tăng 8 lần do $P'=kA(v')^3=kA(2v)^3=8P$
 	
 	\item \qn{If only the length of the blades is doubled, by what factor is the power output increased?}
 	\soln{Solution}
+	Tăng 4 lần do $P'=kAv'v^3=k(\pi L'^2)v^3=4P$
 	
 	\item \qn{For a particular wind turbine, the length of the blades is 30 m and $k=0.214$ kg/$m^3$. Find the power output (in watts, $W=m^2kg/s^3$) when the wind speed is 10 m/s, 15 m/s, and 25 m/s}
 	\soln{Solution}
+	Tự bấm máy tính nhớ:
+	\begin{enumerate}
+		\item $P(10)=0.214\pi30^2(10^3)$
+		\item $P(15)=0.214\pi30^2(15^3)$
+		\item $P(25)=0.214\pi30^2(25^3)$
+	\end{enumerate}
 \end{enumerate}
 
 \section*{Problem 26}
 
-\qn{Astronomers infer the radiant exitance (radiant flux emitted per unit area) of starts using the Stefan Boltzmann Law: $$E(T)=(5.67 x 10^{-8})T^4$$ where $E$ is the energy radiated per unit of surface area measured in watts ($W$) and $T$ is the absolute temperature measured in kelvins ($K$).}
+\qn{Astronomers infer the radiant exitance (radiant flux emitted per unit area) of starts using the Stefan Boltzmann Law: $$E(T)=(5.67 \times 10^{-8})T^4$$ where $E$ is the energy radiated per unit of surface area measured in watts ($W$) and $T$ is the absolute temperature measured in kelvins ($K$).}
 
 \begin{enumerate}
 	\item \qn{Graph the function $E$ for temperature $T$ between 100 K and 300 K}
 	\soln{Solution}
+	\imgsoln{1.2.26-ans.a}
 	
 	\item \qn{Use the graph to describe the change in energy $E$ as the temperature $T$ increases}
 	\soln{Solution}
+	Khi nhiệt độ ($T$) tăng thig năng lượng ($E$) tăng rất nhanh (hàm mũ 4)
 \end{enumerate}
 
 \section*{Problem 27}
@@ -485,6 +507,10 @@ Họ đồ thị các phương trình $f(x)=c-x$ có slope -1
 \imgqn{1.2.27}
 
 \soln{Solution}
+\begin{enumerate}
+	\item Trigonometric function
+	\item Linear function
+\end{enumerate}
 
 \section*{Problem 28}
 
@@ -493,6 +519,10 @@ Họ đồ thị các phương trình $f(x)=c-x$ có slope -1
 \imgqn{1.2.28}
 
 \soln{Solution}
+\begin{enumerate}
+	\item Exponential function
+	\item Reciprocal function
+\end{enumerate}
 
 \section*{Problem 29}
 
@@ -503,21 +533,28 @@ Họ đồ thị các phương trình $f(x)=c-x$ có slope -1
 \begin{enumerate}
 	\item \qn{Make a scatter plot of these data and decide whether a linear model is appropriate}
 	\soln{Solution}
+	Sử dụng scatter plot có thể thấy một hàm tuyến tính là phù hợp để mô hình bài toán này
+	\imgsoln{1.2.29-ans.a}
 	
 	\item \qn{Find and graph a linear model using the first and last data point}
 	\soln{Solution}
+	$U(I)-14.1=\frac{8.2-14.1}{60000-4000}(I-4000) \Rightarrow U(I)=-0.000105I + 13.678571$
 	
 	\item \qn{Find and graph the regression line}
 	\soln{Solution}
+	$U(I)=-0.0001I+13.950764$
 	
 	\item \qn{Use the linear model in part (3) to estimate the ulcer rate for people with an income of \$25,000}
 	\soln{Solution}
+	$f(25000)=-0.0001(25000)+13.950764=11.456$
 	
 	\item \qn{According to the model, how likely is someone with an income \$80,000 to suffer from peptic ulcers?}
 	\soln{Solution}
+	Giá trị này khá thấp $f(80000)=-0.0001(80000)+13.950764=5.968$ và có thể linear không phải là một mô hình phù hợp do giá trị $f$ sẽ không về 0 được
 	
 	\item \qn{Do you think it would be reasonable to apply the model to someone with an income of \$200,000?}
 	\soln{Solution}
+	Không do $f(200000)=-6$ là một giá trị không hợp lý
 \end{enumerate}
 
 \section*{Problem 30}
