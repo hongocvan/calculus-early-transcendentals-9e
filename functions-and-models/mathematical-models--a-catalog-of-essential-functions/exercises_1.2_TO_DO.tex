@@ -1,0 +1,521 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage[none]{hyphenat}
+\usepackage{fancyhdr}
+
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage{wrapfig}
+\usepackage{gensymb}
+\usepackage{float}
+
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[L]{\slshape \MakeUppercase{1.2 - Mathematical Models: A Catalog of Essential Functions}}
+\fancyhead[R]{\slshape Ho Ngoc Van}
+\fancyfoot[C]{\thepage}
+\renewcommand{\footrulewidth}{0pt}
+
+\newcommand{\soln}{\subsection*}
+\newcommand{\qn}{\textit}
+\newcommand{\imagesource}[1]{{\footnotesize Source: #1}}
+\newcommand{\imgqn}[1]{
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.35\linewidth]{figs/#1.png}\\
+		\imagesource{James Stewart, Calculus: Early Transcendentals [9e]}
+	\end{figure}
+}
+\newcommand{\imgsoln}[1]{
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.5\linewidth]{figs/#1.png}
+	\end{figure}
+}
+
+\begin{document}
+
+\section*{Problem 1}
+
+\qn{Classify each function as a power function, root function, polynomial (sate its degree), rational function, algebraic function, trigonometric function, exponential function, or logarithmic function.}
+
+\begin{enumerate}
+	\item $f(x)=x^3+3x^2$
+	\soln{Solution}
+	
+	\item $g(t)=\cos^2t-\sin^2t$
+	\soln{Solution}
+	
+	\item $r(t)=t^{\sqrt{3}}$
+	\soln{Solution}
+	
+	\item $v(t)=8^t$
+	\soln{Solution}
+	
+	\item $y=\frac{\sqrt{x}}{x^2+1}$
+	\soln{Solution}
+	
+	\item $g(u)=\log_{10}{u}$
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 2}
+
+\qn{Classify each function as a power function, root function, polynomial (sate its degree), rational function, algebraic function, trigonometric function, exponential function, or logarithmic function.}
+
+\begin{enumerate}
+	\item $f(t)=\frac{3t^2+2}{t}$
+	\soln{Solution}
+	
+	\item $h(r)=2.3^r$
+	\soln{Solution}
+	
+	\item $s(t)=\sqrt{t+4}$
+	\soln{Solution}
+	
+	\item $y=x^4+5$
+	\soln{Solution}
+	
+	\item $g(x)=\sqrt[3]{x}$
+	\soln{Solution}
+	
+	\item $y=\frac{1}{x^2}$
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 3}
+
+\qn{Match each equation with its graph. Explain your choices. (Don't use a computer or graphing calculator.)}
+
+\imgqn{1.2.3}
+
+\begin{enumerate}
+	\item $y=x^2$
+	\soln{Solution}
+	
+	\item $y=x^5$
+	\soln{Solution}
+	
+	\item $y=x^8$
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 4}
+
+\qn{Match each equation with its graph. Explain your choices. (Don't use a computer or graphing calculator.)}
+
+\imgqn{1.2.4}
+
+\begin{enumerate}
+	\item $y=3x$
+	\soln{Solution}
+	
+	\item $y=3^x$
+	\soln{Solution}
+	
+	\item $y=x^3$
+	\soln{Solution}
+	
+	\item $y=\sqrt[3]{x}$
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 5}
+
+\qn{Find the domain of the function $$f(x)=\frac{\cos{x}}{1-\sin{x}}$$}
+
+\soln{Solution}
+
+\section*{Problem 6}
+
+\qn{Find the domain of the function $$g(x)=\frac{1}{1-\tan{x}}$$}
+
+\soln{Solution}
+
+\section*{Problem 7}
+
+\begin{enumerate}
+	\item \qn{Find an equation for the family of linear functions with slope 2 and sketch several members of the family}
+	\soln{Solution}
+	
+	\item \qn{Find an equation for the family of linear functions such that $f(2)=1$. Sketch several members of the family}
+	\soln{Solution}
+	
+	\item \qn{Which function belongs to both families?}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 8}
+
+\qn{What do all members of the family of linear functions $f(x)=1+m(x+3)$ have in common? Sketch several members of the family.}
+
+\soln{Solution}
+
+\section*{Problem 9}
+
+\qn{What do all members of the family of linear functions $f(x)=c-x$ have in common? Sketch several members of the family.}
+
+\soln{Solution}
+
+\section*{Problem 10}
+
+\qn{Sketch several members of the family of polynomials $P(x)=x^3-cx^2$. How does the graph change when $c$ changes?}
+
+\soln{Solution}
+
+\section*{Problem 11}
+
+\qn{Find a formula for the quadratic function whose graph is shown.}
+
+\imgqn{1.2.11}
+
+\soln{Solution}
+
+\section*{Problem 12}
+
+\qn{Find a formula for the quadratic function whose graph is shown.}
+
+\imgqn{1.2.12}
+
+\soln{Solution}
+
+\section*{Problem 13}
+
+\qn{Find a formula for a cubic function $f$ if $f(1)=6$ and $f(-1)=f(0)=f(2)=0$.}
+
+\soln{Solution}
+
+\section*{Problem 14}
+
+\qn{Recent studies indicate that the average surface temperature of the earth has been rising steadily. Some scientists have modeled the temperature by the linear function $T=0.02t+8.50$, where $T$ is temperature in $\degree C$ and $t$ represents years since 1900.}
+
+\begin{enumerate}
+	\item \qn{What do the slope and $T$-intercept represent?}
+	\soln{Solution}
+	
+	\item \qn{Use the equation to predict the earth's average surface temperature in 2100}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 15}
+
+\qn{If the recommended adult dosage for a drug is $D$ (in mg), then to determine the appropriate dosage $c$ for a child of the age $a$, pharmacists use the equation $c=0.0417D(a+1)$. Suppose the dosage for an adult is 200 mg.}
+
+\begin{enumerate}
+	\item \qn{Find the slope of the graph of $c$. What does it represent?}
+	\soln{Solution}
+	
+	\item \qn{What is the dosage for a newborn?}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 16}
+
+\qn{The manager of a weekend flea market knows from past experience that if he charges $x$ dollars for a rental space at the market, then the number $y$ of spaces that will be rented is given by the equation $y=200-4x$.}
+
+\begin{enumerate}
+	\item \qn{Sketch a graph of this linear function. (Remember that the rental charge per space and the number of spaces rented can't be negative quantities.)}
+	\soln{Solution}
+	
+	\item \qn{What do the slope, the $y$-intercept, and the $x$-intercept of the graph represent?}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 17}
+
+\qn{The relationship between the Fahrenheit ($F$) and Celsius ($C$) temperature scales is given by the linear equation $F=\frac{9}{5}C+32$.}
+
+\begin{enumerate}
+	\item \qn{Sketch a graph of this function}
+	\soln{Solution}
+	
+	\item \qn{What is the slope of the graph and what does it represent? What is the $F$-intercept and what does it represent?}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 18}
+
+\qn{Jade and her roommate Jari commute to work each morning, traveling west on I-10. One morning Jade left for work at 6:50 AM, but Jari left 10 minutes later. Both drove at a constant speed. The graphs show the distance (in miles) each of them has traveled on I-10, $t$ minutes after 7:00 AM.}
+
+\imgqn{1.2.18}
+
+\begin{enumerate}
+	\item \qn{Use the graph to decide which driver is traveling faster}
+	\soln{Solution}
+	
+	\item \qn{Find the speed (in mi/h) at which each of them is driving}
+	\soln{Solution}
+	
+	\item \qn{Find linear functions $f$ and $g$ that model the distances traveled by Jade and Jari as functions of $t$ (in minutes)}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 19}
+
+\qn{The manager of a furniture factory finds that it costs \$2200 to manufacture 100 chairs in one day and \$4800 to produce 300 chairs in one day.}
+
+\begin{enumerate}
+	\item \qn{Express the cost as a function of the number of chairs produced, assuming that it is linear. Then sketch the graph.}
+	\soln{Solution}
+	
+	\item \qn{What is the slope of the graph and what does it represent?}
+	\soln{Solution}
+	
+	\item \qn{What is the $y$-intercept of the graph and what does it represent?}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 20}
+
+\qn{The monthly cost of driving a car depends on the number of miles driven. Lynn found that in May it cost her \$380 to drive 480 mi and in June it cost her \$460 to drive 800 mi.}
+
+\begin{enumerate}
+	\item \qn{Express the monthly cost $C$ as a function of the distance driven $d$, assuming that a linear relationship gives a suitable model}
+	\soln{Solution}
+	
+	\item \qn{Use part (1) to predict the cost of driving 1500 miles per month}
+	\soln{Solution}
+	
+	\item \qn{Draw the graph of the linear function. What does the slope represent?}
+	\soln{Solution}
+	
+	\item \qn{What does the $C$-intercept represent?}
+	\soln{Solution}
+	
+	\item \qn{Why does a linear function give a suitable model in this situation?}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 21}
+
+\qn{At the surface of the ocean, the water pressure is the same as the air pressure above the water, 15 lb/$in^2$. Below the surface, the water pressure increases by 4.34 ln/$in^2$ for every 10 ft if descent.}
+
+\begin{enumerate}
+	\item \qn{Express the water pressure as a function of the depth below the ocean surface}
+	\soln{Solution}
+	
+	\item \qn{At what depth is the pressure 100 lb/$in^2$?}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 22}
+
+\qn{The resistance $R$ of a wire of fixed length is related to its diameter $x$ by an inverse square law, that is, by a function of the form $R(x)=kx^{-2}$.}
+
+\begin{enumerate}
+	\item \qn{A wire of fixed length and 0.005 meters in diameter has a resistance of 140 ohms. Find the value of $k$}
+	\soln{Solution}
+	
+	\item \qn{Find the resistance of a wire made of the same material and of the same length as the wire in part (1) but with a diameter of 0.008 meters}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 23}
+
+\qn{The illumination of an object by a light source is related to the distance from the source by an inverse square law. Suppose that after dark you are sitting in a room with just on lamp, trying to read a book. The light is too dim, so you move your chair halfway to the lamp. How much brighter is the light?}
+
+\soln{Solution}
+
+\section*{Problem 24}
+
+\qn{The pressure $P$ of a sample of oxygen gas that is compressed at a constant temperature is related to the volume $V$ of gas by a reciprocal function of the form $P=k/V$.}
+
+\begin{enumerate}
+	\item \qn{A sample of oxygen gas that occupies 0.671 $m^3$ exerts a pressure of 39 kPa at a temperature of 293 K (absolute temperature measured on the Kelvin scale). Find the value of $k$ in the given model}
+	\soln{Solution}
+	
+	\item \qn{If the sample expands to a volume of 0.916 $m^3$, find the new pressure}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 25}
+
+\qn{The power output of a wind turbine depends on many factors. It can be shown using physical principles that the power $P$ generated by a wind turbine is modeled by $$P=kAv^3$$ where $v$ is the wind speed, $A$ is the area swept out by the blades, and $k$ is a constant that depends on air density, efficiency of the turbine, and the design of the wind turbine blades.}
+
+\begin{enumerate}
+	\item \qn{If only wind speed is doubled, by what factor is the power output increased?}
+	\soln{Solution}
+	
+	\item \qn{If only the length of the blades is doubled, by what factor is the power output increased?}
+	\soln{Solution}
+	
+	\item \qn{For a particular wind turbine, the length of the blades is 30 m and $k=0.214$ kg/$m^3$. Find the power output (in watts, $W=m^2kg/s^3$) when the wind speed is 10 m/s, 15 m/s, and 25 m/s}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 26}
+
+\qn{Astronomers infer the radiant exitance (radiant flux emitted per unit area) of starts using the Stefan Boltzmann Law: $$E(T)=(5.67 x 10^{-8})T^4$$ where $E$ is the energy radiated per unit of surface area measured in watts ($W$) and $T$ is the absolute temperature measured in kelvins ($K$).}
+
+\begin{enumerate}
+	\item \qn{Graph the function $E$ for temperature $T$ between 100 K and 300 K}
+	\soln{Solution}
+	
+	\item \qn{Use the graph to describe the change in energy $E$ as the temperature $T$ increases}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 27}
+
+\qn{For each scatter plot, decide what type of function you might choose as a model for the data. Explain your choices.}
+
+\imgqn{1.2.27}
+
+\soln{Solution}
+
+\section*{Problem 28}
+
+\qn{For each scatter plot, decide what type of function you might choose as a model for the data. Explain your choices.}
+
+\imgqn{1.2.28}
+
+\soln{Solution}
+
+\section*{Problem 29}
+
+\qn{The table shows (lifetime) peptic ulcer rates (per 100 population) for various family incomes as reported by the National Health Interview Survey.}
+
+\imgqn{1.2.29}
+
+\begin{enumerate}
+	\item \qn{Make a scatter plot of these data and decide whether a linear model is appropriate}
+	\soln{Solution}
+	
+	\item \qn{Find and graph a linear model using the first and last data point}
+	\soln{Solution}
+	
+	\item \qn{Find and graph the regression line}
+	\soln{Solution}
+	
+	\item \qn{Use the linear model in part (3) to estimate the ulcer rate for people with an income of \$25,000}
+	\soln{Solution}
+	
+	\item \qn{According to the model, how likely is someone with an income \$80,000 to suffer from peptic ulcers?}
+	\soln{Solution}
+	
+	\item \qn{Do you think it would be reasonable to apply the model to someone with an income of \$200,000?}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 30}
+
+\qn{When laboratory rats are exposed to asbestos fibers,, some of them develop lung tumors. The table lists the results of several experiments by different scientists.}
+
+\imgqn{1.2.30}
+
+\begin{enumerate}
+	\item \qn{Find the regression line for the data}
+	\soln{Solution}
+	
+	\item \qn{Make a scatter plot and graph the regression line. Does the regression line appear to be a suitable model for the data?}
+	\soln{Solution}
+	
+	\item \qn{What does the $y$-intercept of the regression line represent?}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 31}
+
+\qn{Anthropologists use a linear model that relates human femur (thighbone) length to height. The model allows an anthropologist to determine the height of an individual when only a partial skeleton (including the femur) is found. Here we find the model by analyzing the data on femur length and height for the eight males given in the table.}
+
+\imgqn{1.2.31}
+
+\begin{enumerate}
+	\item \qn{Make a scatter plot of the data}
+	\soln{Solution}
+	
+	\item \qn{Find and graph the regression line that models the data}
+	\soln{Solution}
+	
+	\item \qn{An anthropologist finds a human femur of length 53 cm. How tall was the person?}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 32}
+
+\qn{The table shows average US retail residential prices of electricity from 2000 to 2016, measured in cents per kilowatt hour.}
+
+\imgqn{1.2.32}
+
+\begin{enumerate}
+	\item \qn{Make a scatter plot. Is a linear model appropriate?}
+	\soln{Solution}
+	
+	\item \qn{Find and graph the regression line.}
+	\soln{Solution}
+	
+	\item \qn{Use your linear model from part (2) to estimate the average retail price of electricity in 2005 and 2017}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 33}
+
+\qn{The table shows world average daily oil consumption from 1985 to 2015, measured in thousands of barrels per day.}
+
+\imgqn{1.2.33}
+
+\begin{enumerate}
+	\item \qn{Make a scatter plot and decide whether a linear model is appropriate}
+	\soln{Solution}
+	
+	\item \qn{Find and graph the regression line}
+	\soln{Solution}
+	
+	\item \qn{Use the linear model to estimate the oil consumption in 2002 and 2017}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 34}
+
+\qn{The table shows the mean (average) distances $d$ of the planets from the sun (taking the unit of measurement to be the distance from the earth to the sun) and their periods $T$ (time of revolution in years).}
+
+\imgqn{1.2.34}
+
+\begin{enumerate}
+	\item \qn{Fit a power model to the data}
+	\soln{Solution}
+	
+	\item \qn{Kepler's Third Law of Planetary Motion states that "The square of the period of revolution of a planet is proportional to the cube of its mean distance from the sun". Does your model corroborate Kepler's Third Law?}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 35}
+
+\qn{It makes sense that the larger the area of a region, the larger the number of species that inhabit the region. Many ecologists have modeled the species-are relation with a power function. In particular, the number of species $S$ of bats living in caves in central Mexico has been related to the surface area $A$ of the caves by the equation $S=0.7A^{0.3}$.}
+
+\begin{enumerate}
+	\item \qn{The cave called Mision Imposible near Puebla, Mexico, has a surface area of $A=60m^3$. How many species of bats would you expect to find in that cave?}
+	\soln{Solution}
+	
+	\item \qn{If you discover that four species of bats live in a cave, estimate the area of the cave.}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 36}
+
+\qn{The table shows the number $N$ of species of reptiles and amphibians inhabiting Caribbean islands and the area $A$ of the island in square miles.}
+
+\imgqn{1.2.36}
+
+\begin{enumerate}
+	\item \qn{Use a power function to model $N$ as a function of $A$}
+	\soln{Solution}
+	
+	\item \qn{The Caribbean island of Dominica has area 291 $mi^2$. How many species of reptiles and amphibians would you expect to find on Dominica?}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 37}
+
+\qn{Suppose that a force or energy originates from a point source and spreads its influence equally in all directions, such as the light from a light-bulb or the gravitational force of a planet. So at a distance $r$ from the source, the intensity $I$ of the force or energy is equal to the source strength $S$ divided by the surface area of a sphere of radius $r$. Show that $I$ satisfies the inverse square law $I=k/r^2$, where $k$ is a positive constant.}
+
+\soln{Solution}
+
+\end{document}
+
+
+

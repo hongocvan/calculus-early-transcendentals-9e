@@ -1,0 +1,704 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{vietnam}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage[none]{hyphenat}
+\usepackage{fancyhdr}
+
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage{wrapfig}
+\usepackage{gensymb}
+\usepackage{float}
+
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[L]{\slshape \MakeUppercase{1.2 - Mathematical Models: A Catalog of Essential Functions}}
+\fancyhead[R]{\slshape Ho Ngoc Van}
+\fancyfoot[C]{\thepage}
+\renewcommand{\footrulewidth}{0pt}
+
+\newcommand{\soln}{\subsection*}
+\newcommand{\qn}{\textit}
+\newcommand{\imagesource}[1]{{\footnotesize Source: #1}}
+\newcommand{\imgqn}[1]{
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.35\linewidth]{figs/#1.png}\\
+		\imagesource{James Stewart, Calculus: Early Transcendentals [9e]}
+	\end{figure}
+}
+\newcommand{\imgsoln}[1]{
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.5\linewidth]{figs/#1.png}
+	\end{figure}
+}
+
+\begin{document}
+
+\section*{Problem 1}
+
+\qn{Classify each function as a power function, root function, polynomial (sate its degree), rational function, algebraic function, trigonometric function, exponential function, or logarithmic function.}
+
+\begin{enumerate}
+	\item $f(x)=x^3+3x^2$
+	\soln{Solution}
+	Polynomial function
+	
+	\item $g(t)=\cos^2t-\sin^2t$
+	\soln{Solution}
+	Trigonometric function
+	
+	\item $r(t)=t^{\sqrt{3}}$
+	\soln{Solution}
+	Power function
+	
+	\item $v(t)=8^t$
+	\soln{Solution}
+	Exponential function
+	
+	\item $y=\frac{\sqrt{x}}{x^2+1}$
+	\soln{Solution}
+	Algebraic function
+	
+	\item $g(u)=\log_{10}{u}$
+	\soln{Solution}
+	Logarithmic function
+\end{enumerate}
+
+\section*{Problem 2}
+
+\qn{Classify each function as a power function, root function, polynomial (sate its degree), rational function, algebraic function, trigonometric function, exponential function, or logarithmic function.}
+
+\begin{enumerate}
+	\item $f(t)=\frac{3t^2+2}{t}$
+	\soln{Solution}
+	Rational function
+	
+	\item $h(r)=2.3^r$
+	\soln{Solution}
+	Exponential function
+	
+	\item $s(t)=\sqrt{t+4}$
+	\soln{Solution}
+	Root function
+	
+	\item $y=x^4+5$
+	\soln{Solution}
+	Polynomial function
+	
+	\item $g(x)=\sqrt[3]{x}$
+	\soln{Solution}
+	Root function
+	
+	\item $y=\frac{1}{x^2}$
+	\soln{Solution}
+	Rational function
+\end{enumerate}
+
+\section*{Problem 3}
+
+\qn{Match each equation with its graph. Explain your choices. (Don't use a computer or graphing calculator.)}
+
+\imgqn{1.2.3}
+
+\begin{enumerate}
+	\item $y=x^2$
+	\soln{Solution}
+	$h$ bởi vì nó là hàm chẵn và trong khoảng [0,1] giá trị hàm số không giảm quá nhanh
+	
+	\item $y=x^5$
+	\soln{Solution}
+	$f$ bởi vì nó là hàm lẻ (đối xứng qua gốc tọa độ)
+	
+	\item $y=x^8$
+	\soln{Solution}
+	$g$ bởi vì nó là hàm chẵn và giá trị hàm số giảm về 0 rất nhanh trong khoảng [0,1]
+\end{enumerate}
+
+\section*{Problem 4}
+
+\qn{Match each equation with its graph. Explain your choices. (Don't use a computer or graphing calculator.)}
+
+\imgqn{1.2.4}
+
+\begin{enumerate}
+	\item $y=3x$
+	\soln{Solution}
+	$G$ vì đồ thị là hàm số tuyến tính
+	
+	\item $y=3^x$
+	\soln{Solution}
+	$f$ vì đồ thị trông gần giống hàm mũ và $y=f(x) > 0$
+	
+	\item $y=x^3$
+	\soln{Solution}
+	$F$ bởi vì hàm số là hàm lẻ, và giá trị tăng rất nhanh khi $x$ tăng
+	
+	\item $y=\sqrt[3]{x}$
+	\soln{Solution}
+	$g$ vì là hàm số còn lại, và hàm số là hàm lẻ nhưng tăng chậm khi $x$ tăng
+\end{enumerate}
+
+\section*{Problem 5}
+
+\qn{Find the domain of the function $$f(x)=\frac{\cos{x}}{1-\sin{x}}$$}
+
+\soln{Solution}
+Sine ($\sin{x}$) và Cosine ($\cos{x}$) là hàm lượng giác với period $2\pi$
+\begin{equation*}
+	1-\sin{x} \ne 0 \Rightarrow \sin{x} \ne 1 \Rightarrow x \ne \frac{\pi}{2} + k2\pi
+\end{equation*}
+
+\section*{Problem 6}
+
+\qn{Find the domain of the function $$g(x)=\frac{1}{1-\tan{x}}$$}
+
+\soln{Solution}
+Tangent ($\tan{x}$) và Cotangent ($\cot{x}$) là hàm lượng giác với period $\pi$
+\begin{equation*}
+	1-\tan{x} \ne 0 \Rightarrow \tan{x} \ne 1 \Rightarrow x \ne \frac{\pi}{4} + k\pi
+\end{equation*}
+
+\section*{Problem 7}
+
+\begin{enumerate}
+	\item \qn{Find an equation for the family of linear functions with slope 2 and sketch several members of the family}
+	\soln{Solution}
+	Họ các hàm số tuyến tính với slope 2 có phương trình tổng quá như sau $F(x)=2x+a$
+	\imgsoln{1.2.7-ans.a}
+	
+	\item \qn{Find an equation for the family of linear functions such that $f(2)=1$. Sketch several members of the family}
+	\soln{Solution}
+	Họ các hàm số tuyến tính sao cho $f(2)=1$ có phương trình tổng quát sau $G(x)=b(x-2)+1$
+	\imgsoln{1.2.7-ans.b}
+	
+	\item \qn{Which function belongs to both families?}
+	\soln{Solution}
+	Hàm số tuyến tính có slope 2 và thỏa mãn $f(2)=1$ có phương trình như sau $f(x)=2(x-2)+1=2x-3$
+\end{enumerate}
+
+\section*{Problem 8}
+
+\qn{What do all members of the family of linear functions $f(x)=1+m(x+3)$ have in common? Sketch several members of the family.}
+
+\soln{Solution}
+Họ đồ thị các phương trình $f(x)=1+m(x+3)$ đi qua điểm $A(-3, 1)$
+\imgsoln{1.2.8-ans}
+
+\section*{Problem 9}
+
+\qn{What do all members of the family of linear functions $f(x)=c-x$ have in common? Sketch several members of the family.}
+
+\soln{Solution}
+Họ đồ thị các phương trình $f(x)=c-x$ có slope -1
+\imgsoln{1.2.9-ans}
+
+\section*{Problem 10}
+
+\qn{Sketch several members of the family of polynomials $P(x)=x^3-cx^2$. How does the graph change when $c$ changes?}
+
+\soln{Solution}
+\begin{enumerate}
+	\item Khi $c \to -\infty$, đồ thị hàm số $P(x)$ có một điểm cực đại cục bộ, điểm này có xu hướng tiến về $\infty$ khi giá trị $c$ giảm
+	\item Khi $c \to \infty$, đồ thị hàm số $P(x)$ có một điểm cực tiểu cục bộ, điểm này có xu hướng tiến về $-\infty$ khi $c$ tăng
+\end{enumerate}
+\imgsoln{1.2.10-ans}
+
+\section*{Problem 11}
+
+\qn{Find a formula for the quadratic function whose graph is shown.}
+
+\imgqn{1.2.11}
+
+\soln{Solution}
+\begin{equation*}
+	\begin{cases}
+		f(x)=ax^2+bx+c \\
+		A(0,18) \in f(x) \\
+		B(3,0) \in f(x) \\
+		C(4,2) \in f(x)
+	\end{cases}
+	\Rightarrow
+	\begin{cases}
+		18=a(0)^2+b(0)+c \\
+		0=a3^2+3b+c \\
+		2=a4^2+4b+c
+	\end{cases}
+	\Rightarrow
+	\begin{cases}
+		c=18 \\
+		b=-12 \\
+		a=2
+	\end{cases}
+	\Rightarrow
+	f(x)=2x^2-12x+18
+\end{equation*}
+
+\section*{Problem 12}
+
+\qn{Find a formula for the quadratic function whose graph is shown.}
+
+\imgqn{1.2.12}
+
+\soln{Solution}
+\begin{equation*}
+	\begin{cases}
+		g(x)=ax^2+bx+c \\
+		A(-2,2) \in g(x) \\
+		B(0,1) \in g(x) \\
+		C(1,-2.5) \in g(x) 
+	\end{cases}
+	\Rightarrow
+	\begin{cases}
+		2=a(-2)^2+b(-2)+c \\
+		1=a(0)^2+b(0)+c \\
+		-2.5=a(1)^2+1b+c \in g(x) 
+	\end{cases}
+	\Rightarrow
+	\begin{cases}
+		c=1 \\
+		b=-2.5 \\
+		a=-1
+	\end{cases}
+	\Rightarrow
+	g(x)=-x^2-\frac{5}{2}x+1
+\end{equation*}
+
+\section*{Problem 13}
+
+\qn{Find a formula for a cubic function $f$ if $f(1)=6$ and $f(-1)=f(0)=f(2)=0$.}
+
+\soln{Solution}
+\begin{equation*}
+	\begin{cases}
+		f(-1)=f(0)=f(2)=0 \\
+		f(1)=6
+	\end{cases}
+	\Rightarrow
+	\begin{cases}
+		f(x)=a(x+1)x(x-2) \\
+		f(1)=a(1+1)1(1-2)=6
+	\end{cases}
+	\Rightarrow
+	f(x)=-3(x+1)x(x-2)
+\end{equation*}
+
+\section*{Problem 14}
+
+\qn{Recent studies indicate that the average surface temperature of the earth has been rising steadily. Some scientists have modeled the temperature by the linear function $T=0.02t+8.50$, where $T$ is temperature in $\degree C$ and $t$ represents years since 1900.}
+
+\begin{enumerate}
+	\item \qn{What do the slope and $T$-intercept represent?}
+	\soln{Solution}
+	Độ dốc của đồ thị hàm số là 0.02, giá trị này có nghĩa là nhiệt độ trung bình bề mặt trái đất tăng 0.02 qua mỗi năm kể từ năm 1900. The $T$-intercept nói lên rằng vào năm 1900, nhiệt độ trung bình bề mặt trái đất là $8.5 \degree C$
+	
+	\item \qn{Use the equation to predict the earth's average surface temperature in 2100}
+	\soln{Solution}
+	$t(2100)=T(2100-1900)=0.02(2100-1900)+8.5=12.5 \degree C$
+\end{enumerate}
+
+\section*{Problem 15}
+
+\qn{If the recommended adult dosage for a drug is $D$ (in mg), then to determine the appropriate dosage $c$ for a child of the age $a$, pharmacists use the equation $c=0.0417D(a+1)$. Suppose the dosage for an adult is 200 mg.}
+
+\begin{enumerate}
+	\item \qn{Find the slope of the graph of $c$. What does it represent?}
+	\soln{Solution}
+	Độ đốc đồ thị hàm số $c$ là $0.0417D=0.0417(200)=8.34$. Nó nói lên rằng liều lượng khuyến cáo của loại thuốc đó tăng 8.34 mg cứ mỗi tuổi của trẻ tăng lên
+	
+	\item \qn{What is the dosage for a newborn?}là
+	\soln{Solution}
+	Liều lượng khuyến cáo của loại thuốc đó cho trẻ sơ sinh là $0.0417D=0.0417(200)=8.34$ mg
+\end{enumerate}
+
+\section*{Problem 16}
+
+\qn{The manager of a weekend flea market knows from past experience that if he charges $x$ dollars for a rental space at the market, then the number $y$ of spaces that will be rented is given by the equation $y=200-4x$.}
+
+\begin{enumerate}
+	\item \qn{Sketch a graph of this linear function. (Remember that the rental charge per space and the number of spaces rented can't be negative quantities.)}
+	\soln{Solution}
+	\imgsoln{1.2.16-ans.a}
+	
+	\item \qn{What do the slope, the $y$-intercept, and the $x$-intercept of the graph represent?}
+	\soln{Solution}
+	\begin{enumerate}
+		\item Độ dốc của đồ thị hàm số $f$ có ý nghĩa là người quản lý tăng \$1 cho mỗi gian hàng (space) thì số lượng gian hàng được thuê sẽ giảm đi 4
+		
+		\item Giá trị $y$-intercept thể hiện rằng, người quản lý không tính phí thuê gian hàng (space) thì số lượng gian hàng được thuê (cũng là số lượng gian hàng tối đa) là 200
+		
+		\item Giá trị $x$-intercept thể hiện rằng nếu người quản lý tính phí thuê là \$50 thì sẽ không có gian hàng nào được thuê
+	\end{enumerate}
+\end{enumerate}
+
+\section*{Problem 17}
+
+\qn{The relationship between the Fahrenheit ($F$) and Celsius ($C$) temperature scales is given by the linear equation $F=\frac{9}{5}C+32$.}
+
+\begin{enumerate}
+	\item \qn{Sketch a graph of this function}
+	\soln{Solution}
+	\imgsoln{1.2.17-ans.a}
+	
+	\item \qn{What is the slope of the graph and what does it represent? What is the $F$-intercept and what does it represent?}
+	\soln{Solution}
+	Đọ đốc của hàm số là $\frac{9}{5}$, thể hiện rằng cứ mỗi độ Celsius tăng lên, độ Fahrenheit sẽ tăng lên $\frac{9}{5}$. Giá trị $F$-intercept là 32 nghĩa là tại 0$\degree C$, giá trị độ Fahrenheit là 32$\degree F$.
+\end{enumerate}
+
+\section*{Problem 18}
+
+\qn{Jade and her roommate Jari commute to work each morning, traveling west on I-10. One morning Jade left for work at 6:50 AM, but Jari left 10 minutes later. Both drove at a constant speed. The graphs show the distance (in miles) each of them has traveled on I-10, $t$ minutes after 7:00 AM.}
+
+\imgqn{1.2.18}
+
+\begin{enumerate}
+	\item \qn{Use the graph to decide which driver is traveling faster}
+	\soln{Solution}
+	Jari đang di chuyển nhanh hơn
+	
+	\item \qn{Find the speed (in mi/h) at which each of them is driving}
+	\soln{Solution}
+	Jade đang di chuyển với tốc độ 6/6 mi/s. Jari đang di chuyển với tốc độ 7/6 mi/s
+	
+	\item \qn{Find linear functions $f$ and $g$ that model the distances traveled by Jade and Jari as functions of $t$ (in minutes)}
+	\soln{Solution}
+	$f(t)=\frac{10}{6}t+15 \quad \text{and} \quad g(t)=\frac{11}{6}t$
+\end{enumerate}
+
+\section*{Problem 19}
+
+\qn{The manager of a furniture factory finds that it costs \$2200 to manufacture 100 chairs in one day and \$4800 to produce 300 chairs in one day.}
+
+\begin{enumerate}
+	\item \qn{Express the cost as a function of the number of chairs produced, assuming that it is linear. Then sketch the graph.}
+	\soln{Solution}
+	$C=\frac{4800-2200}{300-100}(c-100)+2200=13c+900$
+	
+	\item \qn{What is the slope of the graph and what does it represent?}
+	\soln{Solution}
+	Độ dốc của đồ thị hàm số là 13. Gía trị này nói lên rằng để sản xuất thêm 1 chiếc ghế, chi phí sẽ tăng thêm \$13
+	
+	\item \qn{What is the $y$-intercept of the graph and what does it represent?}
+	\soln{Solution}
+	Giá trị $y$-intercept là 900, đây là chi phí cố định để duy trì dây chuyền sản xuất ghế, tức là nếu không sản xuất chiếc ghế nào thì nhà máy vẫn phải chịu khoản chi phí cố định này
+\end{enumerate}
+
+\section*{Problem 20}
+
+\qn{The monthly cost of driving a car depends on the number of miles driven. Lynn found that in May it cost her \$380 to drive 480 mi and in June it cost her \$460 to drive 800 mi.}
+
+\begin{enumerate}
+	\item \qn{Express the monthly cost $C$ as a function of the distance driven $d$, assuming that a linear relationship gives a suitable model}
+	\soln{Solution}
+	$C-380=\frac{460-380}{800-480}(d-480)=\frac{1}{4}d+260$
+	
+	\item \qn{Use part (1) to predict the cost of driving 1500 miles per month}
+	\soln{Solution}
+	$C(1500)=\frac{1}{4}1500+260=635$
+	
+	\item \qn{Draw the graph of the linear function. What does the slope represent?}
+	\soln{Solution}
+	Độ dốc của hàm số là $\frac{1}{4}$ nói lên rằng cứ mỗi mi June lái xe, chi phí phát sinh sẽ tăng \$0.25
+	
+	\item \qn{What does the $C$-intercept represent?}
+	\soln{Solution}
+	Đây là giá trị cố định mà June phải chịu, tức là chi phí để duy trì chiếc xe mà June đi, trong trong trường June không đi thì vẫn phải chịu chi phí này
+	
+	\item \qn{Why does a linear function give a suitable model in this situation?}
+	\soln{Solution}
+	Nếu không tính chi phí phát sinh từ việc hỏng hóc thiết bị thì linear model là khá phù hợp, nhưng nếu tính tổng quát chi phí thì linear model có thể chưa thực sự hợp lý do càng đi nhiều chi phí phát sinh sẽ càng lớn hơn
+\end{enumerate}
+
+\section*{Problem 21}
+
+\qn{At the surface of the ocean, the water pressure is the same as the air pressure above the water, 15 lb/$in^2$. Below the surface, the water pressure increases by 4.34 ln/$in^2$ for every 10 ft if descent.}
+
+\begin{enumerate}
+	\item \qn{Express the water pressure as a function of the depth below the ocean surface}
+	\soln{Solution}
+	$P(d=0.434d+15$
+	
+	\item \qn{At what depth is the pressure 100 lb/$in^2$?}
+	\soln{Solution}
+	$P(100)=0.434(100)+15=58.4$
+\end{enumerate}
+
+\section*{Problem 22}
+
+\qn{The resistance $R$ of a wire of fixed length is related to its diameter $x$ by an inverse square law, that is, by a function of the form $R(x)=kx^{-2}$.}
+
+\begin{enumerate}
+	\item \qn{A wire of fixed length and 0.005 meters in diameter has a resistance of 140 ohms. Find the value of $k$}
+	\soln{Solution}
+	$k=R(x)x^2=140(0.005)^2$
+	
+	\item \qn{Find the resistance of a wire made of the same material and of the same length as the wire in part (1) but with a diameter of 0.008 meters}
+	\soln{Solution}
+	$\frac{P_1(x)}{P_2(x)}=\frac{x^2_2}{x^2_1}1 \Rightarrow P_2(x)=P_1(x)(\frac{x_1}{x_2})^2=140(\frac{5}{8})^2$
+\end{enumerate}
+
+\section*{Problem 23}
+
+\qn{The illumination of an object by a light source is related to the distance from the source by an inverse square law. Suppose that after dark you are sitting in a room with just on lamp, trying to read a book. The light is too dim, so you move your chair halfway to the lamp. How much brighter is the light?}
+
+\soln{Solution}
+Độ sáng sẽ tăng 4 lần
+
+\section*{Problem 24}
+
+\qn{The pressure $P$ of a sample of oxygen gas that is compressed at a constant temperature is related to the volume $V$ of gas by a reciprocal function of the form $P=k/V$.}
+
+\begin{enumerate}
+	\item \qn{A sample of oxygen gas that occupies 0.671 $m^3$ exerts a pressure of 39 kPa at a temperature of 293 K (absolute temperature measured on the Kelvin scale). Find the value of $k$ in the given model}
+	\soln{Solution}
+	$k=PV=39(0.671)$
+	
+	\item \qn{If the sample expands to a volume of 0.916 $m^3$, find the new pressure}
+	\soln{Solution}
+	$\frac{P_1}{P_2}=\frac{V_2}{V_1} \Rightarrow P_2=\frac{P_1V_1}{V_2}=\frac{39(0.671)}{0.916}$
+\end{enumerate}
+
+\section*{Problem 25}
+
+\qn{The power output of a wind turbine depends on many factors. It can be shown using physical principles that the power $P$ generated by a wind turbine is modeled by $$P=kAv^3$$ where $v$ is the wind speed, $A$ is the area swept out by the blades, and $k$ is a constant that depends on air density, efficiency of the turbine, and the design of the wind turbine blades.}
+
+\begin{enumerate}
+	\item \qn{If only wind speed is doubled, by what factor is the power output increased?}
+	\soln{Solution}
+	Tăng 8 lần do $P'=kA(v')^3=kA(2v)^3=8P$
+	
+	\item \qn{If only the length of the blades is doubled, by what factor is the power output increased?}
+	\soln{Solution}
+	Tăng 4 lần do $P'=kAv'v^3=k(\pi L'^2)v^3=4P$
+	
+	\item \qn{For a particular wind turbine, the length of the blades is 30 m and $k=0.214$ kg/$m^3$. Find the power output (in watts, $W=m^2kg/s^3$) when the wind speed is 10 m/s, 15 m/s, and 25 m/s}
+	\soln{Solution}
+	Tự bấm máy tính nhớ:
+	\begin{enumerate}
+		\item $P(10)=0.214\pi30^2(10^3)$
+		\item $P(15)=0.214\pi30^2(15^3)$
+		\item $P(25)=0.214\pi30^2(25^3)$
+	\end{enumerate}
+\end{enumerate}
+
+\section*{Problem 26}
+
+\qn{Astronomers infer the radiant exitance (radiant flux emitted per unit area) of starts using the Stefan Boltzmann Law: $$E(T)=(5.67 \times 10^{-8})T^4$$ where $E$ is the energy radiated per unit of surface area measured in watts ($W$) and $T$ is the absolute temperature measured in kelvins ($K$).}
+
+\begin{enumerate}
+	\item \qn{Graph the function $E$ for temperature $T$ between 100 K and 300 K}
+	\soln{Solution}
+	\imgsoln{1.2.26-ans.a}
+	
+	\item \qn{Use the graph to describe the change in energy $E$ as the temperature $T$ increases}
+	\soln{Solution}
+	Khi nhiệt độ ($T$) tăng thig năng lượng ($E$) tăng rất nhanh (hàm mũ 4)
+\end{enumerate}
+
+\section*{Problem 27}
+
+\qn{For each scatter plot, decide what type of function you might choose as a model for the data. Explain your choices.}
+
+\imgqn{1.2.27}
+
+\soln{Solution}
+\begin{enumerate}
+	\item Trigonometric function
+	\item Linear function
+\end{enumerate}
+
+\section*{Problem 28}
+
+\qn{For each scatter plot, decide what type of function you might choose as a model for the data. Explain your choices.}
+
+\imgqn{1.2.28}
+
+\soln{Solution}
+\begin{enumerate}
+	\item Exponential function
+	\item Reciprocal function
+\end{enumerate}
+
+\section*{Problem 29}
+
+\qn{The table shows (lifetime) peptic ulcer rates (per 100 population) for various family incomes as reported by the National Health Interview Survey.}
+
+\imgqn{1.2.29}
+
+\begin{enumerate}
+	\item \qn{Make a scatter plot of these data and decide whether a linear model is appropriate}
+	\soln{Solution}
+	Sử dụng scatter plot có thể thấy một hàm tuyến tính là phù hợp để mô hình bài toán này
+	\imgsoln{1.2.29-ans.a}
+	
+	\item \qn{Find and graph a linear model using the first and last data point}
+	\soln{Solution}
+	$U(I)-14.1=\frac{8.2-14.1}{60000-4000}(I-4000) \Rightarrow U(I)=-0.000105I + 13.678571$
+	
+	\item \qn{Find and graph the regression line}
+	\soln{Solution}
+	$U(I)=-0.0001I+13.950764$
+	
+	\item \qn{Use the linear model in part (3) to estimate the ulcer rate for people with an income of \$25,000}
+	\soln{Solution}
+	$f(25000)=-0.0001(25000)+13.950764=11.456$
+	
+	\item \qn{According to the model, how likely is someone with an income \$80,000 to suffer from peptic ulcers?}
+	\soln{Solution}
+	Giá trị này khá thấp $f(80000)=-0.0001(80000)+13.950764=5.968$ và có thể linear không phải là một mô hình phù hợp do giá trị $f$ sẽ không về 0 được
+	
+	\item \qn{Do you think it would be reasonable to apply the model to someone with an income of \$200,000?}
+	\soln{Solution}
+	Không do $f(200000)=-6$ là một giá trị không hợp lý
+\end{enumerate}
+
+\section*{Problem 30}
+
+\qn{When laboratory rats are exposed to asbestos fibers,, some of them develop lung tumors. The table lists the results of several experiments by different scientists.}
+
+\imgqn{1.2.30}
+
+\begin{enumerate}
+	\item \qn{Find the regression line for the data}
+	\soln{Solution}
+	$f(x)=0.018789x+0.304802$
+	
+	\item \qn{Make a scatter plot and graph the regression line. Does the regression line appear to be a suitable model for the data?}
+	\soln{Solution}
+	Sử dụng một hàm tuyến tính là hợp lý với dữ liệu này
+	\imgsoln{1.2.30-ans.b}
+	
+	\item \qn{What does the $y$-intercept of the regression line represent?}
+	\soln{Solution}
+	Khi không tiếp xúc với sợi amiăng, tỉ lệ chuột phát triển khối u là $0.304802\%$
+\end{enumerate}
+
+\section*{Problem 31}
+
+\qn{Anthropologists use a linear model that relates human femur (thighbone) length to height. The model allows an anthropologist to determine the height of an individual when only a partial skeleton (including the femur) is found. Here we find the model by analyzing the data on femur length and height for the eight males given in the table.}
+
+\imgqn{1.2.31}
+
+\begin{enumerate}
+	\item \qn{Make a scatter plot of the data}
+	\soln{Solution}
+	\imgsoln{1.2.31-ans.a}
+	
+	\item \qn{Find and graph the regression line that models the data}
+	\soln{Solution}
+	$f(x)=1.880742x+82.649739$
+	
+	\item \qn{An anthropologist finds a human femur of length 53 cm. How tall was the person?}
+	\soln{Solution}
+	$f(53)=1.880742(53)+82.649739=182.3$ cm
+\end{enumerate}
+
+\section*{Problem 32}
+
+\qn{The table shows average US retail residential prices of electricity from 2000 to 2016, measured in cents per kilowatt hour.}
+
+\imgqn{1.2.32}
+
+\begin{enumerate}
+	\item \qn{Make a scatter plot. Is a linear model appropriate?}
+	\soln{Solution}
+	Hàm số tuyến tính là mô hình phù hợp cho dữ liệu này
+	\imgsoln{1.2.32-ans.a}
+	
+	\item \qn{Find and graph the regression line.}
+	\soln{Solution}
+	$f(x)=0.316x+8.156$
+	
+	\item \qn{Use your linear model from part (2) to estimate the average retail price of electricity in 2005 and 2017}
+	\soln{Solution}
+	$F(2005)=f(5)=0.316(5)+8.156=9.734$
+	
+	$F(2017)=f(17)=0.316(17)+8.156=13.522$
+\end{enumerate}
+
+\section*{Problem 33}
+
+\qn{The table shows world average daily oil consumption from 1985 to 2015, measured in thousands of barrels per day.}
+
+\imgqn{1.2.33}
+
+\begin{enumerate}
+	\item \qn{Make a scatter plot and decide whether a linear model is appropriate}
+	\soln{Solution}
+	Hàm số tuyến tính là mô hình phù hợp với dữ liệu này
+	
+	\item \qn{Find and graph the regression line}
+	\soln{Solution}
+	$f(x)=1124.857x+60119.857$
+	\imgsoln{1.2.33-ans.a}
+	
+	\item \qn{Use the linear model to estimate the oil consumption in 2002 and 2017}
+	\soln{Solution}
+	$F(2002)=f(2002-1985)=f(17)=1124.857(17)+60119.857=79242$
+	
+	$F(2017)=f(2017-1985)=f(32)=1124.857(32)+60119.857=96115$
+\end{enumerate}
+
+\section*{Problem 34}
+
+\qn{The table shows the mean (average) distances $d$ of the planets from the sun (taking the unit of measurement to be the distance from the earth to the sun) and their periods $T$ (time of revolution in years).}
+
+\imgqn{1.2.34}
+
+\begin{enumerate}
+	\item \qn{Fit a power model to the data}
+	\soln{Solution}
+	\imgsoln{1.2.34-ans.a}
+	
+	\item \qn{Kepler's Third Law of Planetary Motion states that "The square of the period of revolution of a planet is proportional to the cube of its mean distance from the sun". Does your model corroborate Kepler's Third Law?}
+	\soln{Solution}
+	Định luật 3 Kepler là đúng do $T(d) \approx d^{1.5}$
+\end{enumerate}
+
+\section*{Problem 35}
+
+\qn{It makes sense that the larger the area of a region, the larger the number of species that inhabit the region. Many ecologists have modeled the species-are relation with a power function. In particular, the number of species $S$ of bats living in caves in central Mexico has been related to the surface area $A$ of the caves by the equation $S=0.7A^{0.3}$.}
+
+\begin{enumerate}
+	\item \qn{The cave called Mision Imposible near Puebla, Mexico, has a surface area of $A=60m^3$. How many species of bats would you expect to find in that cave?}
+	\soln{Solution}
+	$S=0.7(60)^{0.3}=2.4$
+	
+	\item \qn{If you discover that four species of bats live in a cave, estimate the area of the cave.}
+	\soln{Solution}
+	$4=S=0.7A^{0.3} \Rightarrow A=333.6m^2$
+\end{enumerate}
+
+\section*{Problem 36}
+
+\qn{The table shows the number $N$ of species of reptiles and amphibians inhabiting Caribbean islands and the area $A$ of the island in square miles.}
+
+\imgqn{1.2.36}
+
+\begin{enumerate}
+	\item \qn{Use a power function to model $N$ as a function of $A$}
+	\soln{Solution}
+	$N(A)=3.1A^{0.31}$
+	\imgsoln{1.2.36-ans.a}
+	
+	\item \qn{The Caribbean island of Dominica has area 291 $mi^2$. How many species of reptiles and amphibians would you expect to find on Dominica?}
+	\soln{Solution}
+	$N(291)=3.1(291)^{0.31}=17.82$
+\end{enumerate}
+
+\section*{Problem 37}
+
+\qn{Suppose that a force or energy originates from a point source and spreads its influence equally in all directions, such as the light from a light-bulb or the gravitational force of a planet. So at a distance $r$ from the source, the intensity $I$ of the force or energy is equal to the source strength $S$ divided by the surface area of a sphere of radius $r$. Show that $I$ satisfies the inverse square law $I=k/r^2$, where $k$ is a positive constant.}
+
+\soln{Solution}
+$I=\frac{S}{A}=\frac{S}{4\pi{r^2}}=\frac{k}{r^2} \quad \text{với} \quad k=\frac{S}{4\pi}$
+
+\end{document}
+
+
+
