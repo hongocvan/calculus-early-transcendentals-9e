@@ -566,12 +566,16 @@ Họ đồ thị các phương trình $f(x)=c-x$ có slope -1
 \begin{enumerate}
 	\item \qn{Find the regression line for the data}
 	\soln{Solution}
+	$f(x)=0.018789x+0.304802$
 	
 	\item \qn{Make a scatter plot and graph the regression line. Does the regression line appear to be a suitable model for the data?}
 	\soln{Solution}
+	Sử dụng một hàm tuyến tính là hợp lý với dữ liệu này
+	\imgsoln{1.2.30-ans.b}
 	
 	\item \qn{What does the $y$-intercept of the regression line represent?}
 	\soln{Solution}
+	Khi không tiếp xúc với sợi amiăng, tỉ lệ chuột phát triển khối u là $0.304802\%$
 \end{enumerate}
 
 \section*{Problem 31}
@@ -583,12 +587,15 @@ Họ đồ thị các phương trình $f(x)=c-x$ có slope -1
 \begin{enumerate}
 	\item \qn{Make a scatter plot of the data}
 	\soln{Solution}
+	\imgsoln{1.2.31-ans.a}
 	
 	\item \qn{Find and graph the regression line that models the data}
 	\soln{Solution}
+	$f(x)=1.880742x+82.649739$
 	
 	\item \qn{An anthropologist finds a human femur of length 53 cm. How tall was the person?}
 	\soln{Solution}
+	$f(53)=1.880742(53)+82.649739=182.3$ cm
 \end{enumerate}
 
 \section*{Problem 32}
@@ -600,12 +607,18 @@ Họ đồ thị các phương trình $f(x)=c-x$ có slope -1
 \begin{enumerate}
 	\item \qn{Make a scatter plot. Is a linear model appropriate?}
 	\soln{Solution}
+	Hàm số tuyến tính là mô hình phù hợp cho dữ liệu này
+	\imgsoln{1.2.32-ans.a}
 	
 	\item \qn{Find and graph the regression line.}
 	\soln{Solution}
+	$f(x)=0.316x+8.156$
 	
 	\item \qn{Use your linear model from part (2) to estimate the average retail price of electricity in 2005 and 2017}
 	\soln{Solution}
+	$F(2005)=f(5)=0.316(5)+8.156=9.734$
+	
+	$F(2017)=f(17)=0.316(17)+8.156=13.522$
 \end{enumerate}
 
 \section*{Problem 33}
@@ -617,12 +630,18 @@ Họ đồ thị các phương trình $f(x)=c-x$ có slope -1
 \begin{enumerate}
 	\item \qn{Make a scatter plot and decide whether a linear model is appropriate}
 	\soln{Solution}
+	Hàm số tuyến tính là mô hình phù hợp với dữ liệu này
 	
 	\item \qn{Find and graph the regression line}
 	\soln{Solution}
+	$f(x)=1124.857x+60119.857$
+	\imgsoln{1.2.33-ans.a}
 	
 	\item \qn{Use the linear model to estimate the oil consumption in 2002 and 2017}
 	\soln{Solution}
+	$F(2002)=f(2002-1985)=f(17)=1124.857(17)+60119.857=79242$
+	
+	$F(2017)=f(2017-1985)=f(32)=1124.857(32)+60119.857=96115$
 \end{enumerate}
 
 \section*{Problem 34}
@@ -634,9 +653,11 @@ Họ đồ thị các phương trình $f(x)=c-x$ có slope -1
 \begin{enumerate}
 	\item \qn{Fit a power model to the data}
 	\soln{Solution}
+	\imgsoln{1.2.34-ans.a}
 	
 	\item \qn{Kepler's Third Law of Planetary Motion states that "The square of the period of revolution of a planet is proportional to the cube of its mean distance from the sun". Does your model corroborate Kepler's Third Law?}
 	\soln{Solution}
+	Định luật 3 Kepler là đúng do $T(d) \approx d^{1.5}$
 \end{enumerate}
 
 \section*{Problem 35}
@@ -646,9 +667,11 @@ Họ đồ thị các phương trình $f(x)=c-x$ có slope -1
 \begin{enumerate}
 	\item \qn{The cave called Mision Imposible near Puebla, Mexico, has a surface area of $A=60m^3$. How many species of bats would you expect to find in that cave?}
 	\soln{Solution}
+	$S=0.7(60)^{0.3}=2.4$
 	
 	\item \qn{If you discover that four species of bats live in a cave, estimate the area of the cave.}
 	\soln{Solution}
+	$4=S=0.7A^{0.3} \Rightarrow A=333.6m^2$
 \end{enumerate}
 
 \section*{Problem 36}
@@ -660,9 +683,12 @@ Họ đồ thị các phương trình $f(x)=c-x$ có slope -1
 \begin{enumerate}
 	\item \qn{Use a power function to model $N$ as a function of $A$}
 	\soln{Solution}
+	$N(A)=3.1A^{0.31}$
+	\imgsoln{1.2.36-ans.a}
 	
 	\item \qn{The Caribbean island of Dominica has area 291 $mi^2$. How many species of reptiles and amphibians would you expect to find on Dominica?}
 	\soln{Solution}
+	$N(291)=3.1(291)^{0.31}=17.82$
 \end{enumerate}
 
 \section*{Problem 37}
@@ -670,6 +696,7 @@ Họ đồ thị các phương trình $f(x)=c-x$ có slope -1
 \qn{Suppose that a force or energy originates from a point source and spreads its influence equally in all directions, such as the light from a light-bulb or the gravitational force of a planet. So at a distance $r$ from the source, the intensity $I$ of the force or energy is equal to the source strength $S$ divided by the surface area of a sphere of radius $r$. Show that $I$ satisfies the inverse square law $I=k/r^2$, where $k$ is a positive constant.}
 
 \soln{Solution}
+$I=\frac{S}{A}=\frac{S}{4\pi{r^2}}=\frac{k}{r^2} \quad \text{với} \quad k=\frac{S}{4\pi}$
 
 \end{document}
 
