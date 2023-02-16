@@ -902,21 +902,35 @@ ${-4, -3.3, -2, -0.2, -0.1, -0.2, -2, -3.3, -4, -2, 1.8}$
 \qn{Let $f$ and $g$ be linear functions with equations $f(x)=m_1x+b_1$ and $g(x)=m_2x+b_2$. Is $f \circ g$ also a linear? If so, what is the slope of its graph?}
 
 \soln{Solution}
+$f \circ g$ là hàm số tuyến tính với slope là $m_1m_2$
+$$(f \circ g)(x)=m_1(m_2x+b_2)+b_1=m_1m_2x+(m_1b_2+b_1)$$
 
 \section*{Problem 66}
 
 \qn{If you invest $x$ dollars at 4\% interest compounded annually, then the amount $A(x)$ of the investment after one year is $A(x)=1.04x$. Find $A \circ A$, $A \circ A \circ A$, $A \circ A \circ A \circ A$. What doe these compositions represent? Find a formula for the composition of $n$ copies of $A$}
 
 \soln{Solution}
+Hàm hợp $A \circ A$ là số tiền nhận được sau 2 năm đầu tư, tương tự $A \circ A \circ$ là số tiền nhận được sau 3 năm đầu tư,...
+\begin{enumerate}
+	\item $(A \circ A)(x) = 1.04(1.04x)=1.04^2x$
+	
+	\item $(A \circ A \circ A)(x) = 1.04(1.04(1.04x))=1.04^3x$
+	
+	\item $(A \circ A \circ A \circ A)(x) = 1.04(1.04(1.04(1.04x)))=1.04^4x$
+	
+	\item $(A \circ A \circ... \circ A)(x) = 1.04(1.04(...(1.04x)))=1.04^nx$
+\end{enumerate}
 
 \section*{Problem 67}
 
 \begin{enumerate}
 	\item \qn{If $g(x)=2x+1$ and $h(x)=4x^2+4x+7$, find a function $f$ such that $f \circ g=h$. (Think about what operations you would have to perform on the formula for $g$ to end up with the formula for $h$)}
 	\soln{Solution}
+	$$h(x)=4x^2+4x+7=(2x+1)^2+6=g(x)^2+6 \Rightarrow f(x)=x^2+6$$
 	
-	\item \qn{If $f(x)=x+4$ and $h(x)=3x^2+3x+2$, find a function $g$ such that $f \circ g=h$}
+	\item \qn{If $f(x)=3x+5$ and $h(x)=3x^2+3x+2$, find a function $g$ such that $f \circ g=h$}
 	\soln{Solution}
+	$$h(x)=3x^2+3x+2=3(x^2+x-1)+5 \Rightarrow g(x)=x^2+x-1$$
 \end{enumerate}
 
 \section*{Problem 68}
@@ -924,18 +938,27 @@ ${-4, -3.3, -2, -0.2, -0.1, -0.2, -2, -3.3, -4, -2, 1.8}$
 \qn{If $f(x)=x+4$ and $h(x)=4x-1$, find a function $g$ such that $g \circ f=h$}
 
 \soln{Solution}
+$$h(x)=4x-1=4(x+4)-17=4f(x)-17 \Rightarrow g(x)=4x-17$$
 
 \section*{Problem 69}
 
 \qn{Suppose $g$ is an even function and let $h=f \circ g$. Is $h$ always an even function?}
 
 \soln{Solution}
+$$(f \circ g)(-x)=f(g(-x))=f(g(x))=(f \circ g)(x) \Rightarrow even$$
 
 \section*{Problem 70}
 
 \qn{Support $g$ is an odd function and let $h=f \circ g$. Is $h$ always an odd function? What if $f$ is odd? What if $f$ is even?}
 
 \soln{Solution}
+\begin{enumerate}
+	\item \qn{$f$ is odd}
+	$$(f \circ g)(-x)=f(g(-x))=f(-g(x))=-f(g(x))=-(f \circ g)(x) \Rightarrow odd$$
+	
+	\item \qn{$f$ is even}
+	$$(f \circ g)(-x)=f(g(-x))=f(-g(x))=f(g(x))=(f \circ g)(x) \Rightarrow even$$
+\end{enumerate}
 
 \section*{Problem 71}
 
@@ -944,15 +967,25 @@ ${-4, -3.3, -2, -0.2, -0.1, -0.2, -2, -3.3, -4, -2, 1.8}$
 \begin{enumerate}
 	\item \qn{Show that $E(x)=f(x)+f(-x)$ is an even function}
 	\soln{Solution}
+	$$E(-x)=f(-x)+f(x)=E(x)$$
 	
 	\item \qn{Show that $O(x)=f(x)-f(-x)$ is an odd function}
 	\soln{Solution}
+	$$O(-x)=f(-x)-f(x)=-(f(x)-f(-x))=-O(x)$$
 	
 	\item \qn{Prove that every function $f(x)$ can be written as a fum of an even function and an odd function}
 	\soln{Solution}
+	$$f(x)=\frac{1}{x}(f(x)+f(-x))+\frac{1}{2}(f(x)-f(-x))=\frac{1}{2}(\text{even function})+\frac{1}{2}(\text{odd function})$$
 	
 	\item \qn{Express the function $f(x)=2^x+(x-3)^2$ as a sum of an even function and an odd function}
 	\soln{Solution}
+	\begin{equation*}
+		\begin{cases}
+			f(x)+f(-x)=2^x+(x-3)^2+2^{-x}+(-x-3)^2=2^x+2^{-x}+2x^2+18 \\
+			f(x)-f(-x)=2^x+(x-3)^2-2^{-x}-(-x-3)^2=2^x-2^{-x}-12x \\
+			f(x)=2^x+(x-3)^2=\frac{1}{x}(f(x)+f(-x))+\frac{1}{2}(f(x)-f(-x))
+		\end{cases}
+	\end{equation*}
 \end{enumerate}
 	
 \end{document}
