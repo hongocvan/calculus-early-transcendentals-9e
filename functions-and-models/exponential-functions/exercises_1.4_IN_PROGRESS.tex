@@ -252,10 +252,29 @@ Lấy đối xứng qua trục $y$ phần đồ thị hàm số $f(x)=e^x$ khi $
 \begin{enumerate}
 	\item \qn{Reflecting about the line $y=4$}
 	\soln{Solution}
+	Lấy đối xứng qua trục $x$ sau đó dịch đồ thị hàm số lên 8 đơn vị. Do chuyển về hệ tọa độ với Ox và Oy'(y=4) thì phương trình đồ thị hàm số $y=e^x$ có dạng $y'=y-4=e^x-4$, đứng trên góc nhìn của đường thằng $y=4$ lấy đối xứng qua nó thì được phương trình $y'=y-4=-(e^x-4) \Rightarrow y=-e^x+8$
+	\begin{equation*}
+		\begin{cases}
+			(x=0, y=0)&: y=e^x \\
+			(x=0, y'=y-4=0)&: y'=y-4=e^x-4
+		\end{cases}
+		\Rightarrow \text{lấy đối xứng qua $y'$}
+		\Rightarrow y=-(e^x-4)+4=-e^x+8 
+	\end{equation*}
 	
 	\item \qn{Reflecting about the line $x=2$}
 	\soln{Solution}
+	Tương tự như câu (1) nếu chuyển góc nhìn từ hệ tọa độ $(x=0, y=0)$ sang hệ tọa độ mới $(x'=x-2=0, y=0)$ thì cần phải viết lại phương trình hàm số, sau đó coi việc lấy đối xứng qua đường thẳng $x=2$ thì chỉ cần lấy đối xứng đồ thị hàm số vừa thu được qua đường thẳng $x'=x-2=0$
+	\begin{equation*}
+		\begin{cases}
+			(x=0, y=0)&: y=e^x \\
+			(x'=x-2, y=0)&: y=e^{x'+2} 
+		\end{cases}
+		\Rightarrow \text{lấy đối xứng qua $x'$}
+		\Rightarrow y=e^{-x'+2} = e^{-x+2+2}=e^{-x+4}
+	\end{equation*}
 \end{enumerate}
+Đây là một bài tập khá thú vị!
 
 \section*{Problem 17}
 
@@ -264,9 +283,12 @@ Lấy đối xứng qua trục $y$ phần đồ thị hàm số $f(x)=e^x$ khi $
 \begin{enumerate}
 	\item \qn{$f(x)=\frac{1-e^{x^2}}{1-e^{1-x^2}}$}
 	\soln{Solution}
+	$$e^{1-x^2} \ne 1 \Rightarrow 1-x^2 \ne 0 \Rightarrow x \ne \pm 1$$
 	
 	\item \qn{$f(x)=\frac{1+x}{e^{\cos{x}}}$}
 	\soln{Solution}
+	Dựa trên tính chất $e^x>0$
+	$$(-\infty, \infty)$$
 \end{enumerate}
 
 \section*{Problem 18}
@@ -276,9 +298,13 @@ Lấy đối xứng qua trục $y$ phần đồ thị hàm số $f(x)=e^x$ khi $
 \begin{enumerate}
 	\item \qn{$g(t)=\sqrt{10^t-100}$}
 	\soln{Solution}
+	Dựa trên tính chất hàm số $y=b^x$ với $b>1$ là hàm đơn điệu tăng
+	$$10^t-100 \ge 0 \Rightarrow 10^t \ge 10^2 \Rightarrow t \ge 2$$
 	
 	\item \qn{$g(t)=\sin(e^t-1)$}
 	\soln{Solution}
+	Do domain của hàm số $y=\sin{x}$ là $(-\infty, \infty)$ và $y=e^t-1$ là $(-\infty, \infty)$
+	$$(-\infty, \infty)$$
 \end{enumerate}
 
 \section*{Problem 19}
@@ -287,6 +313,22 @@ Lấy đối xứng qua trục $y$ phần đồ thị hàm số $f(x)=e^x$ khi $
 \imgqn{1.4.19}
 
 \soln{Solution}
+\begin{equation*}
+	\begin{cases}
+		f(1)=6 \\
+		f(3)=24
+	\end{cases}
+	\Rightarrow
+	\begin{cases}
+		Cb^1=6 \\
+		Cb^2=24
+	\end{cases}
+	\Rightarrow
+	\begin{cases}
+		b= 4 \\
+		C=3/2
+	\end{cases}
+\end{equation*}
 
 \section*{Problem 20}
 
