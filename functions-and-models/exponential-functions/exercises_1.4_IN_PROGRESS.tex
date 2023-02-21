@@ -364,6 +364,7 @@ Hàm số cần tìm là $f(x)=2(\frac{2}{3})^x$. Quan sát rằng đồ thị l
 \qn{If $f(x)=5^x$, show that $$\frac{f(x+h)-f(x)}{h}=5^x(\frac{5^h-1}{h})$$}
 
 \soln{Solution}
+$$\frac{f(x+h)-f(x)}{h}=\frac{5^{x+h}-5^x}{h}=\frac{5^x5^h-5^x}{h}=5^x(\frac{5^h-1}{h})$$
 
 \section*{Problem 22}
 
@@ -375,30 +376,35 @@ Hàm số cần tìm là $f(x)=2(\frac{2}{3})^x$. Quan sát rằng đồ thị l
 \end{enumerate}
 
 \soln{Solution}
+Mức lương nhận được theo phương án 1 là \$$10^6$. Trong khi đó mức lương nhận được theo phương án 2 là $2^{30-1}=2^{29}=536870912$ cents (giả sử 1 tháng có 30 ngày), chia con số này cho 100 (\$1 = 100 cents) thì con số nhận được là $5,368,709.12$ vẫn lớn hơn nhiều so với $10^6$. Do đó chọn phương án 2.
 
 \section*{Problem 23}
 
 \qn{Suppose the graphs of $f(x)=x^2$ and $g(x)=2^x$ are drawn on a coordinate grid where the unit of measurement is 1 inch. Show that at a distance 2 ft to the right of the origin, the height of the graph of $f$ is 48 ft but the height of the graph of $g$ is about 265 mi.}
 
 \soln{Solution}
+Có 1 ft = 12 inches, 1m = 63360 inches. Do đó $f(2 ft)=f(24 inch)=24^2=576 inches (/12)=48 ft$, và $g(2 ft)=g(24 inch)=2^{24} inches (/63360) = 264.8 mi$
 
 \section*{Problem 24}
 
 \qn{Compare the functions $f(x)=x^5$ and $g(x)=5^x$ by graphing both functions in several viewing rectangles. Find all points of intersection of the graphs correct to one decimal place. Which function grows more rapidly when $x$ is large?}
 
 \soln{Solution}
+$g(x)=5^x$ sẽ tăng nhanh hơn nhiều so với $f(x)=x^5$ khi $x$ 
 
 \section*{Problem 25}
 
 \qn{Compare the functions $f(x)=x^{10}$ and $g(x)=e^x$ by graphing both functions in several viewing rectangles. When does the graph of $g$ finally surpass the graph of $f$?}
 
 \soln{Solution}
+Khi $g$ vượt qua $f$ thì $e^x>x^10 \Rightarrow x \approx 35.8$
 
 \section*{Problem 26}
 
 \qn{Use a graph to estimate the values of $x$ such that $e^x > 1,000,000,000$}
 
 \soln{Solution}
+$$e^x > 1,000,000,000 \Rightarrow x > 20.724$$
 
 \section*{Problem 27}
 
@@ -408,13 +414,16 @@ Hàm số cần tìm là $f(x)=2(\frac{2}{3})^x$. Quan sát rằng đồ thị l
 \begin{enumerate}
 	\item \qn{Make a scatter plot of the data}
 	\soln{Solution}
+	\imgsoln{1.4.27-ans.a}
 	
 	\item \qn{Use a calculator or computer to find an exponential curve $f(t)=ab^t$ that models the bacteria population $t$ hours later}
 	\soln{Solution}
+	$f(t)=36.893e^{0.064t}$
 	
 	\item \qn{Graph the model from part (2) together with the scatter plot in part (1). Use the graph to estimate how long it takes for the bacteria count to double}
-	\imgqn{1.4.27.c}
 	\soln{Solution}
+	$f(t)=74=36.893e^{0.064t} \Rightarrow t \approx 10.87$
+	\imgqn{1.4.27.c}
 \end{enumerate}
 
 \section*{Problem 28}
