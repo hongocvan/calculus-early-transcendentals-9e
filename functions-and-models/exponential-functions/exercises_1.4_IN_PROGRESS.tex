@@ -1,0 +1,547 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{vietnam}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage[none]{hyphenat}
+\usepackage{fancyhdr}
+
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage{wrapfig}
+\usepackage{gensymb}
+\usepackage{float}
+
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[L]{\slshape \MakeUppercase{1.4 - Exponential Functions}}
+\fancyhead[R]{\slshape Ho Ngoc Van}
+\fancyfoot[C]{\thepage}
+\renewcommand{\footrulewidth}{0pt}
+
+\newcommand{\soln}{\subsection*}
+\newcommand{\qn}{\textit}
+\newcommand{\imagesource}[1]{{\footnotesize Source: #1}}
+\newcommand{\imgqn}[1]{
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.35\linewidth]{figs/#1.png}\\
+		\imagesource{James Stewart, Calculus: Early Transcendentals [9e]}
+	\end{figure}
+}
+\newcommand{\imgsoln}[1]{
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.5\linewidth]{figs/#1.png}
+	\end{figure}
+}
+
+\newcommand{\eqtext}[1]{\quad\text{#1}\quad}
+
+\begin{document}
+
+\section*{Problem 1}
+
+\qn{Use the Laws of Exponents to rewrite and simplify each expression}
+
+\begin{enumerate}
+	\item \qn{$\frac{-2^6}{4^3}$}
+	\soln{Solution}
+	$$\frac{-2^6}{4^3}=\frac{-2^6}{(2^2)^3}=-\frac{-2^6}{2^6}=-1$$
+	
+	\item \qn{$\frac{(-3)^6}{9^6}$}
+	\soln{Solution}
+	$$\frac{(-3)^6}{9^6}=\frac{3^6}{(3^2)^6}=\frac{3^6}{3^{12}}=\frac{1}{3^6}=3^{-6}$$
+	
+	\item \qn{$\frac{1}{\sqrt[4]{x^5}}$}
+	\soln{Solution}
+	$$\frac{1}{\sqrt[4]{x^5}}=\frac{1}{x^{5/4}}=x^{-5/4}$$
+	
+	\item \qn{$\frac{x^3x^n}{x^{n+1}}$}
+	\soln{Solution}
+	$$\frac{x^3x^n}{x^{n+1}}=\frac{x^{n+3}}{x^{n+1}}=x^2$$
+	
+	\item \qn{$b^3(3b^{-1})^{-2}$}
+	\soln{Solution}
+	$$b^3(3b^{-1})^{-2}=b^3(3^{-2})b^2=\frac{1}{9}b^5$$
+	
+	\item \qn{$\frac{2x^2y}{(3x^{-2}y)^2}$}
+	\soln{Solution}
+	$$\frac{2x^2y}{(3x^{-2}y)^2}=\frac{2x^2y}{3^2x^{-4}y^2}=\frac{2}{9}x^6y^{-1}$$
+\end{enumerate}
+
+\section*{Problem 2}
+
+\qn{Use the Laws of Exponents to rewrite and simplify each expression}
+
+\begin{enumerate}
+	\item \qn{$\frac{\sqrt[3]{4}}{\sqrt[3]{108}}$}
+	\soln{Solution}
+	$$\frac{\sqrt[3]{4}}{\sqrt[3]{108}}=\frac{\sqrt[3]{4}}{\sqrt[3]{4}\sqrt[3]{27}}=\frac{1}{\sqrt[3]{27}}=\frac{1}{3}$$
+	
+	\item \qn{$27^{2/3}$}
+	\soln{Solution}
+	$$27^{2/3}=\sqrt[3]{27^2}=\sqrt[3]{(3^3)^2}=\sqrt[3]{3^6}=3^2=9$$
+	
+	\item \qn{$2x^2(3x^5)^2$}
+	\soln{Solution}
+	$$2x^2(3x^5)^2=2x^2(3^2x^{10})=18x^{12}$$
+	
+	\item \qn{$(2x^{-2})^{-3}x^{-3}$}
+	\soln{Solution}
+	$$(2x^{-2})^{-3}x^{-3}=2^{-3}x^6x^{-3}=\frac{1}{x^3}x^3=\frac{1}{8}x^3$$
+	
+	\item \qn{$\frac{3a^{3/2}a^{1/2}}{a^{-1}}$}
+	\soln{Solution}
+	$$\frac{3a^{3/2}a^{1/2}}{a^{-1}}=\frac{3a^2}{a^{-1}}=3a^3$$
+	
+	\item \qn{$\frac{\sqrt{a\sqrt{b}}}{\sqrt[3]{ab}}$}
+	\soln{Solution}
+	$$\frac{\sqrt{a\sqrt{b}}}{\sqrt[3]{ab}}=\frac{a^{1/2}(b^{1/2})^{1/2}}{a^{1/3}b^{1/3}}=\frac{a^{1/2}b^{1/4}}{a^{1/3}b^{1/3}}=a^{1/6}b^{-1/12}$$
+\end{enumerate}
+
+\section*{Problem 3}
+
+\begin{enumerate}
+	\item \qn{Write an equation that defines the exponential function with base $b>0$}
+	\soln{Solution}
+	$y=b^x-x$
+	
+	\item \qn{What is the domain of this function?}
+	\soln{Solution}
+	Domain: $(-\infty, \infty)$
+	
+	\item \qn{If $b \ne 1$, what is the range of this function?}
+	\soln{Solution}
+	If $b \ne 1$, range: $[\log_b(\frac{1}{\ln{b}}), \infty)$
+	
+	\item \qn{Sketch the general shape of the graph of the exponential function for each of the following cases}
+	\begin{enumerate}
+		\item \qn{$b>1$}
+		
+		\item \qn{$b=1$}
+		
+		\item \qn{$0<b<1$}
+	\end{enumerate}
+	\soln{Solution}
+	\imgsoln{1.4.3-ans.c}
+\end{enumerate}
+
+\section*{Problem 4}
+
+\begin{enumerate}
+	\item \qn{How is the number $e$ defined?}
+	\soln{Solution}
+	Số $e$ được định nghĩa bằng giá trị $b$ khi đồ thị hàm số $y=b^x$ có slope bằng 1 tại điểm $(0,1)$
+	
+	\item \qn{What is an approximate value for $e$?}
+	\soln{Solution}
+	$e \approx 2.71828182846$
+	
+	\item \qn{What is the natural exponential function?}
+	\soln{Solution}
+	$y=e^x$
+\end{enumerate}
+
+\section*{Problem 5}
+
+\qn{Graph the given functions on a common screen. How are these graphs related? $$y=2^x \eqtext{,} y=e^x \eqtext{,} y=5^x \eqtext{,} y=20^x$$}
+
+\soln{Solution}
+Với các giá trị $b$ càng lớn, đồ thị hàm số $y=b^x$ tăng càng nhanh khi $x>0$ và tiệm cận về 0 càng nhanh với $x<0$
+\imgsoln{1.4.5-ans}
+
+\section*{Problem 6}
+
+\qn{Graph the given functions on a common screen. How are these graphs related? $$y=e^x \eqtext{,} y=e^{-x} \eqtext{,} y=8^x \eqtext{,} y=8^{-x}$$}
+
+\soln{Solution}
+Đồ thị hàm số $y=e^{-x}$ đối xứng với đồ thị hàm thị $y=e^x$ qua trục $y$, tương tự với đồ thị hàm số $y=8^x$ và $y=8^{-x}$
+\imgsoln{1.4.6-ans} 
+
+\section*{Problem 7}
+
+\qn{Graph the given functions on a common screen. How are these graphs related? $$y=3^x \eqtext{,} y=10^x \eqtext{,} y=(\frac{1}{3})^x \eqtext{,} y=(\frac{1}{10})^x$$}
+
+\soln{Solution}
+Đồ thị hàm số $y=3^x$ đối xứng với đồ thị hàm thị $y=(\frac{1}{3})^x=(3^{-1})^x=3^{-x}$ qua trục $y$, tương tự với đồ thị hàm số $y=10^x$ và $y=(\frac{1}{10})^x=(10^{-1})^x=10^{-x}$
+\imgsoln{1.4.7-ans}
+
+\section*{Problem 8}
+
+\qn{Graph the given functions on a common screen. How are these graphs related? $$y=0.9^x \eqtext{,} y=0.6^x \eqtext{,} y=0.3^x \eqtext{,} y=0.1^x$$}
+
+\soln{Solution}
+Với các giá trị $b$ ($b<1$) càng nhỏ, đồ thị hàm số $y=b^x$ giảm càng nhanh khi $x>0$ và tăng càng nhanh với các giá trị $x<0$
+\imgsoln{1.4.5-ans}
+
+\section*{Problem 9}
+
+\qn{Make a rough sketch by hand of the graph of the function. $$g(x)=3^x+1$$}
+
+\soln{Solution}
+Dịch đồ thị hàm số $f(x)=3^x$ lên trên 1 đơn vị
+
+\section*{Problem 10}
+
+\qn{Make a rough sketch by hand of the graph of the function. $$h(x)=2(\frac{1}{2})^x-3$$}
+
+\soln{Solution}
+$h(x)=2(\frac{1}{2})^x-3=2(2^{-x})-3$ Lấy đối xứng đồ thị hàm số $2^x$ qua trục $y$, kéo dài đồ thị lên 2 lần, cuối cùng dịch đồ thị vừa thu được xuống dưới 3 đơn vị
+
+\section*{Problem 11}
+
+\qn{Make a rough sketch by hand of the graph of the function. $$y=-e^{-x}$$}
+
+\soln{Solution}
+Lấy đối xứng đồ thị hàm số $f(x)=e^x$ qua trục $y$, sau đó lấy đối xứng đồ thị hàm số vừa thu được qua trục $x$
+
+\section*{Problem 12}
+
+\qn{Make a rough sketch by hand of the graph of the function. $$y=4^{x+2}$$}
+
+\soln{Solution}
+Dịch đồ thị hàm số $f(x)=4^x$ sang trái 2 đơn vị
+
+\section*{Problem 13}
+
+\qn{Make a rough sketch by hand of the graph of the function. $$y=1-\frac{1}{2}e^{-x}$$}
+
+\soln{Solution}
+Lấy đối xứng đồ thị hàm số $f(x)=e^x$ qua trục $y$, co đồ thị lại 1/2 lần, lấy đối xứng đồ thị qua trục $x$, cuối cùng dịch đồ thị lên 1 đơn vị
+
+\section*{Problem 14}
+
+\qn{Make a rough sketch by hand of the graph of the function. $$y=e^{|x|}$$}
+
+\soln{Solution}
+Lấy đối xứng qua trục $y$ phần đồ thị hàm số $f(x)=e^x$ khi $x<0$
+
+\section*{Problem 15}
+
+\qn{Starting with the graph of $y=e^x$, write the equation of the graph that results from}
+
+\begin{enumerate}
+	\item \qn{Shifting 2 units downward}
+	\soln{Solution}
+	$y=e^x-2$
+	
+	\item \qn{Shifting 2 units to the right}
+	\soln{Solution}
+	$y=e^{x-2}$
+	
+	\item \qn{Reflecting about the $x-$axis}
+	\soln{Solution}
+	$y=-e^x$
+	
+	\item \qn{Reflecting about the $y-$axis}
+	\soln{Solution}
+	$y=e^{-x}$
+	
+	\item \qn{Reflecting about the $x-$axis and then about the $y-$axis}
+	\soln{Solution}
+	$y=-e^{-x}$
+\end{enumerate}
+
+\section*{Problem 16}
+
+\qn{Starting with the graph of $y=e^x$, find the equation of the graph that results from}
+
+\begin{enumerate}
+	\item \qn{Reflecting about the line $y=4$}
+	\soln{Solution}
+	Lấy đối xứng qua trục $x$ sau đó dịch đồ thị hàm số lên 8 đơn vị. Do chuyển về hệ tọa độ với Ox và Oy'(y=4) thì phương trình đồ thị hàm số $y=e^x$ có dạng $y'=y-4=e^x-4$, đứng trên góc nhìn của đường thằng $y=4$ lấy đối xứng qua nó thì được phương trình $y'=y-4=-(e^x-4) \Rightarrow y=-e^x+8$
+	\begin{equation*}
+		\begin{cases}
+			(x=0, y=0)&: y=e^x \\
+			(x=0, y'=y-4=0)&: y'=y-4=e^x-4
+		\end{cases}
+		\Rightarrow \text{lấy đối xứng qua $y'$}
+		\Rightarrow y=-(e^x-4)+4=-e^x+8 
+	\end{equation*}
+	
+	\item \qn{Reflecting about the line $x=2$}
+	\soln{Solution}
+	Tương tự như câu (1) nếu chuyển góc nhìn từ hệ tọa độ $(x=0, y=0)$ sang hệ tọa độ mới $(x'=x-2=0, y=0)$ thì cần phải viết lại phương trình hàm số, sau đó coi việc lấy đối xứng qua đường thẳng $x=2$ thì chỉ cần lấy đối xứng đồ thị hàm số vừa thu được qua đường thẳng $x'=x-2=0$
+	\begin{equation*}
+		\begin{cases}
+			(x=0, y=0)&: y=e^x \\
+			(x'=x-2, y=0)&: y=e^{x'+2} 
+		\end{cases}
+		\Rightarrow \text{lấy đối xứng qua $x'$}
+		\Rightarrow y=e^{-x'+2} = e^{-x+2+2}=e^{-x+4}
+	\end{equation*}
+\end{enumerate}
+Đây là một bài tập khá thú vị!
+
+\section*{Problem 17}
+
+\qn{Find the domain of each function}
+
+\begin{enumerate}
+	\item \qn{$f(x)=\frac{1-e^{x^2}}{1-e^{1-x^2}}$}
+	\soln{Solution}
+	$$e^{1-x^2} \ne 1 \Rightarrow 1-x^2 \ne 0 \Rightarrow x \ne \pm 1$$
+	
+	\item \qn{$f(x)=\frac{1+x}{e^{\cos{x}}}$}
+	\soln{Solution}
+	Dựa trên tính chất $e^x>0$
+	$$(-\infty, \infty)$$
+\end{enumerate}
+
+\section*{Problem 18}
+
+\qn{Find the domain of each function}
+
+\begin{enumerate}
+	\item \qn{$g(t)=\sqrt{10^t-100}$}
+	\soln{Solution}
+	Dựa trên tính chất hàm số $y=b^x$ với $b>1$ là hàm đơn điệu tăng
+	$$10^t-100 \ge 0 \Rightarrow 10^t \ge 10^2 \Rightarrow t \ge 2$$
+	
+	\item \qn{$g(t)=\sin(e^t-1)$}
+	\soln{Solution}
+	Do domain của hàm số $y=\sin{x}$ là $(-\infty, \infty)$ và $y=e^t-1$ là $(-\infty, \infty)$
+	$$(-\infty, \infty)$$
+\end{enumerate}
+
+\section*{Problem 19}
+
+\qn{Find the exponential function $f(x)=Cb^x$ whose graph is given}
+\imgqn{1.4.19}
+
+\soln{Solution}
+Hàm số cần tìm là $f(x)=3(2^x)$. Kiểm tra lại bằng cách để ý rằng $b>1$, đồ thị hàm số đơn điệu tăng 
+\begin{equation*}
+	\begin{cases}
+		f(1)=6 \\
+		f(3)=24 \\
+		b>0
+	\end{cases}
+	\Rightarrow
+	\begin{cases}
+		Cb^1=6 \\
+		Cb^3=24 \\
+		b>0
+	\end{cases}
+	\Rightarrow
+	\begin{cases}
+		b=2 \\
+		C=3
+	\end{cases}
+\end{equation*}
+
+\section*{Problem 20}
+
+\qn{Find the exponential function $f(x)=Cb^x$ whose graph is given}
+\imgqn{1.4.20}
+
+\soln{Solution}
+Hàm số cần tìm là $f(x)=2(\frac{2}{3})^x$. Quan sát rằng đồ thị là hàm số đơn điệu giảm do đó $b<1$
+\begin{equation*}
+	\begin{cases}Q
+		f(-1)=3 \\
+		f(1)=4/3 \\
+		b > 0
+	\end{cases}
+	\Rightarrow
+	\begin{cases}
+		Cb^{-1}=3 \\
+		Cb^1=4/3 \\
+		b > 0
+	\end{cases}
+	\Rightarrow
+	\begin{cases}
+		b=2/3 \\
+		C=2
+	\end{cases}
+\end{equation*}
+
+\section*{Problem 21}
+
+\qn{If $f(x)=5^x$, show that $$\frac{f(x+h)-f(x)}{h}=5^x(\frac{5^h-1}{h})$$}
+
+\soln{Solution}
+$$\frac{f(x+h)-f(x)}{h}=\frac{5^{x+h}-5^x}{h}=\frac{5^x5^h-5^x}{h}=5^x(\frac{5^h-1}{h})$$
+
+\section*{Problem 22}
+
+\qn{Suppose you are offered a job that lasts one month. Which of the following methods of payment do you prefer?}
+\begin{enumerate}
+	\item \qn{One million dollars at the end of the month}
+	
+	\item \qn{One cent on the first day of the month, two cents on the second day, four cents on the third day, and, in general $2^{n-1}$ cents on the $n$th day}
+\end{enumerate}
+
+\soln{Solution}
+Mức lương nhận được theo phương án 1 là \$$10^6$. Trong khi đó mức lương nhận được theo phương án 2 là $2^{30-1}=2^{29}=536870912$ cents (giả sử 1 tháng có 30 ngày), chia con số này cho 100 (\$1 = 100 cents) thì con số nhận được là $5,368,709.12$ vẫn lớn hơn nhiều so với $10^6$. Do đó chọn phương án 2.
+
+\section*{Problem 23}
+
+\qn{Suppose the graphs of $f(x)=x^2$ and $g(x)=2^x$ are drawn on a coordinate grid where the unit of measurement is 1 inch. Show that at a distance 2 ft to the right of the origin, the height of the graph of $f$ is 48 ft but the height of the graph of $g$ is about 265 mi.}
+
+\soln{Solution}
+Có 1 ft = 12 inches, 1m = 63360 inches. Do đó $f(2 ft)=f(24 inch)=24^2=576 inches (/12)=48 ft$, và $g(2 ft)=g(24 inch)=2^{24} inches (/63360) = 264.8 mi$
+
+\section*{Problem 24}
+
+\qn{Compare the functions $f(x)=x^5$ and $g(x)=5^x$ by graphing both functions in several viewing rectangles. Find all points of intersection of the graphs correct to one decimal place. Which function grows more rapidly when $x$ is large?}
+
+\soln{Solution}
+$g(x)=5^x$ sẽ tăng nhanh hơn nhiều so với $f(x)=x^5$ khi $x$ 
+
+\section*{Problem 25}
+
+\qn{Compare the functions $f(x)=x^{10}$ and $g(x)=e^x$ by graphing both functions in several viewing rectangles. When does the graph of $g$ finally surpass the graph of $f$?}
+
+\soln{Solution}
+Khi $g$ vượt qua $f$ thì $e^x>x^10 \Rightarrow x \approx 35.8$
+
+\section*{Problem 26}
+
+\qn{Use a graph to estimate the values of $x$ such that $e^x > 1,000,000,000$}
+
+\soln{Solution}
+$$e^x > 1,000,000,000 \Rightarrow x > 20.724$$
+
+\section*{Problem 27}
+
+\qn{A researcher is trying to determine the doubling time for a population of the bacterium \textit{Giardia lamblia}. He starts a culture in a nutrient solution and estimates the bacteria count every four hours. His data are shown in the table}
+\imgqn{1.4.27}
+
+\begin{enumerate}
+	\item \qn{Make a scatter plot of the data}
+	\soln{Solution}
+	\imgsoln{1.4.27-ans.a}
+	
+	\item \qn{Use a calculator or computer to find an exponential curve $f(t)=ab^t$ that models the bacteria population $t$ hours later}
+	\soln{Solution}
+	$f(t)=36.893e^{0.064t}$
+	
+	\item \qn{Graph the model from part (2) together with the scatter plot in part (1). Use the graph to estimate how long it takes for the bacteria count to double}
+	\soln{Solution}
+	$f(t)=74=36.893e^{0.064t} \Rightarrow t \approx 10.87$
+	\imgqn{1.4.27.c}
+\end{enumerate}
+
+\section*{Problem 28}
+
+\qn{The table gives the population of the United States, in millions, for the years 1900-2010. Use a graphing calculator (or computer) with exponential regression capability to model the US population since 1900. Use the model to estimate the population in 1925 and to predict the population in the year 2020}
+\imgqn{1.4.28}
+
+\soln{Solution}
+Use the model to estimate the population in 1925 and to predict the population in the year 2020: $$f(x)=0.00000000316e^{0.0126133} \Rightarrow f(1925)=110.822 \eqtext{và} f(2020)=367.304 \eqtext{millions}$$
+\imgsoln{1.4.28-ans}
+
+
+\section*{Problem 29}
+
+\qn{A bacteria culture starts with 500 bacteria and doubles in size every half hour}
+
+\begin{enumerate}
+	\item \qn{How many bacteria are there after 3 hours?}
+	\soln{Solution}
+	\begin{enumerate}
+		\item Sau 30 phút: 1,000
+		\item Sau 1.0 giờ: 2,000
+		\item Sau 1.5 giờ: 4,000
+		\item Sau 2.0 giờ: 8,000
+		\item Sau 2.5 giờ: 16,000
+		\item Sau 3.0 giờ: 32,000
+	\end{enumerate}
+	
+	\item \qn{How many bacteria are there after $t$ hours?}
+	\soln{Solution}
+	$f(t)=500(2^{2t})$
+	
+	\item \qn{How many bacteria are there after 40 minutes?}
+	\soln{Solution}
+	$f(40 minutes)=f(2/3 hours)=500(2^{4/3})=1260$
+	
+	\item \qn{Graph the population function and estimate the time for the population to reach 100,000}
+	\soln{Solution}
+	$500(2^{2x})=100000 \Rightarrow 2^{2x}=200 \Rightarrow x \approx 3.82$
+	\imgsoln{1.4.29-ans.c}
+\end{enumerate}
+
+\section*{Problem 30}
+
+\qn{A gray squirrel population was introduced in a certain region 18 years ago. Biologists observe that the population doubles every six years, and now the population is 600}
+
+\begin{enumerate}
+	\item \qn{What was the initial squirrel population?}
+	\soln{Solution}
+	\begin{enumerate}
+		\item 6 năm trước: 300
+		\item 12 năm trước: 150
+		\item 18 năm trước: 75
+	\end{enumerate}
+	
+	\item \qn{What is the expected squirrel population $t$ years after introduction?}
+	\soln{Solution}
+	$f(t)=75(2^{t/6})$
+	
+	\item \qn{Estimate the expected squirrel population 10 years from now.}
+	\soln{Solution}
+	$f(\text{10 now from now})=f(28)=75(2^{28/6})=1904$
+\end{enumerate}
+
+\section*{Problem 31}
+
+\qn{In Example 4, the patient's viral load $V$ was 76.0 RNA copies per mL after one dat of treatment. Use the graph of $V$ in Figure 11 to estimate the additional time required for the viral load to decrease to half that amount.}
+
+\soln{Solution}
+$$V(t)=96.39785(0.818656)^t=76/2=48 \Rightarrow t=3.485$$
+
+\section*{Problem 32}
+
+\qn{After alcohol is fully absorbed into the body, it is metabolized. Suppose that after consuming several alcoholic drinks earlier in the evening, your blood alcohol concentration (BAC) at mid night is 0.14 g/dL. After 1.5 hours your BAC is half this amount}
+
+\begin{enumerate}
+	\item \qn{Find an exponential model for your BAC $t$ hours after midnight}
+	\soln{Solution}
+	Hàm $f(t)=0.14b^t$, do sau 1.5 giờ thì giá trị $f(t)$ giảm đi 1 nửa nên $f(1.5)=0.14(b^{1.5})=0.07 \Rightarrow b = 0.63$ 
+	
+	\item \qn{Graph your BAC and use the graph to determine when your BAC reaches the legal limit of 0.08 g/dL}
+	\soln{Solution}
+	Sau $\log_{0.63}(0.08/0.14)=1.21$ giờ thì giá trị BAC xuống mức an toàn
+	\imgsoln{1.4.32-ans.b}
+\end{enumerate}
+
+\section*{Problem 33}
+
+\qn{If you graph the function $$f(x)=\frac{1-e^{1/x}}{1+e^{1/x}}$$ you'll see that $f$ appears to be an odd function. Prove it}
+
+\soln{Solution}
+$$f(-x)=\frac{1-e^{1/-x}}{1+e^{1/-x}}=\frac{1-\frac{1}{e^{1/x}}}{1+\frac{1}{e^{1/x}}}=\frac{e^{1/x}-1}{e^{1/x}+1}=-f(x)$$
+\imgsoln{1.4.33-ans}
+
+\section*{Problem 34}
+
+\qn{Graph several members of the family of functions $$f(x)=\frac{1}{1+ae^{bx}}$$ where $a>0$. How does the graph change when $b$ changes? How does it change when $a$ changes?}
+
+\soln{Solution}
+\imgsoln{1.4.34-ans.1}
+\imgsoln{1.4.34-ans.2}
+\imgsoln{1.4.34-ans.3}
+\imgsoln{1.4.34-ans.4}
+
+\section*{Problem 35}
+
+\qn{Graph several members of the family of functions $$f(x)=\frac{a}{2}(e^{x/a}+e^{-x/a})$$ where $a>0$. How does the graph change as $a$ increases?}
+
+\soln{Solution}
+\begin{enumerate}
+	\item Khi $a>0$ thì đồ thị có dạng "hình parabol" với bề lõm xuống dưới và khi $a$ càng lớn, độ rộng của "hình parabol" càng lớn, khi $a$ càng gần 0 thì độ rộng càng hẹp
+	\imgsoln{1.4.35-ans.1}
+	\item Khi $a=0$, $f(x)=0$
+	\item Khi $a<0$ thì đồ thị có dạng "hình parabol" với bề lõm lên trên và khi $a$ càng nhỏ, độ rộng của "hình parabol" càng lớn, khi $a$ càng gần 0 thì độ rộng càng hẹp
+	\imgsoln{1.4.35-ans.2}
+\end{enumerate}
+
+\end{document}
+
+
+
