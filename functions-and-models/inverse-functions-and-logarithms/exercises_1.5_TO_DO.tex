@@ -1,0 +1,788 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{vietnam}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage[none]{hyphenat}
+\usepackage{fancyhdr}
+
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage{wrapfig}
+\usepackage{gensymb}
+\usepackage{float}
+
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[L]{\slshape \MakeUppercase{1.5 - Inverse Functions and Logarithms}}
+\fancyhead[R]{\slshape Ho Ngoc Van}
+\fancyfoot[C]{\thepage}
+\renewcommand{\footrulewidth}{0pt}
+
+\newcommand{\soln}{\subsection*}
+\newcommand{\qn}{\textit}
+\newcommand{\imagesource}[1]{{\footnotesize Source: #1}}
+\newcommand{\imgqn}[1]{
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.35\linewidth]{figs/#1.png}\\
+		\imagesource{James Stewart, Calculus: Early Transcendentals [9e]}
+	\end{figure}
+}
+\newcommand{\imgsoln}[1]{
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.5\linewidth]{figs/#1.png}
+	\end{figure}
+}
+
+\newcommand{\eqtext}[1]{\quad\text{#1}\quad}
+
+\begin{document}
+
+\section*{Problem 1}
+
+\begin{enumerate}
+	\item \qn{What is a one-to-one function?}
+	\soln{Solution}
+	
+	\item \qn{How can you tell from the graph of a function whether it is one-to-one?}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 2}
+
+\begin{enumerate}
+	\item \qn{Suppose $f$ is one-to-one function with domain $A$ and range $B$. How is the inverse function $f^{-1}$ defined? What is the domain of $f^{-1}$? What is the range of $f^{-1}$?}
+	\soln{Solution}
+	
+	\item \qn{If you are given a formula for $f$, how do you find a formula for $f^{-1}$?}
+	\soln{Solution}
+	
+	\item \qn{If you are given the graph of $f$, how do you find the graph of $f^{-1}$?}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 3}
+
+\qn{A function is given by a table of values. Determine whether it is one-to-one.}
+\imgqn{1.5.3}
+
+\soln{Solution}
+
+\section*{Problem 4}
+
+\qn{A function is given by a table of values. Determine whether it is one-to-one.}
+\imgqn{1.5.4}
+
+\soln{Solution}
+
+\section*{Problem 5}
+
+\qn{A function is given by a graph. Determine whether it is one-to-one.}
+\imgqn{1.5.5}
+
+\soln{Solution}
+
+\section*{Problem 6}
+
+\qn{A function is given by a graph. Determine whether it is one-to-one.}
+\imgqn{1.5.6}
+
+\soln{Solution}
+
+\section*{Problem 7}
+
+\qn{A function is given by a graph. Determine whether it is one-to-one.}
+\imgqn{1.5.7}
+
+\soln{Solution}
+
+\section*{Problem 8}
+
+\qn{A function is given by a graph. Determine whether it is one-to-one.}
+\imgqn{1.5.8}
+
+\soln{Solution}
+
+\section*{Problem 9}
+
+\qn{A function is given by a formula. Determine whether it is one-to-one. $$f(x)=2x-3$$}
+
+\soln{Solution}
+
+\section*{Problem 10}
+
+\qn{A function is given by a formula. Determine whether it is one-to-one. $$f(x)=x^4-16$$}
+
+\soln{Solution}
+
+\section*{Problem 11}
+
+\qn{A function is given by a formula. Determine whether it is one-to-one. $$r(t)=t^3+4$$}
+
+\soln{Solution}
+
+\section*{Problem 12}
+
+\qn{A function is given by a formula. Determine whether it is one-to-one. $$g(x)=\sqrt[3]{x}$$}
+
+\soln{Solution}
+
+\section*{Problem 13}
+
+\qn{A function is given by a formula. Determine whether it is one-to-one. $$g(x)=1-\sin{x}$$}
+
+\soln{Solution}
+
+\section*{Problem 14}
+
+\qn{A function is given by a formula. Determine whether it is one-to-one. $$f(x)=x^4-1 \eqtext{,} 0 \le x \le 10$$}
+
+\soln{Solution}
+
+\section*{Problem 15}
+
+\qn{A function is given by a verbal description. Determine whether it is one-to-one. "$f(t)$ is the height of a football $t$ seconds after kickoff"}
+
+\soln{Solution}
+
+\section*{Problem 16}
+
+\qn{A function is given by a verbal description. Determine whether it is one-to-one."$f(t)$ is your height at age $t$"}
+
+\soln{Solution}
+
+\section*{Problem 17}
+
+\qn{Assume that $f$ is a one-to-one function.}
+\begin{enumerate}
+	\item \qn{If $f(6)=17$, what is $f^{-1}(17)$}
+	\soln{Solution}
+	
+	\item \qn{If $f^{-1}(3)=2$, what is $f(2)$}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 18}
+
+\qn{If $f(x)=x^5+x^3+x$, find $f^{-1}(3)$ and $f(f^{-1}(2))$}
+
+\soln{Solution}
+
+\section*{Problem 19}
+
+\qn{If $g(x)=3+x+e^x$, find $g^{-1}(4)$}
+
+\soln{Solution}
+
+\section*{Problem 20}
+
+\qn{The graph of $f$ is given}
+\imgqn{1.5.20}
+\begin{enumerate}
+	\item \qn{Why is $f$ one-to-one?}
+	\soln{Solution}
+	
+	\item \qn{What are the domain and range of $f^{-1}$?}
+	\soln{Solution}
+	
+	\item \qn{What is the value of $f^{-1}(2)$?}
+	\soln{Solution}
+	
+	\item \qn{Estimate the value of $f^{-1}(0)$}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 21}
+
+\qn{The formula $C=\frac{5}{9}(F-32)$, where $F \ge -459.67$, expresses the Celsius temperature $C$ as a function of the Fahrenheit temperature $F$. Find a formula for the inverse function and interpret it. What is the domain of the inverse function?}
+
+\soln{Solution}
+
+\section*{Problem 22}
+
+\qn{In the theory of relativity, the mass of a particle with speed $v$ is $$m=f(v)=\frac{m_0}{\sqrt{1-v^2/c^2}}$$ where $m_0$ is the rest mass of the particle and $c$ is the speed of light in a vacuum. Find the inverse function of $f$ and explain its meaning.}
+
+\soln{Solution}
+
+\section*{Problem 23}
+
+\qn{Find a formula for the inverse of the function $$f(x)=1-x^2 \eqtext{,} x \ge 0$$}
+
+\soln{Solution}
+
+\section*{Problem 24}
+
+\qn{Find a formula for the inverse of the function $$g(x)=x^2-2x \eqtext{,} x \ge 1$$}
+
+\soln{Solution}
+
+\section*{Problem 25}
+
+\qn{Find a formula for the inverse of the function $$g(x)=2+\sqrt{x+1}$$}
+
+\soln{Solution}
+
+\section*{Problem 26}
+
+\qn{Find a formula for the inverse of the function $$h(x)=\frac{6-3x}{5x+7}$$}
+
+\soln{Solution}
+
+\section*{Problem 27}
+
+\qn{Find a formula for the inverse of the function $$y=e^{1-x}$$}
+
+\soln{Solution}
+
+\section*{Problem 28}
+
+\qn{Find a formula for the inverse of the function $$y=2\ln(x-2)$$}
+
+\soln{Solution}
+
+\section*{Problem 29}
+
+\qn{Find a formula for the inverse of the function $$y=(2+\sqrt[3]{x})^5$$}
+
+\soln{Solution}
+
+\section*{Problem 30}
+
+\qn{Find a formula for the inverse of the function $$y=\frac{1-e^{-x}}{1+e^{-x}}$$}
+
+\soln{Solution}
+
+\section*{Problem 31}
+
+\qn{Find an explicit formula for $f^{-1}$ and use it to graph $f^{-1}$, $f$, and the line $y=x$ on the same screen. To check your work, see whether the graphs of $f$ and $f^{-1}$ are reflections about the line $$f(x)=\sqrt{4x+3}$$}
+
+\soln{Solution}
+
+\section*{Problem 32}
+
+\qn{Find an explicit formula for $f^{-1}$ and use it to graph $f^{-1}$, $f$, and the line $y=x$ on the same screen. To check your work, see whether the graphs of $f$ and $f^{-1}$ are reflections about the line $$f(x)=1+e^{-x}$$}
+
+\soln{Solution}
+
+\section*{Problem 33}
+
+\qn{Use the given graph of $f$ to sketch the graph of $f^{-1}$}
+\imgqn{1.5.33}
+
+\soln{Solution}
+
+\section*{Problem 34}
+
+\qn{Use the given graph of $f$ to sketch the graph of $f^{-1}$}
+\imgqn{1.5.34}
+
+\soln{Solution}
+
+\section*{Problem 35}
+
+\qn{Let $f(x)=\sqrt{1-x^2}$, $0 \le x \le 1$}
+
+\begin{enumerate}
+	\item \qn{Find $f^{-1}$. How is it related to $f$?}
+	\soln{Solution}
+	
+	\item \qn{Identify the graph of $f$ and explain your answer to part (1)}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 36}
+
+\qn{Let $g(x)=\sqrt[3]{1-x^3}$}
+
+\begin{enumerate}
+	\item \qn{Find $g^{-1}$. How is it related to $g$?}
+	\soln{Solution}
+	
+	\item \qn{Graph $g$. How do you explain your answer to part (1)}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 37}
+
+\begin{enumerate}
+	\item \qn{How is the logarithmic function $y=\log_b{x}$ defined?}
+	\soln{Solution}
+	
+	\item \qn{What is the domain of this function?}
+	\soln{Solution}
+	
+	\item \qn{What is the range of this function?}
+	\soln{Solution}
+	
+	\item \qn{Sketch the general shape of the graph of the function $y=\log_b{x}$ if $b>1$}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 38}
+
+\begin{enumerate}
+	\item \qn{What is the natural logarithm?}
+	\soln{Solution}
+	
+	\item \qn{What is the common logarithm?}
+	\soln{Solution}
+	
+	\item \qn{Sketch the graphs of the natural logarithm function and the natural exponential function with a common set of axes.}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 39}
+
+\qn{Find the exact value of each expression}
+\begin{enumerate}
+	\item \qn{$\log_3{81}$}
+	\soln{Solution}
+	
+	\item \qn{$\log_3{\frac{1}{81}}$}
+	\soln{Solution}
+	
+	\item \qn{$\log_9{3}$}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 40}
+
+\qn{Find the exact value of each expression}
+\begin{enumerate}
+	\item \qn{$\ln{\frac{1}{e^2}}$}
+	\soln{Solution}
+	
+	\item \qn{$\ln(\sqrt{e})$}
+	\soln{Solution}
+	
+	\item \qn{$\ln(\ln(e^{e^{50}}))$}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 41}
+
+\qn{Find the exact value of each expression}
+\begin{enumerate}
+	\item \qn{$\log_2{30}-\log_2{15}$}
+	\soln{Solution}
+	
+	\item \qn{$\log_3{10}-\log_3{5}-\log_3{18}$}
+	\soln{Solution}
+	
+	\item \qn{$2\log_5{100}-4\log_5{50}$}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 42}
+
+\qn{Find the exact value of each expression}
+\begin{enumerate}
+	\item \qn{$e^{2\ln2}$}
+	\soln{Solution}
+	
+	\item \qn{$e^{-2\ln5}$}
+	\soln{Solution}
+	
+	\item \qn{$e^{\ln(\ln{e^3})}$}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 43}
+
+\qn{Use the laws of logarithms to expand each expression}
+\begin{enumerate}
+	\item \qn{$\log_{10}(x^2y^3z)$}
+	\soln{Solution}
+	
+	\item \qn{$\ln(\frac{x^4}{\sqrt{x^2-4}})$}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 44}
+
+\qn{Use the laws of logarithms to expand each expression}
+\begin{enumerate}
+	\item \qn{$\ln\sqrt{\frac{3x}{x-3}}$}
+	\soln{Solution}
+	
+	\item \qn{$\log_2[(x^3+1)\sqrt[3]{(x-3^2)}]$}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 45}
+
+\qn{Express as a single logarithm}
+\begin{enumerate}
+	\item \qn{$\log_{10}{20} - \frac{1}{3}\log_{10}{1000}$}
+	\soln{Solution}
+	
+	\item \qn{$\ln{a}-2\ln{b}+3\ln{c}$}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 46}
+
+\qn{Express as a single logarithm}
+\begin{enumerate}
+	\item \qn{$3\ln(x-2)-\ln(x^2-5x+6)+2\ln(x-3)$}
+	\soln{Solution}
+	
+	\item \qn{$c\log_a{x}-d\log_a{y}+\log_a{z}$}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 47}
+
+\qn{Use Formula 11 to evaluate each logarithm correct to six decimal places}
+\begin{enumerate}
+	\item \qn{$\log_5{10}$}
+	\soln{Solution}
+	
+	\item \qn{$\log_{15}{12}$}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 48}
+
+\qn{Use Formula 11 to evaluate each logarithm correct to six decimal places}
+\begin{enumerate}
+	\item \qn{$\log_3{12}$}
+	\soln{Solution}
+	
+	\item \qn{$\log_{12}6$}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 49}
+
+\qn{Use Formula 11 to graph the given functions on a common screen. How are these graphs related? $$y=\log_{1.5}x \eqtext{,} y=\ln{x} \eqtext{,} y=\log_{10}x \eqtext{,} y=\log_{50}x$$}
+
+\soln{Solution}
+
+\section*{Problem 50}
+
+\qn{Use Formula 11 to graph the given functions on a common screen. How are these graphs related? $$y=\ln{x} \eqtext{,} y=\log_8{x} \eqtext{,} y=e^x \eqtext{,} y=8^x$$}
+
+\soln{Solution}
+
+\section*{Problem 51}
+
+\qn{Suppose that the graph of $y=\log_2{x}$ is drawn on a coordinate grid where the unit of measurement is an inch. How many miles to the right of the origin do we have to move before the height of the curve reaches 3 ft?}
+
+\soln{Solution}
+
+\section*{Problem 52}
+
+\qn{Compare the functions $f(x)=x^{0.1}$ and $g(x)=\ln{x}$ by graphing both functions in several viewing rectangles. When does the graph of $f$ finally surpass the graph of $g$?}
+
+\soln{Solution}
+
+\section*{Problem 53}
+
+\qn{Make a rough sketch by hand of the graph of each function. Use the graphs given in Figures 12 and 13 and, if necessary the transformations of Section 1.3}
+\begin{enumerate}
+	\item \qn{$y=\log_{10}(x+5)$}
+	\soln{Solution}
+	
+	\item \qn{$y=-\ln{x}$}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 54}
+
+\qn{Make a rough sketch by hand of the graph of each function. Use the graphs given in Figures 12 and 13 and, if necessary the transformations of Section 1.3}
+\begin{enumerate}
+	\item \qn{$y=\ln(-x)$}
+	\soln{Solution}
+	
+	\item \qn{$y=\ln(|x|)$}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 55}
+
+\qn{Given the function $$f(x)=\ln{x}+2$$}
+\begin{enumerate}
+	\item \qn{What are the domain and range of $f$?}
+	\soln{Solution}
+	
+	\item \qn{What is the $x$-intercept of the graph $f$?}
+	\soln{Solution}
+	
+	\item \qn{Sketch the graph of $f$}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 56}
+
+\qn{Given the function $$f(x)=\ln(x-1)-1$$}
+\begin{enumerate}
+	\item \qn{What are the domain and range of $f$?}
+	\soln{Solution}
+	
+	\item \qn{What is the $x$-intercept of the graph $f$?}
+	\soln{Solution}
+	
+	\item \qn{Sketch the graph of $f$}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 57}
+
+\qn{Solve each equation for $x$. Give both an exact value and a decimal approximation, correct to three decimal places.}
+\begin{enumerate}
+	\item \qn{$\ln(4x+2)=3$}
+	\soln{Solution}
+	
+	\item \qn{$e^{2x-3}=12$}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 58}
+
+\qn{Solve each equation for $x$. Give both an exact value and a decimal approximation, correct to three decimal places.}
+\begin{enumerate}
+	\item \qn{$\log_2(x^2-x-1)=2$}
+	\soln{Solution}
+	
+	\item \qn{$1+e^{4x+1}=20$}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 59}
+
+\qn{Solve each equation for $x$. Give both an exact value and a decimal approximation, correct to three decimal places.}
+\begin{enumerate}
+	\item \qn{$\ln{x}+\ln(x-1)=0$}
+	\soln{Solution}
+	
+	\item \qn{$5^{1-2x}=9$}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 60}
+
+\qn{Solve each equation for $x$. Give both an exact value and a decimal approximation, correct to three decimal places.}
+\begin{enumerate}
+	\item \qn{$\ln(\ln{x})=0$}
+	\soln{Solution}
+	
+	\item \qn{$\frac{60}{1+e^{-x}}=4$}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 61}
+
+\qn{Solve each inequality for $x$}
+\begin{enumerate}
+	\item \qn{$\ln{x}<0$}
+	\soln{Solution}
+	
+	\item \qn{$e^x>5$}
+	\soln{Solution}
+\end{enumerate}
+
+
+\section*{Problem 62}
+
+\qn{Solve each inequality for $x$}
+\begin{enumerate}
+	\item \qn{$1 < e^{3x-1} < 2$}
+	\soln{Solution}
+	
+	\item \qn{$1 -2\ln{x}<3$}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 63}
+
+\begin{enumerate}
+	\item \qn{Find the domain of $f(x)=\ln(e^x-3)$}
+	\soln{Solution}
+	
+	\item \qn{Find $f^{-1}$ and its domain}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 64}
+
+\begin{enumerate}
+	\item \qn{What are the values of $e^{\ln{300}}$ and $\ln(e^300)$?}
+	\soln{Solution}
+	
+	\item \qn{Use your calculator to evaluate $e^{\ln{300}}$ and $\ln(e^{300})$. What do you notice? Can you explain why the calculator has trouble?}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 65}
+
+\qn{Graph the function $f(x)=\sqrt{x^3+x^2+x+1}$ and explain why it is one-to-one. Then use a computer algebra system to find an explicit expression for $f^{-1}(x)$. (Your CAS will produce three possible expressions. Explain why two of them are irrelevant in this context.)}
+
+\soln{Solution}
+
+\section*{Problem 66}
+
+\begin{enumerate}
+	\item \qn{If $g(x)=x^6+x^4$, $x \ge 0$, use a computer algebra system to find an expression for $g^{-1}(x)$}
+	\soln{Solution}
+	
+	\item \qn{Use the expression in part (1) to graph $y=g(x)$, $y=x$, and $y=g^{-1}(x)$ on the same screen.}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 67}
+
+\qn{If a bacteria population starts with 100 bacteria and doubles every three hours, then the number of bacteria after $t$ hours in $n=f(t)=100(2^{t/3})$}
+\begin{enumerate}
+	\item \qn{Find the inverse of this function and explain its meaning.}
+	\soln{Solution}
+	
+	\item \qn{When will the population reach 50,000}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 68}
+
+\qn{The National Ignition Facility at the Lawrence Livermore National Laboratory maintains the world's largest laser facility. The lasers, which are used to start a nuclear fusion reaction, are powered by a capacitor bank that stores a total of about 400 megajoules of energy. When the lasers are fired the capacitors discharge completely and then immediately begin recharging. The charge $Q$ of the capacitors $t$ seconds after the discharge is given by $$Q(t)=Q_0(1-e^{-t/a})$$ (The maximum charge capacity is $Q_0$ and $t$ is measured in seconds)}
+\begin{enumerate}
+	\item \qn{Find a formula for the inverse of this function and explain its meaning}
+	\soln{Solution}
+	
+	\item \qn{How long does it take to recharge the capacitors to 90\% of capacity if $a=50$?}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 69}
+
+\qn{Find the exact value of each expression}
+\begin{enumerate}
+	\item \qn{$\cos^{-1}(-1)$}
+	\soln{Solution}
+	
+	\item \qn{$\sin^{-1}(0.5)$}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 70}
+
+\qn{Find the exact value of each expression}
+\begin{enumerate}
+	\item \qn{$\tan^{-1}\sqrt{3}$}
+	\soln{Solution}
+	
+	\item \qn{$\arctan(-1)$}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 71}
+
+\qn{Find the exact value of each expression}
+\begin{enumerate}
+	\item \qn{$\csc^{-1}\sqrt{2}$}
+	\soln{Solution}
+	
+	\item \qn{$\arcsin(1)$}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 72}
+
+\qn{Find the exact value of each expression}
+\begin{enumerate}
+	\item \qn{$\sin^{-1}(-1/\sqrt{2})$}
+	\soln{Solution}
+	
+	\item \qn{$\cos^{-1}(\sqrt{3}/2)$}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 73}
+
+\qn{Find the exact value of each expression}
+\begin{enumerate}
+	\item \qn{$\cot^{-1}(-\sqrt{3})$}
+	\soln{Solution}
+	
+	\item \qn{$\sec^{-1}(2)$}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 74}
+
+\qn{Find the exact value of each expression}
+\begin{enumerate}
+	\item \qn{$\arcsin(\sin(5\pi/4))$}
+	\soln{Solution}
+	
+	\item \qn{$\cos(2\sin^{-1}(\frac{5}{13}))$}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 75}
+
+\qn{Prove that $$\cos(\sin^{-1}x)=\sqrt{1-x^2}$$}
+
+\soln{Solution}
+
+\section*{Problem 76}
+
+\qn{Simplify the expression $$\tan(\sin^{-1}x)$$}
+
+\soln{Solution}
+
+\section*{Problem 77}
+
+\qn{Simplify the expression $$\sin(\tan^{-1}x)$$}
+
+\soln{Solution}
+
+\section*{Problem 78}
+
+\qn{Simplify the expression $$\sin(2\arccos{x})$$}
+
+\soln{Solution}
+
+\section*{Problem 79}
+
+\qn{Graph the given functions on the same screen. How are these graphs related? $$y=\sin{x} \eqtext{,} -\pi/2 \le x \le \pi/2 \eqtext{;} y=\sin^{-1}x \eqtext{;} y=x$$}
+\soln{Solution}
+
+\section*{Problem 80}
+
+\qn{Graph the given functions on the same screen. How are these graphs related? $$y=\tan{x} \eqtext{,} -\pi/2 \le x \le \pi/2 \eqtext{;} y=\tan^{-1}x \eqtext{;} y=x$$}
+\soln{Solution}
+
+\section*{Problem 81}
+
+\qn{Find the domain and range of the function $$g(x)=\sin^{-1}(3x+1)$$}
+
+\soln{Solution}
+
+\section*{Problem 82}
+
+\begin{enumerate}
+	\item \qn{Graph the function $f(x)=\sin(\sin^{-1}x)$ and explain the appearance of the graph}
+	\soln{Solution}
+	
+	\item \qn{Graph the function $g(x)=\sin^{-1}(\sin{x})$. How do you explain the appearance of this graph?}
+	\soln{Solution}
+\end{enumerate}
+
+\section*{Problem 83}
+
+\begin{enumerate}
+	\item \qn{If we shift a curve to the left, what happens to its reflection about the line $y=x$? In view of this geometric principle, find an expression for the inverse of $g(x)=f(x+c)$, where $f$ is a one-to-one function.}
+	\soln{Solution}
+	
+	\item \qn{Find an expression for the inverse of $h(x)=f(cx)$, where $c \ne 0$.}
+	\soln{Solution}
+\end{enumerate}
+
+\end{document}
+
+
+
