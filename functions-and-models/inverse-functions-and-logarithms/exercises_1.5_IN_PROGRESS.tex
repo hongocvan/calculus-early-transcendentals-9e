@@ -265,54 +265,101 @@ $$m^2=f^2(v)=\frac{m^2_0}{1-v^2/c^2} \Rightarrow v^2/c^2=1-\frac{m^2_0}{[f^2(v)=
 \qn{Find a formula for the inverse of the function $$g(x)=x^2-2x \eqtext{,} x \ge 1$$}
 
 \soln{Solution}
+\begin{enumerate}
+	\item Write $y=f(x)$: $$y=g(x)=x^2-2x \eqtext{,} x \ge 1$$
+	\item Solve this equation for $x$ in terms of $y$: $$y=(x-1)^2-1 \Rightarrow f^{-1}(y)=x=\sqrt{y+1}+1$$
+	\item Interchange $x$ and $y$: $$y=f^{-1}(x)=\sqrt{x+1}+1 \eqtext{,} x \ge -1$$
+\end{enumerate}
 
 \section*{Problem 25}
 
 \qn{Find a formula for the inverse of the function $$g(x)=2+\sqrt{x+1}$$}
 
 \soln{Solution}
+\begin{enumerate}
+	\item Write $y=f(x)$: $$y=g(x)=2+\sqrt{x+1}$$
+	\item Solve this equation for $x$ in terms of $y$: $$y=2+\sqrt{x+1} \Rightarrow f^{-1}(y)=x=(y-2)^2-1$$
+	\item Interchange $x$ and $y$: $$y=f^{-1}(x)=(x-2)^2-1 \eqtext{,} x \ge 2$$
+\end{enumerate}
 
 \section*{Problem 26}
 
 \qn{Find a formula for the inverse of the function $$h(x)=\frac{6-3x}{5x+7}$$}
 
 \soln{Solution}
+\begin{enumerate}
+	\item Write $y=f(x)$: $$y=h(x)=\frac{6-3x}{5x+7}$$
+	\item Solve this equation for $x$ in terms of $y$: $$y=\frac{6-3x}{5x+7} \Leftrightarrow 5xy+7y=-3x+6 \Rightarrow x=f^{-1}(y)=\frac{6-7y}{5y+3}$$
+	\item Interchange $x$ and $y$: $$y=f^{-1}(x)=\frac{6-7x}{5x+3}$$
+\end{enumerate}
 
 \section*{Problem 27}
 
 \qn{Find a formula for the inverse of the function $$y=e^{1-x}$$}
 
 \soln{Solution}
+\begin{enumerate}
+	\item Write $y=f(x)$: $$y=e^{1-x}$$
+	\item Solve this equation for $x$ in terms of $y$: $$y=e^{1-x} \Rightarrow x=f^{-1}(y)=1-\ln{y}$$
+	\item Interchange $x$ and $y$: $$y=f^{-1}(x)=1-\ln{x} \eqtext{,} x \ge 0$$
+\end{enumerate}
 
 \section*{Problem 28}
 
-\qn{Find a formula for the inverse of the function $$y=2\ln(x-2)$$}
+\qn{Find a formula for the inverse of the function $$y=3ln(x-2)$$}
 
 \soln{Solution}
+\begin{enumerate}
+	\item Write $y=f(x)$: $$y=3\ln(x-2)$$
+	\item Solve this equation for $x$ in terms of $y$: $$y=3\ln(x-2) \Rightarrow x=f^{-1}(y)=\sqrt[3]{e^y}+2$$
+	\item Interchange $x$ and $y$: $$y=f^{-1}(x)=\sqrt[3]{e^x}+2$$
+\end{enumerate}
 
 \section*{Problem 29}
 
 \qn{Find a formula for the inverse of the function $$y=(2+\sqrt[3]{x})^5$$}
 
 \soln{Solution}
+\begin{enumerate}
+	\item Write $y=f(x)$: $$y=(2+\sqrt[3]{x})^5$$
+	\item Solve this equation for $x$ in terms of $y$: $$y=(2+\sqrt[3]{x})^5 \Rightarrow x=f^{-1}(y)=(\sqrt[5]{y}-2)^3$$
+	\item Interchange $x$ and $y$: $$y=f^{-1}(x)=(\sqrt[5]{x}-2)^3$$
+\end{enumerate}
 
 \section*{Problem 30}
 
 \qn{Find a formula for the inverse of the function $$y=\frac{1-e^{-x}}{1+e^{-x}}$$}
 
 \soln{Solution}
+\begin{enumerate}
+	\item Write $y=f(x)$: $$y=\frac{1-e^{-x}}{1+e^{-x}}$$
+	\item Solve this equation for $x$ in terms of $y$: $$y=\frac{1-e^{-x}}{1+e^{-x}} \Leftrightarrow y+ye^{-x}=1-e^{-x} \Leftrightarrow e^{-x}=\frac{1-y}{1+y} \Leftarrow x=f^{-1}(y)=-\ln(\frac{1-y}{1+y})$$
+	\item Interchange $x$ and $y$: $$y=f^{-1}(x)=-\ln(\frac{1-x}{1+x})$$
+\end{enumerate}
 
 \section*{Problem 31}
 
 \qn{Find an explicit formula for $f^{-1}$ and use it to graph $f^{-1}$, $f$, and the line $y=x$ on the same screen. To check your work, see whether the graphs of $f$ and $f^{-1}$ are reflections about the line $$f(x)=\sqrt{4x+3}$$}
 
 \soln{Solution}
+\begin{enumerate}
+	\item Write $y=f(x)$: $$y=f(x)=\sqrt{4x+3}$$
+	\item Solve this equation for $x$ in terms of $y$: $$y=f(x)=\sqrt{4x+3} \Rightarrow x=f^{-1}(y)=\frac{1}{4}(y^2-3)$$
+	\item Interchange $x$ and $y$: $$y=f^{-1}(x)=\frac{1}{4}(x^2-3) \eqtext{,} x \ge 0$$
+\end{enumerate}
+\imgsoln{1.5.31-ans}
 
 \section*{Problem 32}
 
 \qn{Find an explicit formula for $f^{-1}$ and use it to graph $f^{-1}$, $f$, and the line $y=x$ on the same screen. To check your work, see whether the graphs of $f$ and $f^{-1}$ are reflections about the line $$f(x)=1+e^{-x}$$}
 
 \soln{Solution}
+\begin{enumerate}
+	\item Write $y=f(x)$: $$y=f(x)=1+e^{-x}$$
+	\item Solve this equation for $x$ in terms of $y$: $$y=f(x)=1+e^{-x} \Rightarrow x=f^{-1}(y)=-\ln(y-1)$$
+	\item Interchange $x$ and $y$: $$y=f^{-1}(x)=-\ln(x-1) \eqtext{,} x \ge 1$$
+\end{enumerate}
+\imgsoln{1.5.32-ans}
 
 \section*{Problem 33}
 
@@ -320,6 +367,7 @@ $$m^2=f^2(v)=\frac{m^2_0}{1-v^2/c^2} \Rightarrow v^2/c^2=1-\frac{m^2_0}{[f^2(v)=
 \imgqn{1.5.33}
 
 \soln{Solution}
+Vẽ đối xứng qua đường thẳng $y=x$
 
 \section*{Problem 34}
 
@@ -327,6 +375,7 @@ $$m^2=f^2(v)=\frac{m^2_0}{1-v^2/c^2} \Rightarrow v^2/c^2=1-\frac{m^2_0}{[f^2(v)=
 \imgqn{1.5.34}
 
 \soln{Solution}
+Vẽ đối xứng qua đường thẳng $y=x$
 
 \section*{Problem 35}
 
@@ -335,9 +384,11 @@ $$m^2=f^2(v)=\frac{m^2_0}{1-v^2/c^2} \Rightarrow v^2/c^2=1-\frac{m^2_0}{[f^2(v)=
 \begin{enumerate}
 	\item \qn{Find $f^{-1}$. How is it related to $f$?}
 	\soln{Solution}
+	$f^{-1}(x)=f(x)=\sqrt{1-x^2}$, $0 \le x \le 1$
 	
 	\item \qn{Identify the graph of $f$ and explain your answer to part (1)}
 	\soln{Solution}
+	Điều này xảy ra do đồ thị hàm số $f$ đối xứng qua đường thẳng $y=x$
 \end{enumerate}
 
 \section*{Problem 36}
@@ -347,9 +398,12 @@ $$m^2=f^2(v)=\frac{m^2_0}{1-v^2/c^2} \Rightarrow v^2/c^2=1-\frac{m^2_0}{[f^2(v)=
 \begin{enumerate}
 	\item \qn{Find $g^{-1}$. How is it related to $g$?}
 	\soln{Solution}
+	$g^{-1}(x)=g(x)=\sqrt[3]{1-x^3}$
 	
 	\item \qn{Graph $g$. How do you explain your answer to part (1)}
 	\soln{Solution}
+	Điều này xảy ra do đồ thị hàm số $f$ đối xứng qua đường thẳng $y=x$
+	\imgsoln{1.5.36-ans.b}
 \end{enumerate}
 
 \section*{Problem 37}
