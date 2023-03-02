@@ -614,12 +614,15 @@ Hàm số $y=\ln{x}$ là hàm ngược của hàm số $y=e^x$. Tương tự, h�
 \qn{Suppose that the graph of $y=\log_2{x}$ is drawn on a coordinate grid where the unit of measurement is an inch. How many miles to the right of the origin do we have to move before the height of the curve reaches 3 ft?}
 
 \soln{Solution}
+3 ft bằng 36 inches. Do đó, để độ cao của đồ thị đạt 3 ft tức 36 inches thì giá trị của $x$ (inches) là $2^{36}$. Mặt khác, 1 dặm (mile) bằng 63360 inches, đó đó cần phải dịch sang phải $2^{36}/63360=1,084,587$ dặm
 
 \section*{Problem 52}
 
 \qn{Compare the functions $f(x)=x^{0.1}$ and $g(x)=\ln{x}$ by graphing both functions in several viewing rectangles. When does the graph of $f$ finally surpass the graph of $g$?}
 
 \soln{Solution}
+Tại điểm $(3.06, 1.12)$ thì đồ thị $g$ vượt qua $f$:
+\imgsoln{1.5.52-ans}
 
 \section*{Problem 53}
 
@@ -627,9 +630,11 @@ Hàm số $y=\ln{x}$ là hàm ngược của hàm số $y=e^x$. Tương tự, h�
 \begin{enumerate}
 	\item \qn{$y=\log_{10}(x+5)$}
 	\soln{Solution}
+	Dịch đồ thị hàm số $\log_{10}x$ (Figure 12) sang trái 5 đơn vị
 	
 	\item \qn{$y=-\ln{x}$}
 	\soln{Solution}
+	Lấy đối xứng đồ thị hàm số $\ln{x}$ (Figure 13) qua trục $x$
 \end{enumerate}
 
 \section*{Problem 54}
@@ -638,9 +643,11 @@ Hàm số $y=\ln{x}$ là hàm ngược của hàm số $y=e^x$. Tương tự, h�
 \begin{enumerate}
 	\item \qn{$y=\ln(-x)$}
 	\soln{Solution}
+	Lấy đối xứng đồ thị hàm số $\ln{x}$ (Figure 13) qua trục $y$
 	
 	\item \qn{$y=\ln(|x|)$}
 	\soln{Solution}
+	Đồ thị là hợp của hai đồ thị $\ln{x}$ và $\ln(-x)$
 \end{enumerate}
 
 \section*{Problem 55}
@@ -649,12 +656,15 @@ Hàm số $y=\ln{x}$ là hàm ngược của hàm số $y=e^x$. Tương tự, h�
 \begin{enumerate}
 	\item \qn{What are the domain and range of $f$?}
 	\soln{Solution}
+	$(0, \infty)$
 	
 	\item \qn{What is the $x$-intercept of the graph $f$?}
 	\soln{Solution}
+	$y=f(x)=\ln{x}+2=0 \Rightarrow x = e^{-2}$
 	
 	\item \qn{Sketch the graph of $f$}
 	\soln{Solution}
+	\imgsoln{1.5.55-ans.c}
 \end{enumerate}
 
 \section*{Problem 56}
@@ -663,12 +673,15 @@ Hàm số $y=\ln{x}$ là hàm ngược của hàm số $y=e^x$. Tương tự, h�
 \begin{enumerate}
 	\item \qn{What are the domain and range of $f$?}
 	\soln{Solution}
+	$(1, \infty)$
 	
 	\item \qn{What is the $x$-intercept of the graph $f$?}
 	\soln{Solution}
+	$y=f(x)=\ln(x-1)-1=0 \Rightarrow x=e+1$
 	
 	\item \qn{Sketch the graph of $f$}
 	\soln{Solution}
+	\imgsoln{1.5.56-ans.c}
 \end{enumerate}
 
 \section*{Problem 57}
@@ -677,9 +690,11 @@ Hàm số $y=\ln{x}$ là hàm ngược của hàm số $y=e^x$. Tương tự, h�
 \begin{enumerate}
 	\item \qn{$\ln(4x+2)=3$}
 	\soln{Solution}
+	$$\ln(4x+2)=3 \Rightarrow 4x+2=e^3 \Rightarrow x=\frac{e^3-2}{4}\approx4.521$$
 	
 	\item \qn{$e^{2x-3}=12$}
 	\soln{Solution}
+	$$e^{2x-3}=12 \Rightarrow 2x-3=\ln(12) \Rightarrow x=\frac{\ln(12)+3}{2}\approx2.242$$
 \end{enumerate}
 
 \section*{Problem 58}
@@ -688,9 +703,11 @@ Hàm số $y=\ln{x}$ là hàm ngược của hàm số $y=e^x$. Tương tự, h�
 \begin{enumerate}
 	\item \qn{$\log_2(x^2-x-1)=2$}
 	\soln{Solution}
+	$$\log_2(x^2-x-1)=2 \Rightarrow x^2-x-5=0 \Rightarrow x=\frac{1\pm\sqrt{21}}{2} \Rightarrow x\approx2.791 \eqtext{or} x\approx-1.791$$
 	
 	\item \qn{$1+e^{4x+1}=20$}
 	\soln{Solution}
+	$$1+e^{4x+1}=20 \Rightarrow e^{4x+1}=19 \Rightarrow x=\frac{\ln(19)-1}{4}\approx0.486$$
 \end{enumerate}
 
 \section*{Problem 59}
@@ -699,9 +716,11 @@ Hàm số $y=\ln{x}$ là hàm ngược của hàm số $y=e^x$. Tương tự, h�
 \begin{enumerate}
 	\item \qn{$\ln{x}+\ln(x-1)=0$}
 	\soln{Solution}
+	$$\ln{x}+\ln(x-1)=0 \Rightarrow x(x-1)=1 \Rightarrow x=\frac{1+\sqrt{5}}{2}\approx1.618 \eqtext{(vì $x>0$)}$$
 	
 	\item \qn{$5^{1-2x}=9$}
 	\soln{Solution}
+	$$5^{1-2x}=9 \Rightarrow 1-2x=\log_5(9) \Rightarrow x=\frac{1-\log_5(9)}{2}\approx-0.183$$
 \end{enumerate}
 
 \section*{Problem 60}
@@ -710,9 +729,11 @@ Hàm số $y=\ln{x}$ là hàm ngược của hàm số $y=e^x$. Tương tự, h�
 \begin{enumerate}
 	\item \qn{$\ln(\ln{x})=0$}
 	\soln{Solution}
+	$$\ln(\ln{x})=0 \Rightarrow \ln{x}=1 \Rightarrow x=e\approx2.718$$
 	
 	\item \qn{$\frac{60}{1+e^{-x}}=4$}
 	\soln{Solution}
+	$$\frac{60}{1+e^{-x}}=4 \Rightarrow 1+e^{-x}=15 \Rightarrow e^{-x}=14 \Rightarrow x=-\ln(14)\approx-2.639$$
 \end{enumerate}
 
 \section*{Problem 61}
@@ -721,9 +742,11 @@ Hàm số $y=\ln{x}$ là hàm ngược của hàm số $y=e^x$. Tương tự, h�
 \begin{enumerate}
 	\item \qn{$\ln{x}<0$}
 	\soln{Solution}
+	Do hàm số $y=\ln{x}$ đơn điệu tăng khi $x$ tăng nên $$\ln{x}<0 \Rightarrow x<1$$
 	
 	\item \qn{$e^x>5$}
 	\soln{Solution}
+	Do hàm số $y=e^x$ đơn điệu tăng khi $x$ tăng nên $$e^x>5 \Rightarrow x>\ln5$$
 \end{enumerate}
 
 
@@ -733,9 +756,12 @@ Hàm số $y=\ln{x}$ là hàm ngược của hàm số $y=e^x$. Tương tự, h�
 \begin{enumerate}
 	\item \qn{$1 < e^{3x-1} < 2$}
 	\soln{Solution}
+	Do hàm số $y=e^x$ đơn điệu tăng khi $x$ tăng nên
+	$$1 < e^{3x-1} < 2 \Leftrightarrow 0=\ln{1}<3x-1<\ln2 \Leftrightarrow \frac{1}{3}<x<\frac{\ln2+1}{3}$$
 	
-	\item \qn{$1 -2\ln{x}<3$}
+	\item \qn{$1-2\ln{x}<3$}
 	\soln{Solution}
+	$$1-2\ln{x}<3 \Leftrightarrow -1<\ln{x} \Leftrightarrow x>e^{-1}$$
 \end{enumerate}
 
 \section*{Problem 63}
