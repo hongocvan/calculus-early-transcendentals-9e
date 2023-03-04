@@ -769,19 +769,27 @@ Tại điểm $(3.06, 1.12)$ thì đồ thị $g$ vượt qua $f$:
 \begin{enumerate}
 	\item \qn{Find the domain of $f(x)=\ln(e^x-3)$}
 	\soln{Solution}
+	$$e^x-3 >0 \Rightarrow e^x>3 \Rightarrow x > \ln3$$
 	
 	\item \qn{Find $f^{-1}$ and its domain}
 	\soln{Solution}
+	\begin{enumerate}
+		\item Write $y=f(x)$: $$y=f(x)=\ln(e^x-3)$$
+		\item Solve this equation for $x$ in terms of $y$: $$y=f(x)=\ln(e^x-3) \Rightarrow x=f^{-1}(y)=\ln(e^y+3)$$
+		\item Interchange $x$ and $y$: $$y=f^{-1}(x)=\ln(e^y+3)$$
+	\end{enumerate}
 \end{enumerate}
 
 \section*{Problem 64}
 
 \begin{enumerate}
-	\item \qn{What are the values of $e^{\ln{300}}$ and $\ln(e^300)$?}
+	\item \qn{What are the values of $e^{\ln{300}}$ and $\ln(e^{300})$?}
 	\soln{Solution}
+	$$e^{\ln{300}}=\ln(e^{300})=300$$
 	
 	\item \qn{Use your calculator to evaluate $e^{\ln{300}}$ and $\ln(e^{300})$. What do you notice? Can you explain why the calculator has trouble?}
 	\soln{Solution}
+	Cả 2 đều có giá trị 300 nhưng phụ thuộc vào phép tính mũ trước hay logarithm trước mà sẽ có vấn đề, với trường hợp $\ln(e^{300})$ thì phép tính này yêu cầu tính hàm mũ trước, vì kết quả của phép tính này rất lớn, sẽ dẫn đến hiện tượng tràn số và gây ra lỗi tính toán.
 \end{enumerate}
 
 \section*{Problem 65}
@@ -789,15 +797,19 @@ Tại điểm $(3.06, 1.12)$ thì đồ thị $g$ vượt qua $f$:
 \qn{Graph the function $f(x)=\sqrt{x^3+x^2+x+1}$ and explain why it is one-to-one. Then use a computer algebra system to find an explicit expression for $f^{-1}(x)$. (Your CAS will produce three possible expressions. Explain why two of them are irrelevant in this context.)}
 
 \soln{Solution}
+Tìm $f^{-1}$ theo công thức nghiệm bậc 3
+\imgsoln{1.5.65-ans}
 
 \section*{Problem 66}
 
 \begin{enumerate}
 	\item \qn{If $g(x)=x^6+x^4$, $x \ge 0$, use a computer algebra system to find an expression for $g^{-1}(x)$}
 	\soln{Solution}
+	Coi $x^2=a$ là biến, khi đó $g(a)=a^3+a^2$, sau đó giải phương trình bậc 3 theo $a$ và tìm $x$
 	
 	\item \qn{Use the expression in part (1) to graph $y=g(x)$, $y=x$, and $y=g^{-1}(x)$ on the same screen.}
 	\soln{Solution}
+	\imgsoln{1.5.66-ans.a}
 \end{enumerate}
 
 \section*{Problem 67}
@@ -806,9 +818,15 @@ Tại điểm $(3.06, 1.12)$ thì đồ thị $g$ vượt qua $f$:
 \begin{enumerate}
 	\item \qn{Find the inverse of this function and explain its meaning.}
 	\soln{Solution}
+	Hàm ngược là hàm số của $t$ theo biến $n$, thể hiện thời gian để quần thể vi khuẩn đạt ngưỡng $n$ cá thể:
+	\begin{enumerate}
+		\item Write $n=f(t)$: $$n=f(t)=100(2^{t/3})$$
+		\item Solve this equation for $t$ in terms of $n$: $$n=f(t)=100(2^{t/3}) \Rightarrow t=f^{-1}(n)=3\log_2(\frac{n}{100})$$
+	\end{enumerate}
 	
 	\item \qn{When will the population reach 50,000}
 	\soln{Solution}
+	$$t=f^{-1}(n)=3\log_2(\frac{n}{100})=3\log_2(\frac{50000}{100})\approx26.9 \eqtext{giờ}$$
 \end{enumerate}
 
 \section*{Problem 68}
