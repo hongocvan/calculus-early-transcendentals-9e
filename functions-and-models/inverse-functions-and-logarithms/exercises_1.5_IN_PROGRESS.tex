@@ -835,9 +835,15 @@ Tìm $f^{-1}$ theo công thức nghiệm bậc 3
 \begin{enumerate}
 	\item \qn{Find a formula for the inverse of this function and explain its meaning}
 	\soln{Solution}
+	\begin{enumerate}
+		\item Write $y=Q(t)$: $$y=Q(t)=Q_0(1-e^{-t/a})$$
+		\item Solve this equation for $t$ in terms of $y$: $$y=Q(t)=Q_0(1-e^{-t/a}) \Rightarrow t=-a\ln(1-\frac{y}{Q_0})$$
+		\item Interchange $t$ and $y$: $$y=Q^{-1}(t)=-a\ln(1-\frac{t}{Q_0})$$
+	\end{enumerate}
 	
 	\item \qn{How long does it take to recharge the capacitors to 90\% of capacity if $a=50$?}
 	\soln{Solution}
+	$Q(t)/Q_0=0.9=1-e^{-t/a} \Rightarrow e^{-t/50}=0.1 \Rightarrow t=-50\ln(0.1)\approx115.13$
 \end{enumerate}
 
 \section*{Problem 69}
@@ -846,9 +852,11 @@ Tìm $f^{-1}$ theo công thức nghiệm bậc 3
 \begin{enumerate}
 	\item \qn{$\cos^{-1}(-1)$}
 	\soln{Solution}
+	Hàm ngược của hàm $\cos$ được định nghĩa trên khoảng $[0,\pi]$. Do đó: $$\cos^{-1}(-1)=\pi$$
 	
 	\item \qn{$\sin^{-1}(0.5)$}
 	\soln{Solution}
+	Hàm ngược của hàm $\sin$ được định nghĩa trên khoảng $[-\pi/2,\pi/2]$. Do đó: $$\sin^{-1}(0.5)=\pi/6$$
 \end{enumerate}
 
 \section*{Problem 70}
@@ -857,9 +865,11 @@ Tìm $f^{-1}$ theo công thức nghiệm bậc 3
 \begin{enumerate}
 	\item \qn{$\tan^{-1}\sqrt{3}$}
 	\soln{Solution}
+	Hàm ngược của hàm $\tan$ được định nghĩa trên khoảng $(-\pi/2,\pi/2)$. Do đó: $$\tan^{-1}\sqrt{3}=\pi/3$$
 	
 	\item \qn{$\arctan(-1)$}
 	\soln{Solution}
+	Hàm ngược của hàm $\arctan$ được định nghĩa trên khoảng $(-\pi/2,\pi/2)$. Do đó: $$\arctan(-1)=\tan^{-1}(-1)=-\pi/4$$
 \end{enumerate}
 
 \section*{Problem 71}
@@ -868,9 +878,11 @@ Tìm $f^{-1}$ theo công thức nghiệm bậc 3
 \begin{enumerate}
 	\item \qn{$\csc^{-1}\sqrt{2}$}
 	\soln{Solution}
+	Hàm ngược của hàm $\arctan$ được định nghĩa trên khoảng $(0, \pi/2] \cup (\pi,3\pi/2]$. Do đó: $$\csc^{-1}\sqrt{2}=\pi/4$$
 	
 	\item \qn{$\arcsin(1)$}
 	\soln{Solution}
+	Hàm ngược của hàm $\arcsin$ được định nghĩa trên khoảng $[-\pi/2,\pi/2]$. Do đó: $$\arcsin(1)=\pi/2$$
 \end{enumerate}
 
 \section*{Problem 72}
@@ -879,9 +891,11 @@ Tìm $f^{-1}$ theo công thức nghiệm bậc 3
 \begin{enumerate}
 	\item \qn{$\sin^{-1}(-1/\sqrt{2})$}
 	\soln{Solution}
+	Hàm ngược của hàm $\sin^{-1}$ được định nghĩa trên khoảng $[-\pi/2,\pi/2]$. Do đó: $$\sin^{-1}(-1/\sqrt{2})=-\pi/4$$
 	
 	\item \qn{$\cos^{-1}(\sqrt{3}/2)$}
 	\soln{Solution}
+	Hàm ngược của hàm $\cos$ được định nghĩa trên khoảng $[0,\pi]$. Do đó: $$\cos^{-1}(\sqrt{3}/2)=\pi/6$$
 \end{enumerate}
 
 \section*{Problem 73}
@@ -890,9 +904,11 @@ Tìm $f^{-1}$ theo công thức nghiệm bậc 3
 \begin{enumerate}
 	\item \qn{$\cot^{-1}(-\sqrt{3})$}
 	\soln{Solution}
+	Hàm ngược của hàm $\cot$ được định nghĩa trên khoảng $[0,\pi]$. Do đó: $$\cot^{-1}(-\sqrt{3})=-\pi/3$$
 	
 	\item \qn{$\sec^{-1}(2)$}
 	\soln{Solution}
+	Hàm ngược của hàm $\sec$ được định nghĩa trên khoảng $[0,\pi/2] \cup [\pi,3\pi/2]$. Do đó: $$\sec^{-1}(2)=\pi/3$$
 \end{enumerate}
 
 \section*{Problem 74}
@@ -901,9 +917,12 @@ Tìm $f^{-1}$ theo công thức nghiệm bậc 3
 \begin{enumerate}
 	\item \qn{$\arcsin(\sin(5\pi/4))$}
 	\soln{Solution}
+	Hàm ngược của hàm $\sin^{-1}$ được định nghĩa trên khoảng $[-\pi/2,\pi/2]$. Do đó:
+	$$\arcsin(\sin(5\pi/4))=\arcsin(\sin(-\pi/4))=-\pi/4$$
 	
 	\item \qn{$\cos(2\sin^{-1}(\frac{5}{13}))$}
 	\soln{Solution}
+	$$\cos(2\sin^{-1}(\frac{5}{13}))=1-2\sin^2(\sin^{-1}(\frac{5}{13}))=1-2(\frac{5}{13})^2=\frac{119}{169}$$
 \end{enumerate}
 
 \section*{Problem 75}
