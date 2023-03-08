@@ -1,0 +1,1006 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{vietnam}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage[none]{hyphenat}
+\usepackage{fancyhdr}
+
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage{wrapfig}
+\usepackage{gensymb}
+\usepackage{float}
+
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[L]{\slshape \MakeUppercase{1.5 - Inverse Functions and Logarithms}}
+\fancyhead[R]{\slshape Ho Ngoc Van}
+\fancyfoot[C]{\thepage}
+\renewcommand{\footrulewidth}{0pt}
+
+\newcommand{\soln}{\subsection*}
+\newcommand{\qn}{\textit}
+\newcommand{\imagesource}[1]{{\footnotesize Source: #1}}
+\newcommand{\imgqn}[1]{
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.35\linewidth]{figs/#1.png}\\
+		\imagesource{James Stewart, Calculus: Early Transcendentals [9e]}
+	\end{figure}
+}
+\newcommand{\imgsoln}[1]{
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.5\linewidth]{figs/#1.png}
+	\end{figure}
+}
+
+\newcommand{\eqtext}[1]{\quad\text{#1}\quad}
+
+\begin{document}
+
+\section*{Problem 1}
+
+\begin{enumerate}
+	\item \qn{What is a one-to-one function?}
+	\soln{Solution}
+	One-to-one function là một hàm số với 1 $x$ thì chỉ có một $y$ tương ứng
+	
+	\item \qn{How can you tell from the graph of a function whether it is one-to-one?}
+	\soln{Solution}
+	Dùng Horizontal Line Test, nếu không có bất kì một đường thẳng ngang nào cắt đồ thị tại 2 điểm thì đồ thị đó là one-to-one
+\end{enumerate}
+
+\section*{Problem 2}
+
+\begin{enumerate}
+	\item \qn{Suppose $f$ is one-to-one function with domain $A$ and range $B$. How is the inverse function $f^{-1}$ defined? What is the domain of $f^{-1}$? What is the range of $f^{-1}$?}
+	\soln{Solution}one
+	Hàm số $f^{-1}$ được định nghĩa bằng cách $f^{-1}(y)=x$, tức là chúng ta có thể tìm được duy nhất một đường đi từ Range về Domain. Range của hàm số $f^{-1}$ là Domain của hàm số $f$ tức là $A$
+	
+	\item \qn{If you are given a formula for $f$, how do you find a formula for $f^{-1}$?}
+	\soln{Solution}
+	\begin{enumerate}
+		\item Viết hàm số $y=f(x)$
+		\item Giải phương trình cho $x$ theo $y$
+		\item Đổi vai trò của $x$ và $y$
+	\end{enumerate}
+	
+	\item \qn{If you are given the graph of $f$, how do you find the graph of $f^{-1}$?}
+	\soln{Solution}
+	Lấy đối xứng qua đường thẳng $y=x$
+\end{enumerate}
+
+\section*{Problem 3}
+
+\qn{A function is given by a table of values. Determine whether it is one-to-one.}
+\imgqn{1.5.3}
+
+\soln{Solution}
+Không vì $f(2)=f(6)=2.0$
+
+\section*{Problem 4}
+
+\qn{A function is given by a table of values. Determine whether it is one-to-one.}
+\imgqn{1.5.4}
+
+\soln{Solution}
+Có vì thỏa mãn Horizontal Line Test
+
+\section*{Problem 5}
+
+\qn{A function is given by a graph. Determine whether it is one-to-one.}
+\imgqn{1.5.5}
+
+\soln{Solution}
+Không vì tìm được một đường thẳng nằm ngang cắt đồ thị tại 2 điểm, giả sử $y=2$
+
+\section*{Problem 6}
+
+\qn{A function is given by a graph. Determine whether it is one-to-one.}
+\imgqn{1.5.6}
+
+\soln{Solution}
+Có vì thỏa mãn Horizontal Line Test
+
+\section*{Problem 7}
+
+\qn{A function is given by a graph. Determine whether it is one-to-one.}
+\imgqn{1.5.7}
+
+\soln{Solution}
+Có vì thỏa mãn Horizontal Line Test
+
+\section*{Problem 8}
+
+\qn{A function is given by a graph. Determine whether it is one-to-one.}
+\imgqn{1.5.8}
+
+\soln{Solution}
+Không vì tìm được một đường thẳng nằm ngang cắt đồ thị tại 2 điểm, giả sử $y=1$, nhìn giống đồ thị sẽ tiệm cận với đường thẳng này
+
+\section*{Problem 9}
+
+\qn{A function is given by a formula. Determine whether it is one-to-one. $$f(x)=2x-3$$}
+
+\soln{Solution}
+Có vì đây là một đường thẳng
+
+\section*{Problem 10}
+
+\qn{A function is given by a formula. Determine whether it is one-to-one. $$f(x)=x^4-16$$}
+
+\soln{Solution}
+Không vì dễ dàng tìm được một đường thẳng $y=0$ cắt đồ thị tại 2 điểm là $x=\pm 2$
+
+\section*{Problem 11}
+
+\qn{A function is given by a formula. Determine whether it is one-to-one. $$r(t)=t^3+4$$}
+
+\soln{Solution}
+Có vì với mỗi $y$ chúng ta chỉ tìm được một giá trị $x=\sqrt[3]{y-4}$ thỏa mãn phương trình
+
+\section*{Problem 12}
+
+\qn{A function is given by a formula. Determine whether it is one-to-one. $$g(x)=\sqrt[3]{x}$$}
+
+\soln{Solution}
+Có vì với mỗi $y$ chúng ta chỉ tìm được một giá trị $x=y^3$ thỏa mãn phương trình
+
+\section*{Problem 13}
+
+\qn{A function is given by a formula. Determine whether it is one-to-one. $$g(x)=1-\sin{x}$$}
+
+\soln{Solution}3
+Không vì đồ thị hàm số $1-\sin{x}$ có tính tuần hoàn nên dễ dàng tìm được một đường thẳng cắt đồ thị tại nhiều hơn một điểm
+
+\section*{Problem 14}
+
+\qn{A function is given by a formula. Determine whether it is one-to-one. $$f(x)=x^4-1 \eqtext{,} 0 \le x \le 10$$}
+
+\soln{Solution}
+Không vì có thể tìm được một đường thẳng $y=0$ cắt đồ thị tại 2 điểm là $x=\pm 1$
+
+\section*{Problem 15}
+
+\qn{A function is given by a verbal description. Determine whether it is one-to-one. "$f(t)$ is the height of a football $t$ seconds after kickoff"}
+
+\soln{Solution}
+Không vì khi quả được kickoff thì độ cao sẽ tăng nhưng sau khi đạt đến độ cao tối đa, thì giá trị này sẽ giảm
+
+\section*{Problem 16}
+
+\qn{A function is given by a verbal description. Determine whether it is one-to-one."$f(t)$ is your height at age $t$"}
+
+\soln{Solution}
+Không vì chiều con của con người có xu hướng thấp đi khi về già, tương tự Problem 15
+
+\section*{Problem 17}
+
+\qn{Assume that $f$ is a one-to-one function.}
+\begin{enumerate}
+	\item \qn{If $f(6)=17$, what is $f^{-1}(17)$}
+	\soln{Solution}
+	$f^{-1}(17)=6$
+	
+	\item \qn{If $f^{-1}(3)=2$, what is $f(2)$}
+	\soln{Solution}
+	$f(2)=3$
+\end{enumerate}
+
+\section*{Problem 18}
+
+\qn{If $f(x)=x^5+x^3+x$, find $f^{-1}(3)$ and $f(f^{-1}(2))$}
+
+\soln{Solution}
+Hàm số là one-to-one function:
+\begin{equation*}
+	\begin{cases}
+		f(1)=1^5+1^3+1=3 \Rightarrow f^{-1}(3)=1 \\
+		f(f^{-1}(2))=2
+	\end{cases}
+\end{equation*}
+
+\section*{Problem 19}
+
+\qn{If $g(x)=3+x+e^x$, find $g^{-1}(4)$}
+
+\soln{Solution}
+Hàm số là one-to-one function: $$g(0)=3+0+e^0=4 \Rightarrow g^{-1}(4)=0$$
+
+\section*{Problem 20}
+
+\qn{The graph of $f$ is given}
+\imgqn{1.5.20}
+\begin{enumerate}
+	\item \qn{Why is $f$ one-to-one?}
+	\soln{Solution}
+	Vì có thể khẳng định rằng không có một đường thẳng ngang nào cắt đồ thị tại nhiều hơn 1 điểm
+	
+	\item \qn{What are the domain and range of $f^{-1}$?}
+	\soln{Solution}
+	The Domain của $f$ là Range của $f^{-1}$: $[-3,3]$. The Range của $f$ là Domain của $f^{-1}$: $[-1, 3]$
+	
+	\item \qn{What is the value of $f^{-1}(2)$?}
+	\soln{Solution}
+	$f^{-1}(2)=0$
+	
+	\item \qn{Estimate the value of $f^{-1}(0)$}
+	\soln{Solution}
+	$f^{-1}(0) \approx -1.8$
+\end{enumerate}
+
+\section*{Problem 21}
+
+\qn{The formula $C=\frac{5}{9}(F-32)$, where $F \ge -459.67$, expresses the Celsius temperature $C$ as a function of the Fahrenheit temperature $F$. Find a formula for the inverse function and interpret it. What is the domain of the inverse function?}
+
+\soln{Solution}
+Inverse function là hàm số của $F$ theo $C$, thể hiện cách chuyển đổi từ độ $C$ sang độ $F$. Khi $F \ge -459.67$ thì $C \ge -273.15$ là Range của $f$ và cũng là Domain của hàm ngược $f^{-1}$
+$$F=\frac{9}{5}C+32$$
+
+\section*{Problem 22}
+
+\qn{In the theory of relativity, the mass of a particle with speed $v$ is $$m=f(v)=\frac{m_0}{\sqrt{1-v^2/c^2}}$$ where $m_0$ is the rest mass of the particle and $c$ is the speed of light in a vacuum. Find the inverse function of $f$ and explain its meaning.}
+
+\soln{Solution}
+Inverse function là hàm số của $v$ theo $m$, thể hiện mối tương quan giữa vận tốc $v$ và khối lượng nghỉ của hạt $m$
+$$m^2=f^2(v)=\frac{m^2_0}{1-v^2/c^2} \Rightarrow v^2/c^2=1-\frac{m^2_0}{[f^2(v)=m^2]} \Rightarrow v=c\sqrt{1-\frac{m^2_0}{[f^2(v)=m^2]}}$$
+
+\section*{Problem 23}
+
+\qn{Find a formula for the inverse of the function $$f(x)=1-x^2 \eqtext{,} x \ge 0$$}
+
+\soln{Solution}
+\begin{enumerate}
+	\item Write $y=f(x)$: $$y=f(x)=1-x^2 \eqtext{,} x \ge 0$$
+	\item Solve this equation for $x$ in terms of $y$: $$y=1-x^2 \Rightarrow f^{-1}(y)=x=\sqrt{1-y}$$
+	\item Interchange $x$ and $y$: $$y=f^{-1}(x)=\sqrt{1-x}$$
+\end{enumerate}
+
+\section*{Problem 24}
+
+\qn{Find a formula for the inverse of the function $$g(x)=x^2-2x \eqtext{,} x \ge 1$$}
+
+\soln{Solution}
+\begin{enumerate}
+	\item Write $y=f(x)$: $$y=g(x)=x^2-2x \eqtext{,} x \ge 1$$
+	\item Solve this equation for $x$ in terms of $y$: $$y=(x-1)^2-1 \Rightarrow f^{-1}(y)=x=\sqrt{y+1}+1$$
+	\item Interchange $x$ and $y$: $$y=f^{-1}(x)=\sqrt{x+1}+1 \eqtext{,} x \ge -1$$
+\end{enumerate}
+
+\section*{Problem 25}
+
+\qn{Find a formula for the inverse of the function $$g(x)=2+\sqrt{x+1}$$}
+
+\soln{Solution}
+\begin{enumerate}
+	\item Write $y=f(x)$: $$y=g(x)=2+\sqrt{x+1}$$
+	\item Solve this equation for $x$ in terms of $y$: $$y=2+\sqrt{x+1} \Rightarrow f^{-1}(y)=x=(y-2)^2-1$$
+	\item Interchange $x$ and $y$: $$y=f^{-1}(x)=(x-2)^2-1 \eqtext{,} x \ge 2$$
+\end{enumerate}
+
+\section*{Problem 26}
+
+\qn{Find a formula for the inverse of the function $$h(x)=\frac{6-3x}{5x+7}$$}
+
+\soln{Solution}
+\begin{enumerate}
+	\item Write $y=f(x)$: $$y=h(x)=\frac{6-3x}{5x+7}$$
+	\item Solve this equation for $x$ in terms of $y$: $$y=\frac{6-3x}{5x+7} \Leftrightarrow 5xy+7y=-3x+6 \Rightarrow x=f^{-1}(y)=\frac{6-7y}{5y+3}$$
+	\item Interchange $x$ and $y$: $$y=f^{-1}(x)=\frac{6-7x}{5x+3}$$
+\end{enumerate}
+
+\section*{Problem 27}
+
+\qn{Find a formula for the inverse of the function $$y=e^{1-x}$$}
+
+\soln{Solution}
+\begin{enumerate}
+	\item Write $y=f(x)$: $$y=e^{1-x}$$
+	\item Solve this equation for $x$ in terms of $y$: $$y=e^{1-x} \Rightarrow x=f^{-1}(y)=1-\ln{y}$$
+	\item Interchange $x$ and $y$: $$y=f^{-1}(x)=1-\ln{x} \eqtext{,} x \ge 0$$
+\end{enumerate}
+
+\section*{Problem 28}
+
+\qn{Find a formula for the inverse of the function $$y=3ln(x-2)$$}
+
+\soln{Solution}
+\begin{enumerate}
+	\item Write $y=f(x)$: $$y=3\ln(x-2)$$
+	\item Solve this equation for $x$ in terms of $y$: $$y=3\ln(x-2) \Rightarrow x=f^{-1}(y)=\sqrt[3]{e^y}+2$$
+	\item Interchange $x$ and $y$: $$y=f^{-1}(x)=\sqrt[3]{e^x}+2$$
+\end{enumerate}
+
+\section*{Problem 29}
+
+\qn{Find a formula for the inverse of the function $$y=(2+\sqrt[3]{x})^5$$}
+
+\soln{Solution}
+\begin{enumerate}
+	\item Write $y=f(x)$: $$y=(2+\sqrt[3]{x})^5$$
+	\item Solve this equation for $x$ in terms of $y$: $$y=(2+\sqrt[3]{x})^5 \Rightarrow x=f^{-1}(y)=(\sqrt[5]{y}-2)^3$$
+	\item Interchange $x$ and $y$: $$y=f^{-1}(x)=(\sqrt[5]{x}-2)^3$$
+\end{enumerate}
+
+\section*{Problem 30}
+
+\qn{Find a formula for the inverse of the function $$y=\frac{1-e^{-x}}{1+e^{-x}}$$}
+
+\soln{Solution}
+\begin{enumerate}
+	\item Write $y=f(x)$: $$y=\frac{1-e^{-x}}{1+e^{-x}}$$
+	\item Solve this equation for $x$ in terms of $y$: $$y=\frac{1-e^{-x}}{1+e^{-x}} \Leftrightarrow y+ye^{-x}=1-e^{-x} \Leftrightarrow e^{-x}=\frac{1-y}{1+y} \Leftarrow x=f^{-1}(y)=-\ln(\frac{1-y}{1+y})$$
+	\item Interchange $x$ and $y$: $$y=f^{-1}(x)=-\ln(\frac{1-x}{1+x})$$
+\end{enumerate}
+
+\section*{Problem 31}
+
+\qn{Find an explicit formula for $f^{-1}$ and use it to graph $f^{-1}$, $f$, and the line $y=x$ on the same screen. To check your work, see whether the graphs of $f$ and $f^{-1}$ are reflections about the line $$f(x)=\sqrt{4x+3}$$}
+
+\soln{Solution}
+\begin{enumerate}
+	\item Write $y=f(x)$: $$y=f(x)=\sqrt{4x+3}$$
+	\item Solve this equation for $x$ in terms of $y$: $$y=f(x)=\sqrt{4x+3} \Rightarrow x=f^{-1}(y)=\frac{1}{4}(y^2-3)$$
+	\item Interchange $x$ and $y$: $$y=f^{-1}(x)=\frac{1}{4}(x^2-3) \eqtext{,} x \ge 0$$
+\end{enumerate}
+\imgsoln{1.5.31-ans}
+
+\section*{Problem 32}
+
+\qn{Find an explicit formula for $f^{-1}$ and use it to graph $f^{-1}$, $f$, and the line $y=x$ on the same screen. To check your work, see whether the graphs of $f$ and $f^{-1}$ are reflections about the line $$f(x)=1+e^{-x}$$}
+
+\soln{Solution}
+\begin{enumerate}
+	\item Write $y=f(x)$: $$y=f(x)=1+e^{-x}$$
+	\item Solve this equation for $x$ in terms of $y$: $$y=f(x)=1+e^{-x} \Rightarrow x=f^{-1}(y)=-\ln(y-1)$$
+	\item Interchange $x$ and $y$: $$y=f^{-1}(x)=-\ln(x-1) \eqtext{,} x \ge 1$$
+\end{enumerate}
+\imgsoln{1.5.32-ans}
+
+\section*{Problem 33}
+
+\qn{Use the given graph of $f$ to sketch the graph of $f^{-1}$}
+\imgqn{1.5.33}
+
+\soln{Solution}
+Vẽ đối xứng qua đường thẳng $y=x$
+
+\section*{Problem 34}
+
+\qn{Use the given graph of $f$ to sketch the graph of $f^{-1}$}
+\imgqn{1.5.34}
+
+\soln{Solution}
+Vẽ đối xứng qua đường thẳng $y=x$
+
+\section*{Problem 35}
+
+\qn{Let $f(x)=\sqrt{1-x^2}$, $0 \le x \le 1$}
+
+\begin{enumerate}
+	\item \qn{Find $f^{-1}$. How is it related to $f$?}
+	\soln{Solution}
+	$f^{-1}(x)=f(x)=\sqrt{1-x^2}$, $0 \le x \le 1$
+	
+	\item \qn{Identify the graph of $f$ and explain your answer to part (1)}
+	\soln{Solution}
+	Điều này xảy ra do đồ thị hàm số $f$ đối xứng qua đường thẳng $y=x$
+\end{enumerate}
+
+\section*{Problem 36}
+
+\qn{Let $g(x)=\sqrt[3]{1-x^3}$}
+
+\begin{enumerate}
+	\item \qn{Find $g^{-1}$. How is it related to $g$?}
+	\soln{Solution}
+	$g^{-1}(x)=g(x)=\sqrt[3]{1-x^3}$
+	
+	\item \qn{Graph $g$. How do you explain your answer to part (1)}
+	\soln{Solution}
+	Điều này xảy ra do đồ thị hàm số $f$ đối xứng qua đường thẳng $y=x$
+	\imgsoln{1.5.36-ans.b}
+\end{enumerate}
+
+\section*{Problem 37}
+
+\begin{enumerate}
+	\item \qn{How is the logarithmic function $y=\log_b{x}$ defined?}
+	\soln{Solution}
+	Hàm logarithmic $y=\log_b{x}$ là hàm ngược của hàm số $y=b^x$
+	
+	\item \qn{What is the domain of this function?}
+	\soln{Solution}
+	Domain của hàm số này là $(0, \infty)$
+	
+	\item \qn{What is the range of this function?}
+	\soln{Solution}
+	Range của hàm số này là $(-\infty, \infty)$
+	
+	\item \qn{Sketch the general shape of the graph of the function $y=\log_b{x}$ if $b>1$}
+	\soln{Solution}
+	\imgsoln{1.5.37-ans.c}
+\end{enumerate}
+
+\section*{Problem 38}
+
+\begin{enumerate}
+	\item \qn{What is the natural logarithm?}
+	\soln{Solution}
+	Hàm logarithm tự nhiên $y=\ln{x}=\log_e{x}$
+	
+	\item \qn{What is the common logarithm?}
+	\soln{Solution}
+	Đều đi qua điểm $(1,0)$
+	
+	\item \qn{Sketch the graphs of the natural logarithm function and the natural exponential function with a common set of axes.}
+	\soln{Solution}
+	\imgsoln{1.5.38-ans.c}
+\end{enumerate}
+
+\section*{Problem 39}
+
+\qn{Find the exact value of each expression}
+\begin{enumerate}
+	\item \qn{$\log_3{81}$}
+	\soln{Solution}
+	$3^4=81 \Rightarrow \log_3{81}=4$
+	
+	\item \qn{$\log_3{\frac{1}{81}}$}
+	\soln{Solution}
+	$3^{-4}=1/3^4=1/81 \Rightarrow \log_3{1/81}=-4$
+	
+	\item \qn{$\log_9{3}$}
+	\soln{Solution}
+	$9^{1/2}=\sqrt{9}=3 \Rightarrow \log_9(3)=1/2$
+\end{enumerate}
+
+\section*{Problem 40}
+
+\qn{Find the exact value of each expression}
+\begin{enumerate}
+	\item \qn{$\ln{\frac{1}{e^2}}$}
+	\soln{Solution}
+	$\ln{\frac{1}{e^2}}=\ln{e^{-2}}=-2$
+	
+	\item \qn{$\ln(\sqrt{e})$}
+	\soln{Solution}
+	$\ln(\sqrt{e})=\ln{e^{1/2}}=1/2$
+	
+	\item \qn{$\ln(\ln(e^{e^{50}}))$}
+	\soln{Solution}
+	$\ln(\ln(e^{e^{50}}))=\ln(e^{50})=50$
+\end{enumerate}
+
+\section*{Problem 41}
+
+\qn{Find the exact value of each expression}
+\begin{enumerate}
+	\item \qn{$\log_2{30}-\log_2{15}$}
+	\soln{Solution}
+	$\log_2{30}-\log_2{15}=\log_2(\frac{30}{15})=\log_2{2}=1$
+	
+	\item \qn{$\log_3{10}-\log_3{5}-\log_3{18}$}
+	\soln{Solution}
+	$\log_3{10}-\log_3{5}-\log_3{18}=\log_3{\frac{10}{5(18)}}=\log_3{\frac{1}{9}}=\log_3(3^{-2})=-2$
+	
+	\item \qn{$2\log_5{100}-4\log_5{50}$}
+	\soln{Solution}
+	$2\log_5{100}-4\log_5{50}=\log_5(100^2)-\log_5(50^4)=\log_5(\frac{100^2}{50^4})=\log_5(\frac{1}{625})=\log_5(5^{-4})=-4$
+\end{enumerate}
+
+\section*{Problem 42}
+
+\qn{Find the exact value of each expression}
+\begin{enumerate}
+	\item \qn{$e^{2\ln2}$}
+	\soln{Solution}
+	$e^{2\ln2}=e^{\ln2^2}=2^2=4$
+	
+	\item \qn{$e^{-2\ln5}$}
+	\soln{Solution}
+	$e^{-2\ln5}=e^{\ln{5^{-2}}}=5^{-2}=1/25$
+	
+	\item \qn{$e^{\ln(\ln{e^3})}$}
+	\soln{Solution}
+	$e^{\ln(\ln{e^3})}=e^{\ln3}=3$
+\end{enumerate}
+
+\section*{Problem 43}
+
+\qn{Use the laws of logarithms to expand each expression}
+\begin{enumerate}
+	\item \qn{$\log_{10}(x^2y^3z)$}
+	\soln{Solution}
+	$\log_{10}(x^2y^3z)=\log_{10}(x^2)+\log_{10}(y^3)+\log_{10}(z)=2\log_{10}x+3\log_{10}y+\log_{10}z$
+	
+	\item \qn{$\ln(\frac{x^4}{\sqrt{x^2-4}})$}
+	\soln{Solution}
+	$\ln(\frac{x^4}{\sqrt{x^2-4}})=\ln(x^4)-\ln(\sqrt{x^2-4})=4\ln{x}-\frac{1}{2}\ln(x^2-4)$
+\end{enumerate}
+
+\section*{Problem 44}
+
+\qn{Use the laws of logarithms to expand each expression}
+\begin{enumerate}
+	\item \qn{$\ln\sqrt{\frac{3x}{x-3}}$}
+	\soln{Solution}
+	$\ln\sqrt{\frac{3x}{x-3}}=\frac{1}{2}\ln(\frac{3x}{x-3})=\frac{1}{2}(\ln(3x)-\ln(x-3))$
+	
+	\item \qn{$\log_2[(x^3+1)\sqrt[3]{(x-3^2)}]$}
+	\soln{Solution}
+	$\log_2[(x^3+1)\sqrt[3]{(x-3^2)}]=\log_2(x^3+1)+\log_2(\sqrt[3]{(x-3^2)})=\log_2(x^3+1)+\frac{2}{3}\log_2(x-3)$
+\end{enumerate}
+
+\section*{Problem 45}
+
+\qn{Express as a single logarithm}
+\begin{enumerate}
+	\item \qn{$\log_{10}{20} - \frac{1}{3}\log_{10}{1000}$}
+	\soln{Solution}
+	$\log_{10}{20} - \frac{1}{3}\log_{10}{1000}=\log_{10}{20}-\log_{10}{10}=\log_{10}(\frac{20}{10})=\log_{10}2$
+	
+	\item \qn{$\ln{a}-2\ln{b}+3\ln{c}$}
+	\soln{Solution}
+	$\ln{a}-2\ln{b}+3\ln{c}=\ln{a}-\ln{b^2}+\ln{c^3}=\ln{\frac{ac^3}{b^2}}$
+\end{enumerate}
+
+\section*{Problem 46}
+
+\qn{Express as a single logarithm}
+\begin{enumerate}
+	\item \qn{$3\ln(x-2)-\ln(x^2-5x+6)+2\ln(x-3)$}
+	\soln{Solution}
+	\begin{equation*}
+		\begin{aligned}
+			3\ln(x-2)-\ln(x^2-5x+6)+2\ln(x-3)&=\ln{(x-2)^3}-\ln(x^2-5x+6)+\ln{(x-3)^2} \\
+			&=\ln(\frac{(x-2)^3(x-3)^2}{(x-2)(x+3)}=\ln((x-2)^2(x-3)))
+		\end{aligned}
+	\end{equation*}
+	
+	\item \qn{$c\log_a{x}-d\log_a{y}+\log_a{z}$}
+	\soln{Solution}
+	$$c\log_a{x}-d\log_a{y}+\log_a{z}=\log_a{x^c}-\log_a{y^d}+\log_a{z}=\log_a(\frac{x^cz}{y^d})$$
+\end{enumerate}
+
+\section*{Problem 47}
+
+\qn{Use Formula 11 to evaluate each logarithm correct to six decimal places}
+\begin{enumerate}
+	\item \qn{$\log_5{10}$}
+	\soln{Solution}
+	$\log_5{10}=\frac{\ln{10}}{\ln{5}}=1.430677$
+	
+	\item \qn{$\log_{15}{12}$}
+	\soln{Solution}
+	$\log_{15}{12}=\frac{\ln{12}}{\ln{15}}=0.917600$
+\end{enumerate}
+
+\section*{Problem 48}
+
+\qn{Use Formula 11 to evaluate each logarithm correct to six decimal places}
+\begin{enumerate}
+	\item \qn{$\log_3{12}$}
+	\soln{Solution}
+	$\log_3{12}=\frac{\ln{12}}{\ln3}=2.261860$
+	
+	\item \qn{$\log_{12}6$}
+	\soln{Solution}
+	$\log_{12}6=\frac{\ln6}{\ln{12}}=0.721060$
+\end{enumerate}
+
+\section*{Problem 49}
+
+\qn{Use Formula 11 to graph the given functions on a common screen. How are these graphs related? $$y=\log_{1.5}x \eqtext{,} y=\ln{x} \eqtext{,} y=\log_{10}x \eqtext{,} y=\log_{50}x$$}
+
+\soln{Solution}
+Tất cả các hàm số là hằng số nhân với hàm số $y=\ln{x}$ $$y=\log_{1.5}x=\frac{1}{\ln{1.5}}\ln{x} \eqtext{,} y=\ln{x} \eqtext{,} y=\log_{10}x=\frac{1}{\ln{10}}\ln{x} \eqtext{,} y=\log_{50}x=\frac{1}{\ln{50}}\ln{x}$$
+\imgsoln{1.5.49-ans}
+
+\section*{Problem 50}
+
+\qn{Use Formula 11 to graph the given functions on a common screen. How are these graphs related? $$y=\ln{x} \eqtext{,} y=\log_8{x} \eqtext{,} y=e^x \eqtext{,} y=8^x$$}
+
+\soln{Solution}
+Hàm số $y=\ln{x}$ là hàm ngược của hàm số $y=e^x$. Tương tự, hàm số $y=\log_8{x}$ là hàm ngược của hàm số $y=8^x$
+\imgsoln{1.5.50-ans}
+
+\section*{Problem 51}
+
+\qn{Suppose that the graph of $y=\log_2{x}$ is drawn on a coordinate grid where the unit of measurement is an inch. How many miles to the right of the origin do we have to move before the height of the curve reaches 3 ft?}
+
+\soln{Solution}
+3 ft bằng 36 inches. Do đó, để độ cao của đồ thị đạt 3 ft tức 36 inches thì giá trị của $x$ (inches) là $2^{36}$. Mặt khác, 1 dặm (mile) bằng 63360 inches, đó đó cần phải dịch sang phải $2^{36}/63360=1,084,587$ dặm
+
+\section*{Problem 52}
+
+\qn{Compare the functions $f(x)=x^{0.1}$ and $g(x)=\ln{x}$ by graphing both functions in several viewing rectangles. When does the graph of $f$ finally surpass the graph of $g$?}
+
+\soln{Solution}
+Tại điểm $(3.06, 1.12)$ thì đồ thị $g$ vượt qua $f$:
+\imgsoln{1.5.52-ans}
+
+\section*{Problem 53}
+
+\qn{Make a rough sketch by hand of the graph of each function. Use the graphs given in Figures 12 and 13 and, if necessary the transformations of Section 1.3}
+\begin{enumerate}
+	\item \qn{$y=\log_{10}(x+5)$}
+	\soln{Solution}
+	Dịch đồ thị hàm số $\log_{10}x$ (Figure 12) sang trái 5 đơn vị
+	
+	\item \qn{$y=-\ln{x}$}
+	\soln{Solution}
+	Lấy đối xứng đồ thị hàm số $\ln{x}$ (Figure 13) qua trục $x$
+\end{enumerate}
+
+\section*{Problem 54}
+
+\qn{Make a rough sketch by hand of the graph of each function. Use the graphs given in Figures 12 and 13 and, if necessary the transformations of Section 1.3}
+\begin{enumerate}
+	\item \qn{$y=\ln(-x)$}
+	\soln{Solution}
+	Lấy đối xứng đồ thị hàm số $\ln{x}$ (Figure 13) qua trục $y$
+	
+	\item \qn{$y=\ln(|x|)$}
+	\soln{Solution}
+	Đồ thị là hợp của hai đồ thị $\ln{x}$ và $\ln(-x)$
+\end{enumerate}
+
+\section*{Problem 55}
+
+\qn{Given the function $$f(x)=\ln{x}+2$$}
+\begin{enumerate}
+	\item \qn{What are the domain and range of $f$?}
+	\soln{Solution}
+	$(0, \infty)$
+	
+	\item \qn{What is the $x$-intercept of the graph $f$?}
+	\soln{Solution}
+	$y=f(x)=\ln{x}+2=0 \Rightarrow x = e^{-2}$
+	
+	\item \qn{Sketch the graph of $f$}
+	\soln{Solution}
+	\imgsoln{1.5.55-ans.c}
+\end{enumerate}
+
+\section*{Problem 56}
+
+\qn{Given the function $$f(x)=\ln(x-1)-1$$}
+\begin{enumerate}
+	\item \qn{What are the domain and range of $f$?}
+	\soln{Solution}
+	$(1, \infty)$
+	
+	\item \qn{What is the $x$-intercept of the graph $f$?}
+	\soln{Solution}
+	$y=f(x)=\ln(x-1)-1=0 \Rightarrow x=e+1$
+	
+	\item \qn{Sketch the graph of $f$}
+	\soln{Solution}
+	\imgsoln{1.5.56-ans.c}
+\end{enumerate}
+
+\section*{Problem 57}
+
+\qn{Solve each equation for $x$. Give both an exact value and a decimal approximation, correct to three decimal places.}
+\begin{enumerate}
+	\item \qn{$\ln(4x+2)=3$}
+	\soln{Solution}
+	$$\ln(4x+2)=3 \Rightarrow 4x+2=e^3 \Rightarrow x=\frac{e^3-2}{4}\approx4.521$$
+	
+	\item \qn{$e^{2x-3}=12$}
+	\soln{Solution}
+	$$e^{2x-3}=12 \Rightarrow 2x-3=\ln(12) \Rightarrow x=\frac{\ln(12)+3}{2}\approx2.242$$
+\end{enumerate}
+
+\section*{Problem 58}
+
+\qn{Solve each equation for $x$. Give both an exact value and a decimal approximation, correct to three decimal places.}
+\begin{enumerate}
+	\item \qn{$\log_2(x^2-x-1)=2$}
+	\soln{Solution}
+	$$\log_2(x^2-x-1)=2 \Rightarrow x^2-x-5=0 \Rightarrow x=\frac{1\pm\sqrt{21}}{2} \Rightarrow x\approx2.791 \eqtext{or} x\approx-1.791$$
+	
+	\item \qn{$1+e^{4x+1}=20$}
+	\soln{Solution}
+	$$1+e^{4x+1}=20 \Rightarrow e^{4x+1}=19 \Rightarrow x=\frac{\ln(19)-1}{4}\approx0.486$$
+\end{enumerate}
+
+\section*{Problem 59}
+
+\qn{Solve each equation for $x$. Give both an exact value and a decimal approximation, correct to three decimal places.}
+\begin{enumerate}
+	\item \qn{$\ln{x}+\ln(x-1)=0$}
+	\soln{Solution}
+	$$\ln{x}+\ln(x-1)=0 \Rightarrow x(x-1)=1 \Rightarrow x=\frac{1+\sqrt{5}}{2}\approx1.618 \eqtext{(vì $x>0$)}$$
+	
+	\item \qn{$5^{1-2x}=9$}
+	\soln{Solution}
+	$$5^{1-2x}=9 \Rightarrow 1-2x=\log_5(9) \Rightarrow x=\frac{1-\log_5(9)}{2}\approx-0.183$$
+\end{enumerate}
+
+\section*{Problem 60}
+
+\qn{Solve each equation for $x$. Give both an exact value and a decimal approximation, correct to three decimal places.}
+\begin{enumerate}
+	\item \qn{$\ln(\ln{x})=0$}
+	\soln{Solution}
+	$$\ln(\ln{x})=0 \Rightarrow \ln{x}=1 \Rightarrow x=e\approx2.718$$
+	
+	\item \qn{$\frac{60}{1+e^{-x}}=4$}
+	\soln{Solution}
+	$$\frac{60}{1+e^{-x}}=4 \Rightarrow 1+e^{-x}=15 \Rightarrow e^{-x}=14 \Rightarrow x=-\ln(14)\approx-2.639$$
+\end{enumerate}
+
+\section*{Problem 61}
+
+\qn{Solve each inequality for $x$}
+\begin{enumerate}
+	\item \qn{$\ln{x}<0$}
+	\soln{Solution}
+	Do hàm số $y=\ln{x}$ đơn điệu tăng khi $x$ tăng nên $$\ln{x}<0 \Rightarrow x<1$$
+	
+	\item \qn{$e^x>5$}
+	\soln{Solution}
+	Do hàm số $y=e^x$ đơn điệu tăng khi $x$ tăng nên $$e^x>5 \Rightarrow x>\ln5$$
+\end{enumerate}
+
+
+\section*{Problem 62}
+
+\qn{Solve each inequality for $x$}
+\begin{enumerate}
+	\item \qn{$1 < e^{3x-1} < 2$}
+	\soln{Solution}
+	Do hàm số $y=e^x$ đơn điệu tăng khi $x$ tăng nên
+	$$1 < e^{3x-1} < 2 \Leftrightarrow 0=\ln{1}<3x-1<\ln2 \Leftrightarrow \frac{1}{3}<x<\frac{\ln2+1}{3}$$
+	
+	\item \qn{$1-2\ln{x}<3$}
+	\soln{Solution}
+	$$1-2\ln{x}<3 \Leftrightarrow -1<\ln{x} \Leftrightarrow x>e^{-1}$$
+\end{enumerate}
+
+\section*{Problem 63}
+
+\begin{enumerate}
+	\item \qn{Find the domain of $f(x)=\ln(e^x-3)$}
+	\soln{Solution}
+	$$e^x-3 >0 \Rightarrow e^x>3 \Rightarrow x > \ln3$$
+	
+	\item \qn{Find $f^{-1}$ and its domain}
+	\soln{Solution}
+	\begin{enumerate}
+		\item Write $y=f(x)$: $$y=f(x)=\ln(e^x-3)$$
+		\item Solve this equation for $x$ in terms of $y$: $$y=f(x)=\ln(e^x-3) \Rightarrow x=f^{-1}(y)=\ln(e^y+3)$$
+		\item Interchange $x$ and $y$: $$y=f^{-1}(x)=\ln(e^y+3)$$
+	\end{enumerate}
+\end{enumerate}
+
+\section*{Problem 64}
+
+\begin{enumerate}
+	\item \qn{What are the values of $e^{\ln{300}}$ and $\ln(e^{300})$?}
+	\soln{Solution}
+	$$e^{\ln{300}}=\ln(e^{300})=300$$
+	
+	\item \qn{Use your calculator to evaluate $e^{\ln{300}}$ and $\ln(e^{300})$. What do you notice? Can you explain why the calculator has trouble?}
+	\soln{Solution}
+	Cả 2 đều có giá trị 300 nhưng phụ thuộc vào phép tính mũ trước hay logarithm trước mà sẽ có vấn đề, với trường hợp $\ln(e^{300})$ thì phép tính này yêu cầu tính hàm mũ trước, vì kết quả của phép tính này rất lớn, sẽ dẫn đến hiện tượng tràn số và gây ra lỗi tính toán.
+\end{enumerate}
+
+\section*{Problem 65}
+
+\qn{Graph the function $f(x)=\sqrt{x^3+x^2+x+1}$ and explain why it is one-to-one. Then use a computer algebra system to find an explicit expression for $f^{-1}(x)$. (Your CAS will produce three possible expressions. Explain why two of them are irrelevant in this context.)}
+
+\soln{Solution}
+Tìm $f^{-1}$ theo công thức nghiệm bậc 3
+\imgsoln{1.5.65-ans}
+
+\section*{Problem 66}
+
+\begin{enumerate}
+	\item \qn{If $g(x)=x^6+x^4$, $x \ge 0$, use a computer algebra system to find an expression for $g^{-1}(x)$}
+	\soln{Solution}
+	Coi $x^2=a$ là biến, khi đó $g(a)=a^3+a^2$, sau đó giải phương trình bậc 3 theo $a$ và tìm $x$
+	
+	\item \qn{Use the expression in part (1) to graph $y=g(x)$, $y=x$, and $y=g^{-1}(x)$ on the same screen.}
+	\soln{Solution}
+	\imgsoln{1.5.66-ans.a}
+\end{enumerate}
+
+\section*{Problem 67}
+
+\qn{If a bacteria population starts with 100 bacteria and doubles every three hours, then the number of bacteria after $t$ hours in $n=f(t)=100(2^{t/3})$}
+\begin{enumerate}
+	\item \qn{Find the inverse of this function and explain its meaning.}
+	\soln{Solution}
+	Hàm ngược là hàm số của $t$ theo biến $n$, thể hiện thời gian để quần thể vi khuẩn đạt ngưỡng $n$ cá thể:
+	\begin{enumerate}
+		\item Write $n=f(t)$: $$n=f(t)=100(2^{t/3})$$
+		\item Solve this equation for $t$ in terms of $n$: $$n=f(t)=100(2^{t/3}) \Rightarrow t=f^{-1}(n)=3\log_2(\frac{n}{100})$$
+	\end{enumerate}
+	
+	\item \qn{When will the population reach 50,000}
+	\soln{Solution}
+	$$t=f^{-1}(n)=3\log_2(\frac{n}{100})=3\log_2(\frac{50000}{100})\approx26.9 \eqtext{giờ}$$
+\end{enumerate}
+
+\section*{Problem 68}
+
+\qn{The National Ignition Facility at the Lawrence Livermore National Laboratory maintains the world's largest laser facility. The lasers, which are used to start a nuclear fusion reaction, are powered by a capacitor bank that stores a total of about 400 megajoules of energy. When the lasers are fired the capacitors discharge completely and then immediately begin recharging. The charge $Q$ of the capacitors $t$ seconds after the discharge is given by $$Q(t)=Q_0(1-e^{-t/a})$$ (The maximum charge capacity is $Q_0$ and $t$ is measured in seconds)}
+\begin{enumerate}
+	\item \qn{Find a formula for the inverse of this function and explain its meaning}
+	\soln{Solution}
+	\begin{enumerate}
+		\item Write $y=Q(t)$: $$y=Q(t)=Q_0(1-e^{-t/a})$$
+		\item Solve this equation for $t$ in terms of $y$: $$y=Q(t)=Q_0(1-e^{-t/a}) \Rightarrow t=-a\ln(1-\frac{y}{Q_0})$$
+		\item Interchange $t$ and $y$: $$y=Q^{-1}(t)=-a\ln(1-\frac{t}{Q_0})$$
+	\end{enumerate}
+	
+	\item \qn{How long does it take to recharge the capacitors to 90\% of capacity if $a=50$?}
+	\soln{Solution}
+	$Q(t)/Q_0=0.9=1-e^{-t/a} \Rightarrow e^{-t/50}=0.1 \Rightarrow t=-50\ln(0.1)\approx115.13$
+\end{enumerate}
+
+\section*{Problem 69}
+
+\qn{Find the exact value of each expression}
+\begin{enumerate}
+	\item \qn{$\cos^{-1}(-1)$}
+	\soln{Solution}
+	Hàm ngược của hàm $\cos$ được định nghĩa trên khoảng $[0,\pi]$. Do đó: $$\cos^{-1}(-1)=\pi$$
+	
+	\item \qn{$\sin^{-1}(0.5)$}
+	\soln{Solution}
+	Hàm ngược của hàm $\sin$ được định nghĩa trên khoảng $[-\pi/2,\pi/2]$. Do đó: $$\sin^{-1}(0.5)=\pi/6$$
+\end{enumerate}
+
+\section*{Problem 70}
+
+\qn{Find the exact value of each expression}
+\begin{enumerate}
+	\item \qn{$\tan^{-1}\sqrt{3}$}
+	\soln{Solution}
+	Hàm ngược của hàm $\tan$ được định nghĩa trên khoảng $(-\pi/2,\pi/2)$. Do đó: $$\tan^{-1}\sqrt{3}=\pi/3$$
+	
+	\item \qn{$\arctan(-1)$}
+	\soln{Solution}
+	Hàm ngược của hàm $\arctan$ được định nghĩa trên khoảng $(-\pi/2,\pi/2)$. Do đó: $$\arctan(-1)=\tan^{-1}(-1)=-\pi/4$$
+\end{enumerate}
+
+\section*{Problem 71}
+
+\qn{Find the exact value of each expression}
+\begin{enumerate}
+	\item \qn{$\csc^{-1}\sqrt{2}$}
+	\soln{Solution}
+	Hàm ngược của hàm $\arctan$ được định nghĩa trên khoảng $(0, \pi/2] \cup (\pi,3\pi/2]$. Do đó: $$\csc^{-1}\sqrt{2}=\pi/4$$
+	
+	\item \qn{$\arcsin(1)$}
+	\soln{Solution}
+	Hàm ngược của hàm $\arcsin$ được định nghĩa trên khoảng $[-\pi/2,\pi/2]$. Do đó: $$\arcsin(1)=\pi/2$$
+\end{enumerate}
+
+\section*{Problem 72}
+
+\qn{Find the exact value of each expression}
+\begin{enumerate}
+	\item \qn{$\sin^{-1}(-1/\sqrt{2})$}
+	\soln{Solution}
+	Hàm ngược của hàm $\sin^{-1}$ được định nghĩa trên khoảng $[-\pi/2,\pi/2]$. Do đó: $$\sin^{-1}(-1/\sqrt{2})=-\pi/4$$
+	
+	\item \qn{$\cos^{-1}(\sqrt{3}/2)$}
+	\soln{Solution}
+	Hàm ngược của hàm $\cos$ được định nghĩa trên khoảng $[0,\pi]$. Do đó: $$\cos^{-1}(\sqrt{3}/2)=\pi/6$$
+\end{enumerate}
+
+\section*{Problem 73}
+
+\qn{Find the exact value of each expression}
+\begin{enumerate}
+	\item \qn{$\cot^{-1}(-\sqrt{3})$}
+	\soln{Solution}
+	Hàm ngược của hàm $\cot$ được định nghĩa trên khoảng $[0,\pi]$. Do đó: $$\cot^{-1}(-\sqrt{3})=-\pi/3$$
+	
+	\item \qn{$\sec^{-1}(2)$}
+	\soln{Solution}
+	Hàm ngược của hàm $\sec$ được định nghĩa trên khoảng $[0,\pi/2] \cup [\pi,3\pi/2]$. Do đó: $$\sec^{-1}(2)=\pi/3$$
+\end{enumerate}
+
+\section*{Problem 74}
+
+\qn{Find the exact value of each expression}
+\begin{enumerate}
+	\item \qn{$\arcsin(\sin(5\pi/4))$}
+	\soln{Solution}
+	Hàm ngược của hàm $\sin^{-1}$ được định nghĩa trên khoảng $[-\pi/2,\pi/2]$. Do đó:
+	$$\arcsin(\sin(5\pi/4))=\arcsin(\sin(-\pi/4))=-\pi/4$$
+	
+	\item \qn{$\cos(2\sin^{-1}(\frac{5}{13}))$}
+	\soln{Solution}
+	$$\cos(2\sin^{-1}(\frac{5}{13}))=1-2\sin^2(\sin^{-1}(\frac{5}{13}))=1-2(\frac{5}{13})^2=\frac{119}{169}$$
+\end{enumerate}
+
+\section*{Problem 75}
+
+\qn{Prove that $$\cos(\sin^{-1}x)=\sqrt{1-x^2}$$}
+
+\soln{Solution}
+Đặt $\sin^{-1}x=y \Rightarrow \sin(y)=x$, do đó: $$\cos(\sin^{-1}x)=\cos(y)=\sqrt{1-\sin^2y}=\sqrt{1-x^2}$$
+
+\section*{Problem 76}
+
+\qn{Simplify the expression $$\tan(\sin^{-1}x)$$}
+
+\soln{Solution}
+Đặt $$\sin^{-1}x=y \Rightarrow \sin{y}=x \Rightarrow \cos{y}=\sqrt{1-\sin^2{y}}=\sqrt{1-x^2}$$ do đó: $$\tan(\sin^{-1}x)=\tan{y}=\frac{\sin{y}}{\cos{y}}=\frac{x}{\sqrt{1-x^2}}$$
+
+\section*{Problem 77}
+
+\qn{Simplify the expression $$\sin(\tan^{-1}x)$$}
+
+\soln{Solution}
+Ta có $$\tan^{-1}x=y \Rightarrow \tan{y}=x \Rightarrow \frac{\sin{y}}{\cos{y}}=\frac{\sin^2{y}}{1-\sin^2{y}}=x^2 \Rightarrow \sin{y}=\sin(\tan^{-1}x)=\frac{x}{\sqrt{x^2+1}}$$
+
+\section*{Problem 78}
+
+\qn{Simplify the expression $$\sin(2\arccos{x})$$}
+
+\soln{Solution}
+Đặt $\arccos{x}=y \Rightarrow \cos{y}=x \Rightarrow \sin{y}=\sqrt{1-\cos{y}}=\sqrt{1-x^2}$, do đó $$\sin(2\arccos{x})=\sin(2y)=2\sin{y}\cos{y}=2x\sqrt{1-x^2}$$
+
+\section*{Problem 79}
+
+\qn{Graph the given functions on the same screen. How are these graphs related? $$y=\sin{x} \eqtext{,} -\pi/2 \le x \le \pi/2 \eqtext{;} y=\sin^{-1}x \eqtext{;} y=x$$}
+\soln{Solution}
+Hàm số $y=\sin^{-1}x$ là hàm ngược của hàm số $y=\sin{x} \eqtext{,} -\pi/2 \le x \le \pi/2$, đồ thị hai hàm số này đối xứng với nhau qua đường thẳng $y=x$
+\imgsoln{1.5.79-ans}
+
+\section*{Problem 80}
+
+\qn{Graph the given functions on the same screen. How are these graphs related? $$y=\tan{x} \eqtext{,} -\pi/2 \le x \le \pi/2 \eqtext{;} y=\tan^{-1}x \eqtext{;} y=x$$}
+\soln{Solution}
+Hàm số $y=\tan^{-1}x$ là hàm ngược của hàm số $y=\tan{x} \eqtext{,} -\pi/2 \le x \le \pi/2$, đồ thị hai hàm số này đối xứng với nhau qua đường thẳng $y=x$
+\imgsoln{1.5.80-ans}
+
+\section*{Problem 81}
+
+\qn{Find the domain and range of the function $$g(x)=\sin^{-1}(3x+1)$$}
+
+\soln{Solution}
+Vì $\sin^{-1}$ được định nghĩa trong khoảng $[-\pi/2, \pi/2]$ nên:
+\begin{enumerate}
+	\item Domain của $g(x)$: $$-\pi/2 \le 3x+1 \le \pi/2 \Rightarrow -\pi/6-1/3 \le x \le \pi/6 -1/3$$
+	\item Range của $g(x)$: $[-1, 1]$
+\end{enumerate}
+
+\section*{Problem 82}
+
+\begin{enumerate}
+	\item \qn{Graph the function $f(x)=\sin(\sin^{-1}x)$ and explain the appearance of the graph}
+	\soln{Solution}
+	\imgsoln{1.5.82-ans.a}
+	
+	\item \qn{Graph the function $g(x)=\sin^{-1}(\sin{x})$. How do you explain the appearance of this graph?}
+	\soln{Solution}
+	\imgsoln{1.5.82-ans.b}
+\end{enumerate}
+
+\section*{Problem 83}
+
+\begin{enumerate}
+	\item \qn{If we shift a curve to the left, what happens to its reflection about the line $y=x$? In view of this geometric principle, find an expression for the inverse of $g(x)=f(x+c)$, where $f$ is a one-to-one function.}
+	\soln{Solution}
+	
+	\item \qn{Find an expression for the inverse of $h(x)=f(cx)$, where $c \ne 0$.}
+	\soln{Solution}
+\end{enumerate}
+
+\end{document}
+
+
+
