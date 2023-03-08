@@ -930,49 +930,64 @@ Tìm $f^{-1}$ theo công thức nghiệm bậc 3
 \qn{Prove that $$\cos(\sin^{-1}x)=\sqrt{1-x^2}$$}
 
 \soln{Solution}
+Đặt $\sin^{-1}x=y \Rightarrow \sin(y)=x$, do đó: $$\cos(\sin^{-1}x)=\cos(y)=\sqrt{1-\sin^2y}=\sqrt{1-x^2}$$
 
 \section*{Problem 76}
 
 \qn{Simplify the expression $$\tan(\sin^{-1}x)$$}
 
 \soln{Solution}
+Đặt $$\sin^{-1}x=y \Rightarrow \sin{y}=x \Rightarrow \cos{y}=\sqrt{1-\sin^2{y}}=\sqrt{1-x^2}$$ do đó: $$\tan(\sin^{-1}x)=\tan{y}=\frac{\sin{y}}{\cos{y}}=\frac{x}{\sqrt{1-x^2}}$$
 
 \section*{Problem 77}
 
 \qn{Simplify the expression $$\sin(\tan^{-1}x)$$}
 
 \soln{Solution}
+Ta có $$\tan^{-1}x=y \Rightarrow \tan{y}=x \Rightarrow \frac{\sin{y}}{\cos{y}}=\frac{\sin^2{y}}{1-\sin^2{y}}=x^2 \Rightarrow \sin{y}=\sin(\tan^{-1}x)=\frac{x}{\sqrt{x^2+1}}$$
 
 \section*{Problem 78}
 
 \qn{Simplify the expression $$\sin(2\arccos{x})$$}
 
 \soln{Solution}
+Đặt $\arccos{x}=y \Rightarrow \cos{y}=x \Rightarrow \sin{y}=\sqrt{1-\cos{y}}=\sqrt{1-x^2}$, do đó $$\sin(2\arccos{x})=\sin(2y)=2\sin{y}\cos{y}=2x\sqrt{1-x^2}$$
 
 \section*{Problem 79}
 
 \qn{Graph the given functions on the same screen. How are these graphs related? $$y=\sin{x} \eqtext{,} -\pi/2 \le x \le \pi/2 \eqtext{;} y=\sin^{-1}x \eqtext{;} y=x$$}
 \soln{Solution}
+Hàm số $y=\sin^{-1}x$ là hàm ngược của hàm số $y=\sin{x} \eqtext{,} -\pi/2 \le x \le \pi/2$, đồ thị hai hàm số này đối xứng với nhau qua đường thẳng $y=x$
+\imgsoln{1.5.79-ans}
 
 \section*{Problem 80}
 
 \qn{Graph the given functions on the same screen. How are these graphs related? $$y=\tan{x} \eqtext{,} -\pi/2 \le x \le \pi/2 \eqtext{;} y=\tan^{-1}x \eqtext{;} y=x$$}
 \soln{Solution}
+Hàm số $y=\tan^{-1}x$ là hàm ngược của hàm số $y=\tan{x} \eqtext{,} -\pi/2 \le x \le \pi/2$, đồ thị hai hàm số này đối xứng với nhau qua đường thẳng $y=x$
+\imgsoln{1.5.80-ans}
 
 \section*{Problem 81}
 
 \qn{Find the domain and range of the function $$g(x)=\sin^{-1}(3x+1)$$}
 
 \soln{Solution}
+Vì $\sin^{-1}$ được định nghĩa trong khoảng $[-\pi/2, \pi/2]$ nên:
+\begin{enumerate}
+	\item Domain của $g(x)$: $$-\pi/2 \le 3x+1 \le \pi/2 \Rightarrow -\pi/6-1/3 \le x \le \pi/6 -1/3$$
+	\item Range của $g(x)$: $[-1, 1]$
+\end{enumerate}
 
 \section*{Problem 82}
 
 \begin{enumerate}
 	\item \qn{Graph the function $f(x)=\sin(\sin^{-1}x)$ and explain the appearance of the graph}
 	\soln{Solution}
+	\imgsoln{1.5.82-ans.a}
 	
 	\item \qn{Graph the function $g(x)=\sin^{-1}(\sin{x})$. How do you explain the appearance of this graph?}
 	\soln{Solution}
+	\imgsoln{1.5.82-ans.b}
 \end{enumerate}
 
 \section*{Problem 83}
